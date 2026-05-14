@@ -1,606 +1,891 @@
-local _I0IloI0l0oO0=function(t,k)local r=""for i=1,#t do r=r..string.char(t[i]~k)end return r end
-local _0OiioliO0OiI=function(t)local r=""for i=1,#t do r=r..string.char(t[i])end return r end
-local _lIoIlo0IIool={}
-_lIoIlo0IIool[_0OiioliO0OiI({103,97,109,101})]=game
-_lIoIlo0IIool[_0OiioliO0OiI({119,111,114,107,115,112,97,99,101})]=workspace
-_lIoIlo0IIool[_0OiioliO0OiI({115,99,114,105,112,116})]=script
-_lIoIlo0IIool[_0OiioliO0OiI({115,104,97,114,101,100})]=shared
-_lIoIlo0IIool[_0OiioliO0OiI({95,71})]=_G
-_lIoIlo0IIool[_0OiioliO0OiI({116,97,115,107})]=task
-_lIoIlo0IIool[_0OiioliO0OiI({119,97,105,116})]=wait
-_lIoIlo0IIool[_0OiioliO0OiI({115,112,97,119,110})]=spawn
-_lIoIlo0IIool[_0OiioliO0OiI({100,101,108,97,121})]=delay
-_lIoIlo0IIool[_0OiioliO0OiI({100,101,102,101,114})]=defer
-_lIoIlo0IIool[_0OiioliO0OiI({112,114,105,110,116})]=print
-_lIoIlo0IIool[_0OiioliO0OiI({119,97,114,110})]=warn
-_lIoIlo0IIool[_0OiioliO0OiI({101,114,114,111,114})]=error
-_lIoIlo0IIool[_0OiioliO0OiI({97,115,115,101,114,116})]=assert
-_lIoIlo0IIool[_0OiioliO0OiI({116,111,115,116,114,105,110,103})]=tostring
-_lIoIlo0IIool[_0OiioliO0OiI({116,111,110,117,109,98,101,114})]=tonumber
-_lIoIlo0IIool[_0OiioliO0OiI({116,121,112,101})]=type
-_lIoIlo0IIool[_0OiioliO0OiI({112,97,105,114,115})]=pairs
-_lIoIlo0IIool[_0OiioliO0OiI({105,112,97,105,114,115})]=ipairs
-_lIoIlo0IIool[_0OiioliO0OiI({110,101,120,116})]=next
-_lIoIlo0IIool[_0OiioliO0OiI({115,101,108,101,99,116})]=select
-_lIoIlo0IIool[_0OiioliO0OiI({114,97,119,103,101,116})]=rawget
-_lIoIlo0IIool[_0OiioliO0OiI({114,97,119,115,101,116})]=rawset
-_lIoIlo0IIool[_0OiioliO0OiI({114,97,119,101,113,117,97,108})]=rawequal
-_lIoIlo0IIool[_0OiioliO0OiI({114,97,119,108,101,110})]=rawlen
-_lIoIlo0IIool[_0OiioliO0OiI({112,99,97,108,108})]=pcall
-_lIoIlo0IIool[_0OiioliO0OiI({120,112,99,97,108,108})]=xpcall
-_lIoIlo0IIool[_0OiioliO0OiI({115,101,116,109,101,116,97,116,97,98,108,101})]=setmetatable
-_lIoIlo0IIool[_0OiioliO0OiI({103,101,116,109,101,116,97,116,97,98,108,101})]=getmetatable
-_lIoIlo0IIool[_0OiioliO0OiI({114,101,113,117,105,114,101})]=require
-_lIoIlo0IIool[_0OiioliO0OiI({108,111,97,100})]=load
-_lIoIlo0IIool[_0OiioliO0OiI({108,111,97,100,115,116,114,105,110,103})]=loadstring
-_lIoIlo0IIool[_0OiioliO0OiI({99,111,108,108,101,99,116,103,97,114,98,97,103,101})]=collectgarbage
-_lIoIlo0IIool[_0OiioliO0OiI({116,121,112,101,111,102})]=typeof
-_lIoIlo0IIool[_0OiioliO0OiI({99,111,114,111,117,116,105,110,101})]=coroutine
-_lIoIlo0IIool[_0OiioliO0OiI({109,97,116,104})]=math
-_lIoIlo0IIool[_0OiioliO0OiI({115,116,114,105,110,103})]=string
-_lIoIlo0IIool[_0OiioliO0OiI({111,115})]=os
-_lIoIlo0IIool[_0OiioliO0OiI({98,105,116,51,50})]=bit32
-_lIoIlo0IIool[_0OiioliO0OiI({117,116,102,56})]=utf8
-_lIoIlo0IIool[_0OiioliO0OiI({116,97,98,108,101})]=table
-_lIoIlo0IIool[_0OiioliO0OiI({98,117,102,102,101,114})]=buffer
-_lIoIlo0IIool[_0OiioliO0OiI({73,110,115,116,97,110,99,101})]=Instance
-_lIoIlo0IIool[_0OiioliO0OiI({69,110,117,109})]=Enum
-_lIoIlo0IIool[_0OiioliO0OiI({86,101,99,116,111,114,50})]=Vector2
-_lIoIlo0IIool[_0OiioliO0OiI({86,101,99,116,111,114,51})]=Vector3
-_lIoIlo0IIool[_0OiioliO0OiI({86,101,99,116,111,114,50,105,110,116,49,54})]=Vector2int16
-_lIoIlo0IIool[_0OiioliO0OiI({86,101,99,116,111,114,51,105,110,116,49,54})]=Vector3int16
-_lIoIlo0IIool[_0OiioliO0OiI({67,70,114,97,109,101})]=CFrame
-_lIoIlo0IIool[_0OiioliO0OiI({67,111,108,111,114,51})]=Color3
-_lIoIlo0IIool[_0OiioliO0OiI({66,114,105,99,107,67,111,108,111,114})]=BrickColor
-_lIoIlo0IIool[_0OiioliO0OiI({85,68,105,109})]=UDim
-_lIoIlo0IIool[_0OiioliO0OiI({85,68,105,109,50})]=UDim2
-_lIoIlo0IIool[_0OiioliO0OiI({82,101,99,116})]=Rect
-_lIoIlo0IIool[_0OiioliO0OiI({82,97,121})]=Ray
-_lIoIlo0IIool[_0OiioliO0OiI({82,101,103,105,111,110,51})]=Region3
-_lIoIlo0IIool[_0OiioliO0OiI({82,101,103,105,111,110,51,105,110,116,49,54})]=Region3int16
-_lIoIlo0IIool[_0OiioliO0OiI({84,119,101,101,110,73,110,102,111})]=TweenInfo
-_lIoIlo0IIool[_0OiioliO0OiI({78,117,109,98,101,114,83,101,113,117,101,110,99,101})]=NumberSequence
-_lIoIlo0IIool[_0OiioliO0OiI({67,111,108,111,114,83,101,113,117,101,110,99,101})]=ColorSequence
-_lIoIlo0IIool[_0OiioliO0OiI({78,117,109,98,101,114,82,97,110,103,101})]=NumberRange
-_lIoIlo0IIool[_0OiioliO0OiI({80,104,121,115,105,99,97,108,80,114,111,112,101,114,116,105,101,115})]=PhysicalProperties
-_lIoIlo0IIool[_0OiioliO0OiI({70,97,99,101,115})]=Faces
-_lIoIlo0IIool[_0OiioliO0OiI({65,120,101,115})]=Axes
-_lIoIlo0IIool[_0OiioliO0OiI({82,97,110,100,111,109})]=Random
-_lIoIlo0IIool[_0OiioliO0OiI({68,97,116,101,84,105,109,101})]=DateTime
-_lIoIlo0IIool[_0OiioliO0OiI({82,97,121,99,97,115,116,80,97,114,97,109,115})]=RaycastParams
-_lIoIlo0IIool[_0OiioliO0OiI({79,118,101,114,108,97,112,80,97,114,97,109,115})]=OverlapParams
-pcall(function()if RunService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({82,117,110,83,101,114,118,105,99,101})]=RunService end end)
-pcall(function()if Players~=nil then _lIoIlo0IIool[_0OiioliO0OiI({80,108,97,121,101,114,115})]=Players end end)
-pcall(function()if Workspace~=nil then _lIoIlo0IIool[_0OiioliO0OiI({87,111,114,107,115,112,97,99,101})]=Workspace end end)
-pcall(function()if ReplicatedStorage~=nil then _lIoIlo0IIool[_0OiioliO0OiI({82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101})]=ReplicatedStorage end end)
-pcall(function()if ServerStorage~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,101,114,118,101,114,83,116,111,114,97,103,101})]=ServerStorage end end)
-pcall(function()if ServerScriptService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,101,114,118,101,114,83,99,114,105,112,116,83,101,114,118,105,99,101})]=ServerScriptService end end)
-pcall(function()if StarterGui~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,116,97,114,116,101,114,71,117,105})]=StarterGui end end)
-pcall(function()if StarterPack~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,116,97,114,116,101,114,80,97,99,107})]=StarterPack end end)
-pcall(function()if StarterPlayer~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,116,97,114,116,101,114,80,108,97,121,101,114})]=StarterPlayer end end)
-pcall(function()if Lighting~=nil then _lIoIlo0IIool[_0OiioliO0OiI({76,105,103,104,116,105,110,103})]=Lighting end end)
-pcall(function()if SoundService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({83,111,117,110,100,83,101,114,118,105,99,101})]=SoundService end end)
-pcall(function()if TweenService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({84,119,101,101,110,83,101,114,118,105,99,101})]=TweenService end end)
-pcall(function()if UserInputService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101})]=UserInputService end end)
-pcall(function()if ContextActionService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({67,111,110,116,101,120,116,65,99,116,105,111,110,83,101,114,118,105,99,101})]=ContextActionService end end)
-pcall(function()if HttpService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({72,116,116,112,83,101,114,118,105,99,101})]=HttpService end end)
-pcall(function()if DataStoreService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({68,97,116,97,83,116,111,114,101,83,101,114,118,105,99,101})]=DataStoreService end end)
-pcall(function()if MessagingService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({77,101,115,115,97,103,105,110,103,83,101,114,118,105,99,101})]=MessagingService end end)
-pcall(function()if PhysicsService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({80,104,121,115,105,99,115,83,101,114,118,105,99,101})]=PhysicsService end end)
-pcall(function()if CollectionService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({67,111,108,108,101,99,116,105,111,110,83,101,114,118,105,99,101})]=CollectionService end end)
-pcall(function()if PathfindingService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({80,97,116,104,102,105,110,100,105,110,103,83,101,114,118,105,99,101})]=PathfindingService end end)
-pcall(function()if MarketplaceService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({77,97,114,107,101,116,112,108,97,99,101,83,101,114,118,105,99,101})]=MarketplaceService end end)
-pcall(function()if BadgeService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({66,97,100,103,101,83,101,114,118,105,99,101})]=BadgeService end end)
-pcall(function()if InsertService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({73,110,115,101,114,116,83,101,114,118,105,99,101})]=InsertService end end)
-pcall(function()if GuiService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({71,117,105,83,101,114,118,105,99,101})]=GuiService end end)
-pcall(function()if TextService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({84,101,120,116,83,101,114,118,105,99,101})]=TextService end end)
-pcall(function()if ChatService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({67,104,97,116,83,101,114,118,105,99,101})]=ChatService end end)
-pcall(function()if GroupService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({71,114,111,117,112,83,101,114,118,105,99,101})]=GroupService end end)
-pcall(function()if AssetService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({65,115,115,101,116,83,101,114,118,105,99,101})]=AssetService end end)
-pcall(function()if LocalizationService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({76,111,99,97,108,105,122,97,116,105,111,110,83,101,114,118,105,99,101})]=LocalizationService end end)
-pcall(function()if PolicyService~=nil then _lIoIlo0IIool[_0OiioliO0OiI({80,111,108,105,99,121,83,101,114,118,105,99,101})]=PolicyService end end)
-pcall(function()if plugin~=nil then _lIoIlo0IIool[_0OiioliO0OiI({112,108,117,103,105,110})]=plugin end end)
-pcall(function()if loadfile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({108,111,97,100,102,105,108,101})]=loadfile end end)
-pcall(function()if dostring~=nil then _lIoIlo0IIool[_0OiioliO0OiI({100,111,115,116,114,105,110,103})]=dostring end end)
-pcall(function()if loadmodule~=nil then _lIoIlo0IIool[_0OiioliO0OiI({108,111,97,100,109,111,100,117,108,101})]=loadmodule end end)
-pcall(function()if readfile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({114,101,97,100,102,105,108,101})]=readfile end end)
-pcall(function()if writefile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({119,114,105,116,101,102,105,108,101})]=writefile end end)
-pcall(function()if listfiles~=nil then _lIoIlo0IIool[_0OiioliO0OiI({108,105,115,116,102,105,108,101,115})]=listfiles end end)
-pcall(function()if isfile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,102,105,108,101})]=isfile end end)
-pcall(function()if isfolder~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,102,111,108,100,101,114})]=isfolder end end)
-pcall(function()if makefolder~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,97,107,101,102,111,108,100,101,114})]=makefolder end end)
-pcall(function()if delfolder~=nil then _lIoIlo0IIool[_0OiioliO0OiI({100,101,108,102,111,108,100,101,114})]=delfolder end end)
-pcall(function()if delfile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({100,101,108,102,105,108,101})]=delfile end end)
-pcall(function()if appendfile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({97,112,112,101,110,100,102,105,108,101})]=appendfile end end)
-pcall(function()if request~=nil then _lIoIlo0IIool[_0OiioliO0OiI({114,101,113,117,101,115,116})]=request end end)
-pcall(function()if http_request~=nil then _lIoIlo0IIool[_0OiioliO0OiI({104,116,116,112,95,114,101,113,117,101,115,116})]=http_request end end)
-pcall(function()if syn~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,121,110})]=syn end end)
-pcall(function()if fluxus~=nil then _lIoIlo0IIool[_0OiioliO0OiI({102,108,117,120,117,115})]=fluxus end end)
-pcall(function()if getgenv~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,103,101,110,118})]=getgenv end end)
-pcall(function()if getrenv~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,114,101,110,118})]=getrenv end end)
-pcall(function()if getreg~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,114,101,103})]=getreg end end)
-pcall(function()if getrawmetatable~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,114,97,119,109,101,116,97,116,97,98,108,101})]=getrawmetatable end end)
-pcall(function()if setrawmetatable~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,114,97,119,109,101,116,97,116,97,98,108,101})]=setrawmetatable end end)
-pcall(function()if hookfunction~=nil then _lIoIlo0IIool[_0OiioliO0OiI({104,111,111,107,102,117,110,99,116,105,111,110})]=hookfunction end end)
-pcall(function()if newcclosure~=nil then _lIoIlo0IIool[_0OiioliO0OiI({110,101,119,99,99,108,111,115,117,114,101})]=newcclosure end end)
-pcall(function()if checkcaller~=nil then _lIoIlo0IIool[_0OiioliO0OiI({99,104,101,99,107,99,97,108,108,101,114})]=checkcaller end end)
-pcall(function()if islclosure~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,108,99,108,111,115,117,114,101})]=islclosure end end)
-pcall(function()if iscclosure~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,99,99,108,111,115,117,114,101})]=iscclosure end end)
-pcall(function()if getnamecallmethod~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})]=getnamecallmethod end end)
-pcall(function()if setnamecallmethod~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})]=setnamecallmethod end end)
-pcall(function()if gethui~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,104,117,105})]=gethui end end)
-pcall(function()if cloneref~=nil then _lIoIlo0IIool[_0OiioliO0OiI({99,108,111,110,101,114,101,102})]=cloneref end end)
-pcall(function()if compareinstances~=nil then _lIoIlo0IIool[_0OiioliO0OiI({99,111,109,112,97,114,101,105,110,115,116,97,110,99,101,115})]=compareinstances end end)
-pcall(function()if getinstances~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,105,110,115,116,97,110,99,101,115})]=getinstances end end)
-pcall(function()if getnilinstances~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,110,105,108,105,110,115,116,97,110,99,101,115})]=getnilinstances end end)
-pcall(function()if getscripts~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,115,99,114,105,112,116,115})]=getscripts end end)
-pcall(function()if getloadedmodules~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,108,111,97,100,101,100,109,111,100,117,108,101,115})]=getloadedmodules end end)
-pcall(function()if getrunningscripts~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,114,117,110,110,105,110,103,115,99,114,105,112,116,115})]=getrunningscripts end end)
-pcall(function()if getscriptbytecode~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,115,99,114,105,112,116,98,121,116,101,99,111,100,101})]=getscriptbytecode end end)
-pcall(function()if getscriptclosure~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,115,99,114,105,112,116,99,108,111,115,117,114,101})]=getscriptclosure end end)
-pcall(function()if decompile~=nil then _lIoIlo0IIool[_0OiioliO0OiI({100,101,99,111,109,112,105,108,101})]=decompile end end)
-pcall(function()if replicatesignal~=nil then _lIoIlo0IIool[_0OiioliO0OiI({114,101,112,108,105,99,97,116,101,115,105,103,110,97,108})]=replicatesignal end end)
-pcall(function()if firesignal~=nil then _lIoIlo0IIool[_0OiioliO0OiI({102,105,114,101,115,105,103,110,97,108})]=firesignal end end)
-pcall(function()if firetouchinterest~=nil then _lIoIlo0IIool[_0OiioliO0OiI({102,105,114,101,116,111,117,99,104,105,110,116,101,114,101,115,116})]=firetouchinterest end end)
-pcall(function()if fireproximityprompt~=nil then _lIoIlo0IIool[_0OiioliO0OiI({102,105,114,101,112,114,111,120,105,109,105,116,121,112,114,111,109,112,116})]=fireproximityprompt end end)
-pcall(function()if fireclickdetector~=nil then _lIoIlo0IIool[_0OiioliO0OiI({102,105,114,101,99,108,105,99,107,100,101,116,101,99,116,111,114})]=fireclickdetector end end)
-pcall(function()if getcallstack~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,99,97,108,108,115,116,97,99,107})]=getcallstack end end)
-pcall(function()if getupvalues~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,117,112,118,97,108,117,101,115})]=getupvalues end end)
-pcall(function()if getupvalue~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,117,112,118,97,108,117,101})]=getupvalue end end)
-pcall(function()if setupvalue~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,117,112,118,97,108,117,101})]=setupvalue end end)
-pcall(function()if getprotos~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,112,114,111,116,111,115})]=getprotos end end)
-pcall(function()if getproto~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,112,114,111,116,111})]=getproto end end)
-pcall(function()if getstack~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,115,116,97,99,107})]=getstack end end)
-pcall(function()if getmoduleenv~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,109,111,100,117,108,101,101,110,118})]=getmoduleenv end end)
-pcall(function()if isexecutorclosure~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,101,120,101,99,117,116,111,114,99,108,111,115,117,114,101})]=isexecutorclosure end end)
-pcall(function()if identifyexecutor~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,100,101,110,116,105,102,121,101,120,101,99,117,116,111,114})]=identifyexecutor end end)
-pcall(function()if messagebox~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,101,115,115,97,103,101,98,111,120})]=messagebox end end)
-pcall(function()if queue_on_teleport~=nil then _lIoIlo0IIool[_0OiioliO0OiI({113,117,101,117,101,95,111,110,95,116,101,108,101,112,111,114,116})]=queue_on_teleport end end)
-pcall(function()if queueonteleport~=nil then _lIoIlo0IIool[_0OiioliO0OiI({113,117,101,117,101,111,110,116,101,108,101,112,111,114,116})]=queueonteleport end end)
-pcall(function()if Drawing~=nil then _lIoIlo0IIool[_0OiioliO0OiI({68,114,97,119,105,110,103})]=Drawing end end)
-pcall(function()if isrenderobj~=nil then _lIoIlo0IIool[_0OiioliO0OiI({105,115,114,101,110,100,101,114,111,98,106})]=isrenderobj end end)
-pcall(function()if getrenderproperty~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,114,101,110,100,101,114,112,114,111,112,101,114,116,121})]=getrenderproperty end end)
-pcall(function()if setrenderproperty~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,114,101,110,100,101,114,112,114,111,112,101,114,116,121})]=setrenderproperty end end)
-pcall(function()if cleardrawcache~=nil then _lIoIlo0IIool[_0OiioliO0OiI({99,108,101,97,114,100,114,97,119,99,97,99,104,101})]=cleardrawcache end end)
-pcall(function()if writeclipboard~=nil then _lIoIlo0IIool[_0OiioliO0OiI({119,114,105,116,101,99,108,105,112,98,111,97,114,100})]=writeclipboard end end)
-pcall(function()if getclipboard~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,99,108,105,112,98,111,97,114,100})]=getclipboard end end)
-pcall(function()if setclipboard~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,99,108,105,112,98,111,97,114,100})]=setclipboard end end)
-pcall(function()if mouse1click~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,49,99,108,105,99,107})]=mouse1click end end)
-pcall(function()if mouse2click~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,50,99,108,105,99,107})]=mouse2click end end)
-pcall(function()if mouse1press~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,49,112,114,101,115,115})]=mouse1press end end)
-pcall(function()if mouse2press~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,50,112,114,101,115,115})]=mouse2press end end)
-pcall(function()if mouse1release~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,49,114,101,108,101,97,115,101})]=mouse1release end end)
-pcall(function()if mouse2release~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,50,114,101,108,101,97,115,101})]=mouse2release end end)
-pcall(function()if mousemoverel~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,109,111,118,101,114,101,108})]=mousemoverel end end)
-pcall(function()if mousemoveabs~=nil then _lIoIlo0IIool[_0OiioliO0OiI({109,111,117,115,101,109,111,118,101,97,98,115})]=mousemoveabs end end)
-pcall(function()if keypress~=nil then _lIoIlo0IIool[_0OiioliO0OiI({107,101,121,112,114,101,115,115})]=keypress end end)
-pcall(function()if keyrelease~=nil then _lIoIlo0IIool[_0OiioliO0OiI({107,101,121,114,101,108,101,97,115,101})]=keyrelease end end)
-pcall(function()if sendlua~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,110,100,108,117,97})]=sendlua end end)
-pcall(function()if setthreadidentity~=nil then _lIoIlo0IIool[_0OiioliO0OiI({115,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})]=setthreadidentity end end)
-pcall(function()if getthreadidentity~=nil then _lIoIlo0IIool[_0OiioliO0OiI({103,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})]=getthreadidentity end end)
-local _oIl0IiOoil00={}
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,48,105,108,79,73,111,111,48,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,57,34,37,63},(29567+-29492))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,111,79,111,48,111,73,48,48,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,42,57,37},(61053-60978))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,108,48,48,108,73,48,105,73,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({46,57,57,36,57},(2529+-2454))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,48,79,105,48,111,73,105,48,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,56,56,46,57,63},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,105,73,108,105,108,111,108,48,73,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,36,56,63,57,34,37,44},(36838+-36763))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,48,111,108,73,48,108,79,79,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,36,37,62,38,41,46,57},(19074-18999))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,111,48,108,73,73,108,108,108,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,50,59,46},(79713+-79638))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,111,105,111,108,48,105,79,73,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,42,34,57,56},(14479-14404))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,48,108,73,79,111,79,73,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,59,42,34,57,56},(87118-87043))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,111,111,105,108,105,79,79,79,79,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({37,46,51,63},(85036-84961))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,111,79,108,79,79,79,79,111,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({62,37,59,42,40,32},(8722-8647))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,105,108,73,79,105,73,108,105,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,42,41,39,46},(77369-77294))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,48,105,105,48,79,111,108,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,39,46,40,63},(1192~1251))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,79,79,48,108,111,73,111,79,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,60,44,46,63},(92518+-92443))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,48,79,48,111,79,111,108,108,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,60,56,46,63},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,105,108,111,48,111,79,73,108,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,60,46,58,62,42,39},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,73,111,111,108,48,79,111,73,48,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,60,39,46,37},(53528~53587))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,111,111,79,108,105,105,108,73,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,40,42,39,39},(83620-83545))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,73,73,48,111,48,111,73,79,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({51,59,40,42,39,39},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,105,111,108,111,48,111,105,105,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,38,46,63,42,63,42,41,39,46},(93593+-93518))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,111,105,111,79,73,73,108,79,48,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,38,46,63,42,63,42,41,39,46},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,48,48,79,79,48,111,111,108,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,58,62,34,57,46},(17311-17236))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,111,48,111,111,111,108,111,111,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,42,47},(56821~56766))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,48,79,105,48,73,73,108,48,108,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,42,47,56,63,57,34,37,44},(49574~49645))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,73,105,48,105,48,73,73,48,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,36,45,34,39,46},(47171+-47096))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,73,111,73,79,48,48,79,73,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,36,39,39,46,40,63,44,42,57,41,42,44,46},(78871-78796))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,111,73,73,79,73,73,111,108,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,36,57,36,62,63,34,37,46},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,79,79,73,111,111,73,79,111,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,42,63,35},(90360+-90285))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,48,48,73,73,48,108,73,73,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,63,57,34,37,44},(48454~48397))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,108,108,73,73,48,73,105,105,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({36,56},(11150~11205))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,73,73,108,111,111,108,48,79,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,36},(60623+-60548))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,111,111,108,73,48,73,79,73,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({41,34,63,120,121},(43567+-43492))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,73,79,111,108,73,111,73,79,73,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({62,63,45,115},(44677~44750))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,111,73,48,111,79,108,105,108,105,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,41,62,44},(28206~28261))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,105,48,105,73,111,48,105,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,50,59,46,36,45},(9466+-9391))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,48,79,105,79,73,108,105,79,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({41,62,45,45,46,57},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,108,73,79,105,48,105,79,108,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,42,38,46},(88904+-88829))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,105,79,79,105,48,79,108,48,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,36,57,32,56,59,42,40,46},(619+-544))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,48,79,111,79,105,111,108,48,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,40,57,34,59,63},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,73,79,105,111,111,73,111,48,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,39,62,44,34,37},(20208~20155))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,111,108,108,79,48,108,48,73,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,35,42,57,46,47},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,73,105,79,108,73,73,111,108,111,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({20,12},(40979+-40904))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,108,79,73,105,108,111,79,73,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,37,56,63,42,37,40,46},(97478-97403))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,111,111,48,73,108,105,111,111,48,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({14,37,62,38},(37413+-37338))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,73,105,111,105,73,108,111,108,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({29,46,40,63,36,57,121},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,79,111,108,79,108,111,79,111,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({29,46,40,63,36,57,120},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,105,108,105,108,111,111,105,48,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({29,46,40,63,36,57,121,34,37,63,122,125},(67322+-67247))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,108,73,105,73,73,105,105,79,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({29,46,40,63,36,57,120,34,37,63,122,125},(36802+-36727))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,48,48,48,108,105,73,73,79,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,13,57,42,38,46},(47205~47150))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,48,105,111,105,111,105,73,73,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,36,39,36,57,120},(29619~29688))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,79,73,79,79,73,108,108,105,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({9,57,34,40,32,8,36,39,36,57},(4785+-4710))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,105,105,105,48,105,111,108,105,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({30,15,34,38},(31092-31017))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,48,48,108,79,108,48,48,105,111,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({30,15,34,38,121},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,105,73,111,79,48,79,73,108,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,40,63},(59679~59732))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,105,79,111,48,105,73,73,111,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,42,50},(72479-72404))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,111,48,48,108,108,105,105,105,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,44,34,36,37,120},(8929~8874))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,111,48,48,108,108,108,79,111,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,44,34,36,37,120,34,37,63,122,125},(44209+-44134))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,105,105,105,79,48,79,105,73,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({31,60,46,46,37,2,37,45,36},(12010~11937))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,105,48,73,105,73,73,108,79,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({5,62,38,41,46,57,24,46,58,62,46,37,40,46},(14099~14168))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,79,73,105,73,108,105,48,79,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,36,39,36,57,24,46,58,62,46,37,40,46},(52413~52470))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,48,111,108,73,108,111,105,79,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({5,62,38,41,46,57,25,42,37,44,46},(88693-88618))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,111,73,105,48,108,73,105,108,48,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({27,35,50,56,34,40,42,39,27,57,36,59,46,57,63,34,46,56},(9223~9292))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,108,111,79,79,48,79,108,79,108,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,42,40,46,56},(40626+-40551))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,111,79,108,108,108,111,73,105,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({10,51,46,56},(41091~41160))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,79,79,48,108,111,108,108,105,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,42,37,47,36,38},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,73,111,73,73,105,48,48,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({15,42,63,46,31,34,38,46},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,111,105,48,48,111,111,48,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,42,50,40,42,56,63,27,42,57,42,38,56},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,108,73,105,79,73,111,73,108,111,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({4,61,46,57,39,42,59,27,42,57,42,38,56},(58261~58334))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,105,48,79,79,108,108,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,42,56,32},(69572+-69497))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,108,105,108,79,111,79,73,79,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,42,34,63},(35943~35884))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,105,73,73,108,73,73,73,79,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,59,42,60,37},(28706+-28631))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,105,105,105,105,48,105,79,79,79,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,39,42,50},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,111,105,79,111,73,105,79,108,111,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,45,46,57},(48555~48608))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,79,111,73,73,79,108,79,79,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,62,37,24,46,57,61,34,40,46},(35267-35192))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,105,105,79,79,105,108,73,108,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({27,39,42,50,46,57,56},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,108,48,111,48,73,105,108,73,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({28,36,57,32,56,59,42,40,46},(51459-51384))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,108,111,48,73,105,48,73,79,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,59,39,34,40,42,63,46,47,24,63,36,57,42,44,46},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,111,48,48,105,48,73,111,108,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,46,57,61,46,57,24,63,36,57,42,44,46},(44490-44415))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,48,48,79,79,79,108,105,111,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,46,57,61,46,57,24,40,57,34,59,63,24,46,57,61,34,40,46},(26399-26324))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,108,48,79,73,111,73,108,73,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,63,42,57,63,46,57,12,62,34},(27583+-27508))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,73,79,73,48,105,48,48,73,111,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,63,42,57,63,46,57,27,42,40,32},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,108,108,111,73,108,105,79,48,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,63,42,57,63,46,57,27,39,42,50,46,57},(98428+-98353))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,79,79,105,105,111,73,48,73,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({7,34,44,35,63,34,37,44},(60540+-60465))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,111,108,108,79,73,108,105,73,48,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,36,62,37,47,24,46,57,61,34,40,46},(84922-84847))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,73,73,108,105,79,79,48,105,105,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({31,60,46,46,37,24,46,57,61,34,40,46},(51168~51115))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,105,48,111,73,105,73,108,108,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({30,56,46,57,2,37,59,62,63,24,46,57,61,34,40,46},(13878+-13803))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,111,111,108,73,48,111,73,48,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,36,37,63,46,51,63,10,40,63,34,36,37,24,46,57,61,34,40,46},(65908+-65833))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,73,48,73,111,79,108,105,111,111,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({3,63,63,59,24,46,57,61,34,40,46},(82573+-82498))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,79,79,108,105,73,79,105,108,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({15,42,63,42,24,63,36,57,46,24,46,57,61,34,40,46},(63694~63621))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,108,108,48,79,48,48,108,108,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({6,46,56,56,42,44,34,37,44,24,46,57,61,34,40,46},(24103+-24028))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,79,79,79,105,79,48,73,73,111,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({27,35,50,56,34,40,56,24,46,57,61,34,40,46},(51460~51535))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,48,111,111,105,79,111,73,79,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,36,39,39,46,40,63,34,36,37,24,46,57,61,34,40,46},(10307~10248))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,108,48,111,111,48,79,111,108,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({27,42,63,35,45,34,37,47,34,37,44,24,46,57,61,34,40,46},(27151+-27076))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,108,73,48,48,79,105,48,79,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({6,42,57,32,46,63,59,39,42,40,46,24,46,57,61,34,40,46},(36097+-36022))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,111,73,73,73,79,79,105,105,73,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({9,42,47,44,46,24,46,57,61,34,40,46},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,105,108,73,79,111,105,111,105,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,37,56,46,57,63,24,46,57,61,34,40,46},(96886+-96811))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,111,79,111,108,111,105,111,105,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,62,34,24,46,57,61,34,40,46},(30904~30963))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,79,73,73,79,73,111,73,111,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({31,46,51,63,24,46,57,61,34,40,46},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,108,111,108,105,73,108,73,108,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,35,42,63,24,46,57,61,34,40,46},(54242~54185))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,79,48,108,79,79,73,105,111,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,57,36,62,59,24,46,57,61,34,40,46},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,108,48,111,105,111,105,108,73,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({10,56,56,46,63,24,46,57,61,34,40,46},(68425+-68350))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,48,105,48,73,73,105,105,79,73,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({7,36,40,42,39,34,49,42,63,34,36,37,24,46,57,61,34,40,46},(29694+-29619))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,108,79,79,111,108,111,108,48,105,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({27,36,39,34,40,50,24,46,57,61,34,40,46},(55714~55785))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,73,108,108,79,105,105,79,105,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,8,35,34,39,47},(16194~16137))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,73,73,108,105,79,111,48,105,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,8,35,34,39,47,4,45,8,39,42,56,56},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,108,79,48,73,111,108,111,111,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,8,35,34,39,47,28,35,34,40,35,2,56,10},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,111,108,111,111,48,108,73,105,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,10,37,40,46,56,63,36,57},(35001+-34926))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,79,48,108,105,48,79,73,73,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,10,37,40,46,56,63,36,57,4,45,8,39,42,56,56},(82494+-82419))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,73,73,73,79,48,108,108,73,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,37,47,13,34,57,56,63,10,37,40,46,56,63,36,57,28,35,34,40,35,2,56,10},(78264-78189))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,48,111,79,79,48,105,73,111,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({28,42,34,63,13,36,57,8,35,34,39,47},(37180~37239))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,105,111,48,73,79,111,73,108,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,8,35,34,39,47,57,46,37},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,111,108,105,105,48,79,111,79,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,15,46,56,40,46,37,47,42,37,63,56},(57529~57586))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,48,73,79,105,105,79,108,73,73,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,10,37,40,46,56,63,36,57,56},(36660-36585))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,73,79,111,111,73,111,105,48,73,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,56,10},(48363+-48288))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,111,48,73,79,108,79,79,73,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,56,15,46,56,40,46,37,47,42,37,63,4,45},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,48,108,105,105,48,108,105,105,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,56,10,37,40,46,56,63,36,57,4,45},(11174~11245))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,79,111,73,111,111,48,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,39,36,37,46},(41900~41959))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,111,79,111,73,111,108,105,79,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({15,46,56,63,57,36,50},(49242+-49167))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,48,105,111,48,48,105,108,105,48,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,38,36,61,46},(60620~60551))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,73,108,79,48,105,79,111,79,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,39,46,42,57,10,39,39,8,35,34,39,47,57,46,37},(54327+-54252))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,48,48,105,48,108,111,108,105,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,13,62,39,39,5,42,38,46},(32436+-32361))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,111,73,108,73,73,108,73,105,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,36,37,37,46,40,63},(49788~49719))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,108,111,79,108,108,108,111,108,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({4,37,40,46},(14484+-14409))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,73,111,105,105,48,73,111,73,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({15,34,56,40,36,37,37,46,40,63},(10833~10778))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,73,48,79,79,48,105,48,48,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({13,34,57,46},(34607~34660))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,79,105,105,79,73,48,111,73,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({28,42,34,63},(34778-34703))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,105,73,108,108,48,105,105,48,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,24,46,57,61,34,40,46},(50184+-50109))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,79,73,48,73,105,111,73,111,111,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,4,41,33,46,40,63,56},(19553~19498))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,73,108,108,79,79,111,108,111,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({9,34,37,47,31,36,8,39,36,56,46},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,48,111,79,105,48,108,79,105,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,46,63,10,63,63,57,34,41,62,63,46},(43560+-43485))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,79,79,108,105,73,105,105,73,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,10,63,63,57,34,41,62,63,46},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,73,73,79,111,79,73,111,48,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,10,63,63,57,34,41,62,63,46,56},(60452-60377))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,111,73,105,79,108,79,108,48,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({3,42,56,31,42,44},(4943+-4868))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,111,73,108,48,73,108,105,105,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({10,47,47,31,42,44},(37594~37521))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,73,48,111,48,73,48,73,73,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,38,36,61,46,31,42,44},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,79,111,108,111,111,105,48,79,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,31,42,44,56},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,48,108,73,73,73,79,48,48,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({6,36,61,46,31,36},(7292+-7217))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,105,73,105,105,111,108,48,105,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({31,42,32,46,15,42,38,42,44,46},(17507~17448))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,105,105,105,79,79,108,48,105,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,24,63,42,63,46},(13610-13535))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,48,48,108,48,73,105,79,105,73,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({8,35,42,37,44,46,24,63,42,63,46},(16419+-16344))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,111,79,73,111,105,108,108,48,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({7,36,42,47,10,37,34,38,42,63,34,36,37},(27745~27690))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,108,79,108,48,108,105,79,108,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({10,47,33,62,56,63,24,59,46,46,47},(90002+-89927))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,111,73,111,73,48,108,48,108,111,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({10,47,33,62,56,63,28,46,34,44,35,63},(2124+-2049))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,105,73,73,108,108,111,108,105,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,10,56,50,37,40},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,48,73,105,79,79,111,108,79,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({24,46,63,10,56,50,37,40},(275-200))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,108,48,108,105,108,105,105,108,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({30,59,47,42,63,46,10,56,50,37,40},(52476~52407))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,105,73,48,108,108,73,79,79,48,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({25,46,38,36,61,46,10,56,50,37,40},(80669+-80594))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,105,79,48,48,105,105,105,105,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,37,40,57,46,38,46,37,63,10,56,50,37,40},(98911+-98836))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,105,73,79,108,111,79,48,73,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,27,39,42,50,46,57,13,57,36,38,8,35,42,57,42,40,63,46,57},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,111,48,48,79,79,48,108,105,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,27,39,42,50,46,57,9,50,30,56,46,57,2,47},(10438+-10363))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,111,108,108,73,108,73,48,111,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,27,39,42,50,46,57,56},(20323+-20248))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,73,73,79,73,105,108,105,48,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,56,13,57,34,46,37,47,56,28,34,63,35},(18455+-18380))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,79,79,73,48,79,48,48,108,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({2,56,2,37,12,57,36,62,59},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,108,73,111,73,105,111,73,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({12,46,63,25,42,37,32,2,37,12,57,36,62,59},(3532~3463))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,79,108,48,108,48,105,108,48,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,41,56},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,48,48,73,79,73,73,48,48,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,46,34,39},(35978-35903))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,111,111,48,108,108,105,48,111,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,39,36,36,57},(50314-50239))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,48,73,48,108,73,111,79,105,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,58,57,63},(91231-91156))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,108,73,79,48,48,48,79,108,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,34,37},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,73,48,79,108,105,111,111,79,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,36,56},(2157-2082))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,79,73,111,105,105,79,111,108,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({63,42,37},(174+-99))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,79,111,48,73,79,111,73,108,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,56,34,37},(46090-46015))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,111,108,73,48,108,48,105,73,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,40,36,56},(79633-79558))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,79,111,108,111,108,105,79,105,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,63,42,37},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,48,73,111,73,108,48,73,108,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,63,42,37,121},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,111,108,48,79,48,79,48,73,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({46,51,59},(43799~43868))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,111,111,108,108,108,111,108,108,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,44},(87974+-87899))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,111,108,73,73,111,111,108,73,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,42,51},(83495-83420))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,73,105,48,105,108,105,79,79,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,34,37},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,79,73,79,111,105,105,79,111,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,38,36,47},(15601~15546))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,73,79,79,73,105,105,79,105,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({35,62,44,46},(67225-67150))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,111,48,73,108,79,48,79,108,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,34},(32194~32137))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,111,48,48,111,48,108,73,108,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,37,47,36,38},(20316-20241))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,108,105,111,105,108,79,79,111,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,42,37,47,36,38,56,46,46,47},(58683~58736))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,73,48,111,48,73,79,105,105,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,36,60},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,108,73,48,105,105,73,48,111,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,39,42,38,59},(28188-28113))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,73,48,48,79,79,108,105,108,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,34,44,37},(15299~15240))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,48,108,105,73,108,73,108,111,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({37,36,34,56,46},(11516-11441))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,73,73,48,105,48,111,73,48,105,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,36,62,37,47},(43026+-42951))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,79,111,79,105,79,111,105,105,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,36,57,38,42,63},(41067-40992))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,79,73,108,48,105,108,79,111,111,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,46,37},(12691~12760))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,108,111,105,105,73,111,111,111,108,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,62,41},(63283~63352))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,111,111,105,79,108,105,108,108,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,59},(10177~10122))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,108,108,111,73,108,79,108,111,73,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,61,46,57,56,46},(6880~6827))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,79,111,73,79,105,73,111,48,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({62,59,59,46,57},(1371~1296))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,73,73,105,79,73,105,48,48,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,60,46,57},(78003-77928))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,79,105,105,48,105,48,73,108,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({41,50,63,46},(73901-73826))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,105,73,73,48,111,48,79,111,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,35,42,57},(69625+-69550))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,108,79,48,48,48,48,108,79,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,34,37,47},(48829-48754))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,79,79,105,48,48,48,79,48,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,42,63,40,35},(89602-89527))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,73,108,108,48,48,105,108,73,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,38,42,63,40,35},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,79,79,108,105,79,111,79,73,73,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,56,62,41},(61096~61155))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,111,48,105,48,48,105,79,79,111,111,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,59,39,34,63},(52850~52793))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,48,79,79,73,105,73,73,73,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,37,56,46,57,63},(73681+-73606))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,111,79,111,73,105,73,105,79,111,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,38,36,61,46},(37206-37131))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,48,79,73,48,105,111,108,79,48,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,36,57,63},(62740~62815))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,105,105,73,48,105,108,79,48,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,36,37,40,42,63},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,111,73,111,111,48,111,108,105,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,61,46},(1882~1809))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,111,111,111,73,48,108,79,48,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,57,46,42,63,46},(58154~58209))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,105,108,105,79,73,111,111,108,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,37},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,79,79,108,111,48,79,111,73,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({59,42,40,32},(39416~39347))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,79,108,105,108,108,73,108,48,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,56,62,38,46},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,111,73,48,73,111,105,79,48,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({50,34,46,39,47},(40287-40212))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,48,73,79,105,73,108,48,48,48,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,63,42,63,62,56},(18272-18197))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,108,105,108,79,79,105,73,73,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,57,42,59},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,48,108,108,108,105,111,108,105,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,62,37,37,34,37,44},(40955-40880))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,111,48,108,79,105,73,108,79,73,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,50,34,46,39,47,42,41,39,46},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,79,108,105,108,111,105,73,111,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,42,47,45,34,39,46},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,108,105,105,111,79,73,73,108,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,36,56,63,57,34,37,44},(27173+-27098))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,48,48,79,73,108,105,48,105,105,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,36,42,47,38,36,47,62,39,46},(20870+-20795))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,108,79,108,73,111,111,48,108,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,42,47,45,34,39,46},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,111,111,73,79,79,105,48,105,108,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,57,34,63,46,45,34,39,46},(20965-20890))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,111,108,108,105,105,108,108,111,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({39,34,56,63,45,34,39,46,56},(14553~14482))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,48,105,111,105,108,79,105,105,111,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,45,34,39,46},(15780~15855))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,105,79,73,108,73,73,73,111,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,45,36,39,47,46,57},(34234~34289))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,105,105,73,79,79,105,73,73,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,42,32,46,45,36,39,47,46,57},(70861-70786))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,79,79,105,108,105,111,48,48,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,39,45,36,39,47,46,57},(40146~40089))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,48,48,108,111,105,108,108,48,105,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,39,45,34,39,46},(72931-72856))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,73,105,48,48,111,111,108,108,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({42,59,59,46,37,47,45,34,39,46},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,108,108,111,73,48,108,111,48,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,58,62,46,56,63},(12780+-12705))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,105,105,48,108,108,105,111,108,108,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({35,63,63,59,20,57,46,58,62,46,56,63},(90314+-90239))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,111,108,111,48,73,73,105,79,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,50,37},(48984+-48909))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,48,79,48,105,79,105,108,48,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,39,62,51,62,56},(30850~30921))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,73,111,111,105,79,48,108,111,108,111,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,44,46,37,61},(34065+-33990))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,111,105,48,73,111,105,79,79,79,73,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,57,46,37,61},(49788-49713))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,73,79,48,105,73,111,79,111,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,57,46,44},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,48,48,108,48,79,105,73,108,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,57,42,60,38,46,63,42,63,42,41,39,46},(23856-23781))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,48,105,48,105,105,48,79,105,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,57,42,60,38,46,63,42,63,42,41,39,46},(12061~12118))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,73,73,73,111,105,105,79,108,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({35,36,36,32,45,62,37,40,63,34,36,37},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,48,105,79,105,79,48,111,79,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({37,46,60,40,40,39,36,56,62,57,46},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,105,105,79,105,73,73,108,48,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,35,46,40,32,40,42,39,39,46,57},(52814-52739))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,111,73,105,48,108,48,79,108,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,39,40,39,36,56,62,57,46},(23346~23417))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,105,73,111,79,73,48,105,111,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,40,40,39,36,56,62,57,46},(28434~28505))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,73,73,73,48,73,48,79,79,105,105,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,37,42,38,46,40,42,39,39,38,46,63,35,36,47},(39062~39133))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,79,105,111,108,73,73,48,111,73,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,37,42,38,46,40,42,39,39,38,46,63,35,36,47},(92953-92878))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,105,111,105,105,111,111,73,105,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,35,62,34},(6*12+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,73,48,73,105,48,108,48,79,108,48,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,39,36,37,46,57,46,45},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,48,105,105,111,105,73,105,48,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,36,38,59,42,57,46,34,37,56,63,42,37,40,46,56},(48085-48010))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,73,105,105,48,48,73,111,79,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,34,37,56,63,42,37,40,46,56},(54308-54233))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,79,105,79,79,108,108,48,105,108,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,37,34,39,34,37,56,63,42,37,40,46,56},(39578-39503))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,108,108,111,79,111,48,111,105,48,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,56,40,57,34,59,63,56},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,48,79,79,111,105,108,73,73,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,39,36,42,47,46,47,38,36,47,62,39,46,56},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,73,73,105,111,73,73,105,108,108,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,57,62,37,37,34,37,44,56,40,57,34,59,63,56},(67965-67890))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,105,73,48,108,79,111,108,79,105,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,56,40,57,34,59,63,41,50,63,46,40,36,47,46},(7450~7505))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,105,79,48,111,79,105,48,73,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,56,40,57,34,59,63,40,39,36,56,62,57,46},(17394~17337))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,48,108,73,111,105,48,108,111,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({47,46,40,36,38,59,34,39,46},(30913-30838))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,79,108,111,73,105,105,105,108,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({57,46,59,39,34,40,42,63,46,56,34,44,37,42,39},(14744+-14669))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,79,79,73,111,111,111,79,79,79,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,34,57,46,56,34,44,37,42,39},(13516~13447))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,105,79,48,48,105,73,111,73,105,111,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,34,57,46,63,36,62,40,35,34,37,63,46,57,46,56,63},(188+-113))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,79,108,108,73,108,111,111,73,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,34,57,46,59,57,36,51,34,38,34,63,50,59,57,36,38,59,63},(21137+-21062))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,105,105,108,111,79,108,79,73,79,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({45,34,57,46,40,39,34,40,32,47,46,63,46,40,63,36,57},(31878-31803))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,73,108,79,73,111,79,48,73,105,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,40,42,39,39,56,63,42,40,32},(32654+-32579))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,108,48,73,48,48,111,79,108,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,62,59,61,42,39,62,46,56},(35114~35169))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,79,105,105,73,79,48,108,73,79,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,62,59,61,42,39,62,46},(12670~12597))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,48,48,108,111,73,79,79,108,79,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,62,59,61,42,39,62,46},(7*10+5))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,79,73,73,79,111,79,48,108,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,59,57,36,63,36,56},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,48,79,79,111,108,79,48,79,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,59,57,36,63,36},(50581-50506))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,79,73,73,73,108,105,48,79,111,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,56,63,42,40,32},(21509~21582))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,79,105,111,108,111,73,79,111,111,48,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,38,36,47,62,39,46,46,37,61},(5*15+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,108,105,105,48,105,48,73,105,108,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,46,51,46,40,62,63,36,57,40,39,36,56,62,57,46},(3*25+0))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,48,79,48,108,105,73,48,105,79,111,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,47,46,37,63,34,45,50,46,51,46,40,62,63,36,57},(16457+-16382))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,108,73,108,105,79,73,105,48,108,48,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,46,56,56,42,44,46,41,36,51},(30943~30868))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,105,79,73,108,48,48,79,79,108,79,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({58,62,46,62,46,20,36,37,20,63,46,39,46,59,36,57,63},(18868~18943))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,111,108,73,105,79,79,105,48,48,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({58,62,46,62,46,36,37,63,46,39,46,59,36,57,63},(9453-9378))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,48,48,105,111,105,73,111,73,108,48,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({15,57,42,60,34,37,44},(64149+-64074))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,73,105,105,79,108,111,73,79,105,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({34,56,57,46,37,47,46,57,36,41,33},(4*18+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,108,79,73,105,105,79,79,111,79,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,57,46,37,47,46,57,59,57,36,59,46,57,63,50},(26199+-26124))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,48,79,73,105,105,48,79,111,79,108,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,57,46,37,47,46,57,59,57,36,59,46,57,63,50},(29962+-29887))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,73,79,111,111,105,73,108,73,108,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({40,39,46,42,57,47,57,42,60,40,42,40,35,46},(2*37+1))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,79,105,73,79,79,108,105,105,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({60,57,34,63,46,40,39,34,59,41,36,42,57,47},(19473-19398))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,73,111,48,48,105,48,105,79,108,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,40,39,34,59,41,36,42,57,47},(68818-68743))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,73,48,111,105,48,73,108,108,73,108,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,40,39,34,59,41,36,42,57,47},(64565+-64490))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,73,111,73,108,105,79,105,108,73,48})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,122,40,39,34,40,32},(24361+-24286))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,111,79,111,73,73,73,73,105,79,108,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,121,40,39,34,40,32},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,79,73,108,73,73,111,105,108,73,111,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,122,59,57,46,56,56},(61050-60975))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,111,105,105,111,48,111,105,111,73,79,111})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,121,59,57,46,56,56},(44710+-44635))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,48,73,105,105,48,79,79,111,73,73,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,122,57,46,39,46,42,56,46},(81953+-81878))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,105,108,79,48,73,111,105,48,48,48,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,121,57,46,39,46,42,56,46},(63448~63379))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,111,79,73,79,105,108,73,48,79,111,73})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,38,36,61,46,57,46,39},(25526+-25451))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,48,108,48,73,73,48,79,111,108,111,48,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({38,36,62,56,46,38,36,61,46,42,41,56},(9*8+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,105,48,48,48,108,79,105,111,105,105,105})]=_lIoIlo0IIool[_I0IloI0l0oO0({32,46,50,59,57,46,56,56},(50554~50481))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,111,48,73,111,79,111,73,79,111,79,79})]=_lIoIlo0IIool[_I0IloI0l0oO0({32,46,50,57,46,39,46,42,56,46},(27308+-27233))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,108,105,105,108,111,79,111,111,105,48,79,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,37,47,39,62,42},(36345~36274))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,79,108,105,73,48,79,48,73,48,79,73,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({56,46,63,63,35,57,46,42,47,34,47,46,37,63,34,63,50},(8*9+3))]
-_oIl0IiOoil00[_0OiioliO0OiI({95,105,105,105,79,79,79,111,105,79,111,105,108})]=_lIoIlo0IIool[_I0IloI0l0oO0({44,46,63,63,35,57,46,42,47,34,47,46,37,63,34,63,50},(48730~48657))]
+local _l00OOoI0IOO0=function(t,k)local r=""for i=1,#t do r=r..string.char(t[i]~k)end return r end
+local _OlIoIolIOIll=function(t)local r=""for i=1,#t do r=r..string.char(t[i])end return r end
+local _ioIl0lioiI0i={} local _iOiloOoIo0IO={}
+_ioIl0lioiI0i[_OlIoIolIOIll({103,97,109,101})]=game
+_ioIl0lioiI0i[_OlIoIolIOIll({119,111,114,107,115,112,97,99,101})]=workspace
+_ioIl0lioiI0i[_OlIoIolIOIll({115,99,114,105,112,116})]=script
+_ioIl0lioiI0i[_OlIoIolIOIll({115,104,97,114,101,100})]=shared
+_ioIl0lioiI0i[_OlIoIolIOIll({95,71})]=_G
+_ioIl0lioiI0i[_OlIoIolIOIll({116,97,115,107})]=task
+_ioIl0lioiI0i[_OlIoIolIOIll({119,97,105,116})]=wait
+_ioIl0lioiI0i[_OlIoIolIOIll({115,112,97,119,110})]=spawn
+_ioIl0lioiI0i[_OlIoIolIOIll({100,101,108,97,121})]=delay
+_ioIl0lioiI0i[_OlIoIolIOIll({100,101,102,101,114})]=defer
+_ioIl0lioiI0i[_OlIoIolIOIll({112,114,105,110,116})]=print
+_ioIl0lioiI0i[_OlIoIolIOIll({119,97,114,110})]=warn
+_ioIl0lioiI0i[_OlIoIolIOIll({101,114,114,111,114})]=error
+_ioIl0lioiI0i[_OlIoIolIOIll({97,115,115,101,114,116})]=assert
+_ioIl0lioiI0i[_OlIoIolIOIll({116,111,115,116,114,105,110,103})]=tostring
+_ioIl0lioiI0i[_OlIoIolIOIll({116,111,110,117,109,98,101,114})]=tonumber
+_ioIl0lioiI0i[_OlIoIolIOIll({116,121,112,101})]=type
+_ioIl0lioiI0i[_OlIoIolIOIll({112,97,105,114,115})]=pairs
+_ioIl0lioiI0i[_OlIoIolIOIll({105,112,97,105,114,115})]=ipairs
+_ioIl0lioiI0i[_OlIoIolIOIll({110,101,120,116})]=next
+_ioIl0lioiI0i[_OlIoIolIOIll({115,101,108,101,99,116})]=select
+_ioIl0lioiI0i[_OlIoIolIOIll({114,97,119,103,101,116})]=rawget
+_ioIl0lioiI0i[_OlIoIolIOIll({114,97,119,115,101,116})]=rawset
+_ioIl0lioiI0i[_OlIoIolIOIll({114,97,119,101,113,117,97,108})]=rawequal
+_ioIl0lioiI0i[_OlIoIolIOIll({114,97,119,108,101,110})]=rawlen
+_ioIl0lioiI0i[_OlIoIolIOIll({112,99,97,108,108})]=pcall
+_ioIl0lioiI0i[_OlIoIolIOIll({120,112,99,97,108,108})]=xpcall
+_ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,109,101,116,97,116,97,98,108,101})]=setmetatable
+_ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,109,101,116,97,116,97,98,108,101})]=getmetatable
+_ioIl0lioiI0i[_OlIoIolIOIll({114,101,113,117,105,114,101})]=require
+_ioIl0lioiI0i[_OlIoIolIOIll({108,111,97,100})]=load
+_ioIl0lioiI0i[_OlIoIolIOIll({108,111,97,100,115,116,114,105,110,103})]=loadstring
+_ioIl0lioiI0i[_OlIoIolIOIll({99,111,108,108,101,99,116,103,97,114,98,97,103,101})]=collectgarbage
+_ioIl0lioiI0i[_OlIoIolIOIll({116,121,112,101,111,102})]=typeof
+_ioIl0lioiI0i[_OlIoIolIOIll({99,111,114,111,117,116,105,110,101})]=coroutine
+_ioIl0lioiI0i[_OlIoIolIOIll({109,97,116,104})]=math
+_ioIl0lioiI0i[_OlIoIolIOIll({115,116,114,105,110,103})]=string
+_ioIl0lioiI0i[_OlIoIolIOIll({111,115})]=os
+_ioIl0lioiI0i[_OlIoIolIOIll({98,105,116,51,50})]=bit32
+_ioIl0lioiI0i[_OlIoIolIOIll({117,116,102,56})]=utf8
+_ioIl0lioiI0i[_OlIoIolIOIll({116,97,98,108,101})]=table
+_ioIl0lioiI0i[_OlIoIolIOIll({98,117,102,102,101,114})]=buffer
+_ioIl0lioiI0i[_OlIoIolIOIll({73,110,115,116,97,110,99,101})]=Instance
+_ioIl0lioiI0i[_OlIoIolIOIll({69,110,117,109})]=Enum
+_ioIl0lioiI0i[_OlIoIolIOIll({86,101,99,116,111,114,50})]=Vector2
+_ioIl0lioiI0i[_OlIoIolIOIll({86,101,99,116,111,114,51})]=Vector3
+_ioIl0lioiI0i[_OlIoIolIOIll({86,101,99,116,111,114,50,105,110,116,49,54})]=Vector2int16
+_ioIl0lioiI0i[_OlIoIolIOIll({86,101,99,116,111,114,51,105,110,116,49,54})]=Vector3int16
+_ioIl0lioiI0i[_OlIoIolIOIll({67,70,114,97,109,101})]=CFrame
+_ioIl0lioiI0i[_OlIoIolIOIll({67,111,108,111,114,51})]=Color3
+_ioIl0lioiI0i[_OlIoIolIOIll({66,114,105,99,107,67,111,108,111,114})]=BrickColor
+_ioIl0lioiI0i[_OlIoIolIOIll({85,68,105,109})]=UDim
+_ioIl0lioiI0i[_OlIoIolIOIll({85,68,105,109,50})]=UDim2
+_ioIl0lioiI0i[_OlIoIolIOIll({82,101,99,116})]=Rect
+_ioIl0lioiI0i[_OlIoIolIOIll({82,97,121})]=Ray
+_ioIl0lioiI0i[_OlIoIolIOIll({82,101,103,105,111,110,51})]=Region3
+_ioIl0lioiI0i[_OlIoIolIOIll({82,101,103,105,111,110,51,105,110,116,49,54})]=Region3int16
+_ioIl0lioiI0i[_OlIoIolIOIll({84,119,101,101,110,73,110,102,111})]=TweenInfo
+_ioIl0lioiI0i[_OlIoIolIOIll({78,117,109,98,101,114,83,101,113,117,101,110,99,101})]=NumberSequence
+_ioIl0lioiI0i[_OlIoIolIOIll({67,111,108,111,114,83,101,113,117,101,110,99,101})]=ColorSequence
+_ioIl0lioiI0i[_OlIoIolIOIll({78,117,109,98,101,114,82,97,110,103,101})]=NumberRange
+_ioIl0lioiI0i[_OlIoIolIOIll({80,104,121,115,105,99,97,108,80,114,111,112,101,114,116,105,101,115})]=PhysicalProperties
+_ioIl0lioiI0i[_OlIoIolIOIll({70,97,99,101,115})]=Faces
+_ioIl0lioiI0i[_OlIoIolIOIll({65,120,101,115})]=Axes
+_ioIl0lioiI0i[_OlIoIolIOIll({82,97,110,100,111,109})]=Random
+_ioIl0lioiI0i[_OlIoIolIOIll({68,97,116,101,84,105,109,101})]=DateTime
+_ioIl0lioiI0i[_OlIoIolIOIll({82,97,121,99,97,115,116,80,97,114,97,109,115})]=RaycastParams
+_ioIl0lioiI0i[_OlIoIolIOIll({79,118,101,114,108,97,112,80,97,114,97,109,115})]=OverlapParams
+pcall(function() if RunService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({82,117,110,83,101,114,118,105,99,101})]=RunService end end)
+pcall(function() if Players~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({80,108,97,121,101,114,115})]=Players end end)
+pcall(function() if Workspace~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({87,111,114,107,115,112,97,99,101})]=Workspace end end)
+pcall(function() if ReplicatedStorage~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101})]=ReplicatedStorage end end)
+pcall(function() if ServerStorage~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,101,114,118,101,114,83,116,111,114,97,103,101})]=ServerStorage end end)
+pcall(function() if ServerScriptService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,101,114,118,101,114,83,99,114,105,112,116,83,101,114,118,105,99,101})]=ServerScriptService end end)
+pcall(function() if StarterGui~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,116,97,114,116,101,114,71,117,105})]=StarterGui end end)
+pcall(function() if StarterPack~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,116,97,114,116,101,114,80,97,99,107})]=StarterPack end end)
+pcall(function() if StarterPlayer~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,116,97,114,116,101,114,80,108,97,121,101,114})]=StarterPlayer end end)
+pcall(function() if Lighting~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({76,105,103,104,116,105,110,103})]=Lighting end end)
+pcall(function() if SoundService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({83,111,117,110,100,83,101,114,118,105,99,101})]=SoundService end end)
+pcall(function() if TweenService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({84,119,101,101,110,83,101,114,118,105,99,101})]=TweenService end end)
+pcall(function() if UserInputService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101})]=UserInputService end end)
+pcall(function() if ContextActionService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({67,111,110,116,101,120,116,65,99,116,105,111,110,83,101,114,118,105,99,101})]=ContextActionService end end)
+pcall(function() if HttpService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({72,116,116,112,83,101,114,118,105,99,101})]=HttpService end end)
+pcall(function() if DataStoreService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({68,97,116,97,83,116,111,114,101,83,101,114,118,105,99,101})]=DataStoreService end end)
+pcall(function() if MessagingService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({77,101,115,115,97,103,105,110,103,83,101,114,118,105,99,101})]=MessagingService end end)
+pcall(function() if PhysicsService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({80,104,121,115,105,99,115,83,101,114,118,105,99,101})]=PhysicsService end end)
+pcall(function() if CollectionService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({67,111,108,108,101,99,116,105,111,110,83,101,114,118,105,99,101})]=CollectionService end end)
+pcall(function() if PathfindingService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({80,97,116,104,102,105,110,100,105,110,103,83,101,114,118,105,99,101})]=PathfindingService end end)
+pcall(function() if MarketplaceService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({77,97,114,107,101,116,112,108,97,99,101,83,101,114,118,105,99,101})]=MarketplaceService end end)
+pcall(function() if BadgeService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({66,97,100,103,101,83,101,114,118,105,99,101})]=BadgeService end end)
+pcall(function() if InsertService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({73,110,115,101,114,116,83,101,114,118,105,99,101})]=InsertService end end)
+pcall(function() if GuiService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({71,117,105,83,101,114,118,105,99,101})]=GuiService end end)
+pcall(function() if TextService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({84,101,120,116,83,101,114,118,105,99,101})]=TextService end end)
+pcall(function() if ChatService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({67,104,97,116,83,101,114,118,105,99,101})]=ChatService end end)
+pcall(function() if GroupService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({71,114,111,117,112,83,101,114,118,105,99,101})]=GroupService end end)
+pcall(function() if AssetService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({65,115,115,101,116,83,101,114,118,105,99,101})]=AssetService end end)
+pcall(function() if LocalizationService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({76,111,99,97,108,105,122,97,116,105,111,110,83,101,114,118,105,99,101})]=LocalizationService end end)
+pcall(function() if PolicyService~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({80,111,108,105,99,121,83,101,114,118,105,99,101})]=PolicyService end end)
+pcall(function() if plugin~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({112,108,117,103,105,110})]=plugin end end)
+pcall(function() if loadfile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({108,111,97,100,102,105,108,101})]=loadfile end end)
+pcall(function() if dostring~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({100,111,115,116,114,105,110,103})]=dostring end end)
+pcall(function() if loadmodule~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({108,111,97,100,109,111,100,117,108,101})]=loadmodule end end)
+pcall(function() if readfile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({114,101,97,100,102,105,108,101})]=readfile end end)
+pcall(function() if writefile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({119,114,105,116,101,102,105,108,101})]=writefile end end)
+pcall(function() if listfiles~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({108,105,115,116,102,105,108,101,115})]=listfiles end end)
+pcall(function() if isfile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,102,105,108,101})]=isfile end end)
+pcall(function() if isfolder~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,102,111,108,100,101,114})]=isfolder end end)
+pcall(function() if makefolder~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,97,107,101,102,111,108,100,101,114})]=makefolder end end)
+pcall(function() if delfolder~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({100,101,108,102,111,108,100,101,114})]=delfolder end end)
+pcall(function() if delfile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({100,101,108,102,105,108,101})]=delfile end end)
+pcall(function() if appendfile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({97,112,112,101,110,100,102,105,108,101})]=appendfile end end)
+pcall(function() if request~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({114,101,113,117,101,115,116})]=request end end)
+pcall(function() if http_request~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({104,116,116,112,95,114,101,113,117,101,115,116})]=http_request end end)
+pcall(function() if syn~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,121,110})]=syn end end)
+pcall(function() if fluxus~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({102,108,117,120,117,115})]=fluxus end end)
+pcall(function() if getgenv~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,103,101,110,118})]=getgenv end end)
+pcall(function() if getrenv~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,114,101,110,118})]=getrenv end end)
+pcall(function() if getreg~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,114,101,103})]=getreg end end)
+pcall(function() if getrawmetatable~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,114,97,119,109,101,116,97,116,97,98,108,101})]=getrawmetatable end end)
+pcall(function() if setrawmetatable~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,114,97,119,109,101,116,97,116,97,98,108,101})]=setrawmetatable end end)
+pcall(function() if hookfunction~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({104,111,111,107,102,117,110,99,116,105,111,110})]=hookfunction end end)
+pcall(function() if newcclosure~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({110,101,119,99,99,108,111,115,117,114,101})]=newcclosure end end)
+pcall(function() if checkcaller~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({99,104,101,99,107,99,97,108,108,101,114})]=checkcaller end end)
+pcall(function() if islclosure~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,108,99,108,111,115,117,114,101})]=islclosure end end)
+pcall(function() if iscclosure~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,99,99,108,111,115,117,114,101})]=iscclosure end end)
+pcall(function() if getnamecallmethod~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})]=getnamecallmethod end end)
+pcall(function() if setnamecallmethod~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})]=setnamecallmethod end end)
+pcall(function() if gethui~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,104,117,105})]=gethui end end)
+pcall(function() if cloneref~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({99,108,111,110,101,114,101,102})]=cloneref end end)
+pcall(function() if compareinstances~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({99,111,109,112,97,114,101,105,110,115,116,97,110,99,101,115})]=compareinstances end end)
+pcall(function() if getinstances~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,105,110,115,116,97,110,99,101,115})]=getinstances end end)
+pcall(function() if getnilinstances~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,110,105,108,105,110,115,116,97,110,99,101,115})]=getnilinstances end end)
+pcall(function() if getscripts~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,115,99,114,105,112,116,115})]=getscripts end end)
+pcall(function() if getloadedmodules~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,108,111,97,100,101,100,109,111,100,117,108,101,115})]=getloadedmodules end end)
+pcall(function() if getrunningscripts~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,114,117,110,110,105,110,103,115,99,114,105,112,116,115})]=getrunningscripts end end)
+pcall(function() if getscriptbytecode~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,115,99,114,105,112,116,98,121,116,101,99,111,100,101})]=getscriptbytecode end end)
+pcall(function() if getscriptclosure~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,115,99,114,105,112,116,99,108,111,115,117,114,101})]=getscriptclosure end end)
+pcall(function() if decompile~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({100,101,99,111,109,112,105,108,101})]=decompile end end)
+pcall(function() if replicatesignal~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({114,101,112,108,105,99,97,116,101,115,105,103,110,97,108})]=replicatesignal end end)
+pcall(function() if firesignal~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({102,105,114,101,115,105,103,110,97,108})]=firesignal end end)
+pcall(function() if firetouchinterest~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({102,105,114,101,116,111,117,99,104,105,110,116,101,114,101,115,116})]=firetouchinterest end end)
+pcall(function() if fireproximityprompt~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({102,105,114,101,112,114,111,120,105,109,105,116,121,112,114,111,109,112,116})]=fireproximityprompt end end)
+pcall(function() if fireclickdetector~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({102,105,114,101,99,108,105,99,107,100,101,116,101,99,116,111,114})]=fireclickdetector end end)
+pcall(function() if getcallstack~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,99,97,108,108,115,116,97,99,107})]=getcallstack end end)
+pcall(function() if getupvalues~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,117,112,118,97,108,117,101,115})]=getupvalues end end)
+pcall(function() if getupvalue~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,117,112,118,97,108,117,101})]=getupvalue end end)
+pcall(function() if setupvalue~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,117,112,118,97,108,117,101})]=setupvalue end end)
+pcall(function() if getprotos~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,112,114,111,116,111,115})]=getprotos end end)
+pcall(function() if getproto~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,112,114,111,116,111})]=getproto end end)
+pcall(function() if getstack~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,115,116,97,99,107})]=getstack end end)
+pcall(function() if getmoduleenv~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,109,111,100,117,108,101,101,110,118})]=getmoduleenv end end)
+pcall(function() if isexecutorclosure~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,101,120,101,99,117,116,111,114,99,108,111,115,117,114,101})]=isexecutorclosure end end)
+pcall(function() if identifyexecutor~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,100,101,110,116,105,102,121,101,120,101,99,117,116,111,114})]=identifyexecutor end end)
+pcall(function() if messagebox~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,101,115,115,97,103,101,98,111,120})]=messagebox end end)
+pcall(function() if queue_on_teleport~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({113,117,101,117,101,95,111,110,95,116,101,108,101,112,111,114,116})]=queue_on_teleport end end)
+pcall(function() if queueonteleport~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({113,117,101,117,101,111,110,116,101,108,101,112,111,114,116})]=queueonteleport end end)
+pcall(function() if Drawing~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({68,114,97,119,105,110,103})]=Drawing end end)
+pcall(function() if isrenderobj~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({105,115,114,101,110,100,101,114,111,98,106})]=isrenderobj end end)
+pcall(function() if getrenderproperty~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,114,101,110,100,101,114,112,114,111,112,101,114,116,121})]=getrenderproperty end end)
+pcall(function() if setrenderproperty~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,114,101,110,100,101,114,112,114,111,112,101,114,116,121})]=setrenderproperty end end)
+pcall(function() if cleardrawcache~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({99,108,101,97,114,100,114,97,119,99,97,99,104,101})]=cleardrawcache end end)
+pcall(function() if writeclipboard~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({119,114,105,116,101,99,108,105,112,98,111,97,114,100})]=writeclipboard end end)
+pcall(function() if getclipboard~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,99,108,105,112,98,111,97,114,100})]=getclipboard end end)
+pcall(function() if setclipboard~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,99,108,105,112,98,111,97,114,100})]=setclipboard end end)
+pcall(function() if mouse1click~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,49,99,108,105,99,107})]=mouse1click end end)
+pcall(function() if mouse2click~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,50,99,108,105,99,107})]=mouse2click end end)
+pcall(function() if mouse1press~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,49,112,114,101,115,115})]=mouse1press end end)
+pcall(function() if mouse2press~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,50,112,114,101,115,115})]=mouse2press end end)
+pcall(function() if mouse1release~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,49,114,101,108,101,97,115,101})]=mouse1release end end)
+pcall(function() if mouse2release~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,50,114,101,108,101,97,115,101})]=mouse2release end end)
+pcall(function() if mousemoverel~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,109,111,118,101,114,101,108})]=mousemoverel end end)
+pcall(function() if mousemoveabs~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({109,111,117,115,101,109,111,118,101,97,98,115})]=mousemoveabs end end)
+pcall(function() if keypress~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({107,101,121,112,114,101,115,115})]=keypress end end)
+pcall(function() if keyrelease~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({107,101,121,114,101,108,101,97,115,101})]=keyrelease end end)
+pcall(function() if sendlua~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,110,100,108,117,97})]=sendlua end end)
+pcall(function() if setthreadidentity~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({115,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})]=setthreadidentity end end)
+pcall(function() if getthreadidentity~=nil then _ioIl0lioiI0i[_OlIoIolIOIll({103,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})]=getthreadidentity end end)
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,48,105,111,73,111,48,73,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,77,86,81,75}, (29931-29868))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,48,105,111,73,73,108,111,48,48,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,94,77,81}, (38290-38227))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,79,111,111,105,108,73,73,111,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({90,77,77,80,77}, (87280-87217))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,108,73,73,79,73,48,105,48,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,76,76,90,77,75}, (94804-94741))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,48,111,111,48,79,105,111,108,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,80,76,75,77,86,81,88}, (79740+-79677))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,108,105,108,108,105,105,111,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,80,81,74,82,93,90,77}, (26599+-26536))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,79,73,108,73,79,48,79,105,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,70,79,90}, (63549+-63486))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,108,108,79,111,108,111,111,79,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,94,86,77,76}, (36018~35981))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,108,73,111,111,48,73,108,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,79,94,86,77,76}, (52915+-52852))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,111,111,105,108,105,108,105,48,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({81,90,71,75}, (36350-36287))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,73,111,105,105,111,48,48,48,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({74,81,79,94,92,84}, (67410+-67347))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,48,105,111,108,73,73,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,94,93,83,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,73,79,79,79,111,73,48,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,83,90,92,75}, (58235+-58172))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,105,108,79,79,111,108,48,48,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,72,88,90,75}, (86529+-86466))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,79,48,79,48,73,108,108,108,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,72,76,90,75}, (83360-83297))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,111,79,73,48,79,73,111,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,72,90,78,74,94,83}, (64551~64536))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,79,108,73,48,105,48,105,73,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,72,83,90,81}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,48,105,48,108,111,108,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,92,94,83,83}, (29833-29770))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,105,48,105,73,108,73,111,73,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({71,79,92,94,83,83}, (79890+-79827))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,73,79,73,48,79,111,79,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,82,90,75,94,75,94,93,83,90}, (7758-7695))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,79,73,105,108,105,111,108,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,82,90,75,94,75,94,93,83,90}, (42959~42992))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,111,79,79,111,111,73,48,73,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,78,74,86,77,90}, (70035-69972))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,79,73,48,111,105,73,108,48,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,94,91}, (20676~20731))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,108,105,111,105,73,111,105,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,94,91,76,75,77,86,81,88}, (24113~24078))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,73,73,111,105,108,48,79,79,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,80,89,86,83,90}, (58024-57961))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,108,73,48,73,79,105,111,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,80,83,83,90,92,75,88,94,77,93,94,88,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,108,73,105,111,48,111,79,73,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,80,77,80,74,75,86,81,90}, (4263+-4200))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,105,73,111,48,73,108,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,94,75,87}, (22430-22367))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,108,79,79,79,111,79,108,105,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,75,77,86,81,88}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,73,48,48,111,108,111,111,48,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({80,76}, (89663+-89600))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,79,73,111,111,105,105,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,80}, (57725-57662))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,79,108,108,105,108,108,111,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({93,86,75,12,13}, (70451-70388))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,79,111,73,105,105,105,48,111,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({74,75,89,7}, (41620-41557))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,73,111,48,79,105,73,105,105,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,93,74,88}, (61762~61821))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,79,111,79,108,105,108,79,48,48,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,70,79,90,80,89}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,105,108,48,105,111,48,108,48,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({93,74,89,89,90,77}, (17300-17237))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,105,48,48,79,105,111,111,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,94,82,90}, (94799-94736))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,73,111,73,73,73,105,73,73,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,80,77,84,76,79,94,92,90}, (96980-96917))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,108,111,73,108,48,48,111,108,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,92,77,86,79,75}, (44365-44302))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,111,111,48,108,73,73,79,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,83,74,88,86,81}, (34952+-34889))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,73,79,73,48,73,73,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,87,94,77,90,91}, (3*21+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,105,73,79,79,105,79,105,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({96,120}, (3*21+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,111,111,48,108,111,48,48,79,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,81,76,75,94,81,92,90}, (16830+-16767))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,79,111,111,105,111,105,79,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({122,81,74,82}, (27039-26976))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,48,73,73,105,105,105,73,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({105,90,92,75,80,77,13}, (12987~12932))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,108,73,105,108,111,73,73,108,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({105,90,92,75,80,77,12}, (72832-72769))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,73,108,108,48,79,73,111,105,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({105,90,92,75,80,77,13,86,81,75,14,9}, (48892-48829))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,111,105,73,111,111,48,79,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({105,90,92,75,80,77,12,86,81,75,14,9}, (76864-76801))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,105,105,73,48,108,111,79,79,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,121,77,94,82,90}, (8199-8136))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,48,108,48,108,79,48,111,111,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,80,83,80,77,12}, (5*12+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,108,79,48,48,73,79,73,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({125,77,86,92,84,124,80,83,80,77}, (51145~51190))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,111,79,79,108,48,73,48,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({106,123,86,82}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,48,108,105,73,48,48,111,111,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({106,123,86,82,13}, (4502~4521))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,48,111,48,105,79,73,108,105,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,92,75}, (78157-78094))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,73,111,73,79,79,111,111,48,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,94,70}, (9192+-9129))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,105,48,108,111,79,48,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,88,86,80,81,12}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,111,111,48,48,79,111,79,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,88,86,80,81,12,86,81,75,14,9}, (61329+-61266))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,108,105,111,79,79,79,48,108,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({107,72,90,90,81,118,81,89,80}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,79,111,111,108,108,108,105,48,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({113,74,82,93,90,77,108,90,78,74,90,81,92,90}, (73260+-73197))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,105,48,48,73,48,111,111,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,80,83,80,77,108,90,78,74,90,81,92,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,108,79,48,105,79,79,73,48,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({113,74,82,93,90,77,109,94,81,88,90}, (5*12+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,73,73,111,79,111,105,79,111,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({111,87,70,76,86,92,94,83,111,77,80,79,90,77,75,86,90,76}, (48358+-48295))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,105,108,79,48,73,79,73,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,94,92,90,76}, (3*21+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,73,105,48,111,108,105,111,48,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({126,71,90,76}, (62006~61961))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,48,108,73,73,111,108,79,108,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,94,81,91,80,82}, (9150-9087))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,108,79,111,108,111,108,111,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({123,94,75,90,107,86,82,90}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,73,111,105,105,79,105,105,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,94,70,92,94,76,75,111,94,77,94,82,76}, (61598+-61535))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,48,73,105,111,73,48,48,105,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({112,73,90,77,83,94,79,111,94,77,94,82,76}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,79,48,108,73,79,111,48,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,94,76,84}, (21675+-21612))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,108,73,79,79,105,48,73,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,94,86,75}, (47931~47876))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,105,111,105,48,48,105,108,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,79,94,72,81}, (87140+-87077))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,79,79,105,73,108,105,48,73,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,83,94,70}, (45996~45971))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,105,73,108,108,108,108,48,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,89,90,77}, (14155+-14092))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,108,48,105,73,105,105,111,48,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,74,81,108,90,77,73,86,92,90}, (27661~27698))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,48,73,108,108,48,108,105,73,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({111,83,94,70,90,77,76}, (63780-63717))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,108,108,79,48,79,105,48,108,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({104,80,77,84,76,79,94,92,90}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,111,79,73,73,111,108,108,48,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,79,83,86,92,94,75,90,91,108,75,80,77,94,88,90}, (64650+-64587))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,48,108,79,79,73,48,48,111,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,90,77,73,90,77,108,75,80,77,94,88,90}, (38210~38269))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,48,105,111,105,111,108,73,79,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,90,77,73,90,77,108,92,77,86,79,75,108,90,77,73,86,92,90}, (39373+-39310))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,48,73,79,79,108,108,48,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,75,94,77,75,90,77,120,74,86}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,105,73,73,111,105,79,105,108,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,75,94,77,75,90,77,111,94,92,84}, (60539-60476))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,105,111,48,73,48,105,48,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,75,94,77,75,90,77,111,83,94,70,90,77}, (96619+-96556))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,48,73,48,73,111,79,48,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({115,86,88,87,75,86,81,88}, (30312-30249))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,79,79,108,73,108,79,48,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,80,74,81,91,108,90,77,73,86,92,90}, (39836+-39773))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,48,48,108,79,105,111,48,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({107,72,90,90,81,108,90,77,73,86,92,90}, (26644-26581))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,79,108,111,48,108,79,48,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({106,76,90,77,118,81,79,74,75,108,90,77,73,86,92,90}, (51140-51077))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,48,73,73,111,79,105,73,73,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,80,81,75,90,71,75,126,92,75,86,80,81,108,90,77,73,86,92,90}, (56708+-56645))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,111,48,108,73,79,105,73,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({119,75,75,79,108,90,77,73,86,92,90}, (89598-89535))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,111,48,48,108,105,73,105,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({123,94,75,94,108,75,80,77,90,108,90,77,73,86,92,90}, (17264~17231))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,108,48,79,108,105,105,73,108,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({114,90,76,76,94,88,86,81,88,108,90,77,73,86,92,90}, (47706~47717))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,79,105,48,73,73,108,111,79,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({111,87,70,76,86,92,76,108,90,77,73,86,92,90}, (3007+-2944))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,111,108,48,48,105,79,48,105,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,80,83,83,90,92,75,86,80,81,108,90,77,73,86,92,90}, (43592~43639))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,73,108,79,79,108,111,73,108,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({111,94,75,87,89,86,81,91,86,81,88,108,90,77,73,86,92,90}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,73,48,73,105,73,73,48,73,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({114,94,77,84,90,75,79,83,94,92,90,108,90,77,73,86,92,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,73,111,73,111,111,79,111,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({125,94,91,88,90,108,90,77,73,86,92,90}, (100057-99994))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,111,111,105,73,111,73,48,108,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,81,76,90,77,75,108,90,77,73,86,92,90}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,108,73,108,111,73,108,105,111,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,74,86,108,90,77,73,86,92,90}, (31225+-31162))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,111,48,105,105,111,48,111,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({107,90,71,75,108,90,77,73,86,92,90}, (38333-38270))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,108,73,111,111,105,111,105,108,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,87,94,75,108,90,77,73,86,92,90}, (78417-78354))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,73,48,111,111,79,73,108,79,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,77,80,74,79,108,90,77,73,86,92,90}, (21872~21839))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,73,73,108,111,73,111,48,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({126,76,76,90,75,108,90,77,73,86,92,90}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,111,79,105,105,48,105,79,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({115,80,92,94,83,86,69,94,75,86,80,81,108,90,77,73,86,92,90}, (62761~62742))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,73,48,48,111,48,73,73,73,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({111,80,83,86,92,70,108,90,77,73,86,92,90}, (57311+-57248))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,111,108,111,111,48,105,111,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,124,87,86,83,91}, (37833-37770))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,79,105,79,48,105,48,108,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,124,87,86,83,91,112,89,124,83,94,76,76}, (3548~3555))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,48,79,48,73,105,108,79,105,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,124,87,86,83,91,104,87,86,92,87,118,76,126}, (29060~29115))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,73,105,108,48,108,48,79,105,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,126,81,92,90,76,75,80,77}, (49653~49610))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,111,79,48,105,111,48,79,111,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,126,81,92,90,76,75,80,77,112,89,124,83,94,76,76}, (74511+-74448))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,105,48,79,48,111,105,111,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,81,91,121,86,77,76,75,126,81,92,90,76,75,80,77,104,87,86,92,87,118,76,126}, (27840~27903))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,48,73,48,111,111,73,108,111,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({104,94,86,75,121,80,77,124,87,86,83,91}, (52413~52354))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,79,105,108,48,111,111,111,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,124,87,86,83,91,77,90,81}, (3*21+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,108,73,73,108,111,48,111,48,48,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,123,90,76,92,90,81,91,94,81,75,76}, (58153~58134))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,105,111,79,108,108,105,105,111,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,126,81,92,90,76,75,80,77,76}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,111,111,79,111,105,79,73,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,76,126}, (63173~63226))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,48,48,79,79,79,111,108,73,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,76,123,90,76,92,90,81,91,94,81,75,112,89}, (93751+-93688))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,111,111,79,73,73,73,48,111,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,76,126,81,92,90,76,75,80,77,112,89}, (8840+-8777))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,79,73,48,105,111,73,108,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,83,80,81,90}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,48,111,108,111,48,73,105,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({123,90,76,75,77,80,70}, (82147+-82084))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,48,79,108,79,48,111,111,79,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,82,80,73,90}, (50902+-50839))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,48,73,108,111,108,111,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,83,90,94,77,126,83,83,124,87,86,83,91,77,90,81}, (16202~16245))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,108,108,108,73,79,108,105,108,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,121,74,83,83,113,94,82,90}, (49330-49267))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,79,48,108,79,73,48,105,111,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,80,81,81,90,92,75}, (5*12+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,108,48,105,108,111,48,73,48,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({112,81,92,90}, (2561-2498))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,111,79,105,108,108,108,108,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({123,86,76,92,80,81,81,90,92,75}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,48,48,48,108,108,108,48,105,48,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({121,86,77,90}, (97555+-97492))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,108,105,105,105,73,111,108,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({104,94,86,75}, (6256~6223))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,48,48,79,105,79,48,79,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,108,90,77,73,86,92,90}, (84690-84627))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,111,79,73,79,108,105,73,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,112,93,85,90,92,75,76}, (60629~60650))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,108,73,105,111,79,111,108,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({125,86,81,91,107,80,124,83,80,76,90}, (71993-71930))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,48,105,73,111,111,79,48,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,90,75,126,75,75,77,86,93,74,75,90}, (32186-32123))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,108,108,73,105,105,111,111,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,126,75,75,77,86,93,74,75,90}, (36788+-36725))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,73,108,105,79,111,79,108,105,73,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,126,75,75,77,86,93,74,75,90,76}, (34221-34158))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,111,48,108,108,73,48,73,48,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({119,94,76,107,94,88}, (11922+-11859))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,48,105,73,79,79,111,48,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({126,91,91,107,94,88}, (59987~60012))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,108,111,105,111,73,48,111,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,82,80,73,90,107,94,88}, (54532-54469))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,73,48,73,111,79,79,108,108,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,107,94,88,76}, (60871+-60808))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,79,79,105,105,111,73,48,79,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({114,80,73,90,107,80}, (15986+-15923))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,73,48,73,108,105,73,108,79,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({107,94,84,90,123,94,82,94,88,90}, (67056-66993))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,111,79,48,111,108,73,105,79,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,108,75,94,75,90}, (32721-32658))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,48,79,73,73,108,105,48,79,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({124,87,94,81,88,90,108,75,94,75,90}, (92403+-92340))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,73,79,111,79,108,73,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({115,80,94,91,126,81,86,82,94,75,86,80,81}, (16864~16863))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,108,79,108,108,48,108,105,48,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({126,91,85,74,76,75,108,79,90,90,91}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,111,48,111,48,105,111,48,73,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({126,91,85,74,76,75,104,90,86,88,87,75}, (3795-3732))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,73,73,111,73,105,48,111,73,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,126,76,70,81,92}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,111,48,105,111,111,108,73,111,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({108,90,75,126,76,70,81,92}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,48,108,108,79,73,105,73,105,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({106,79,91,94,75,90,126,76,70,81,92}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,79,111,79,48,108,73,79,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({109,90,82,80,73,90,126,76,70,81,92}, (27925-27862))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,73,48,111,79,48,73,108,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,81,92,77,90,82,90,81,75,126,76,70,81,92}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,79,111,111,48,79,73,73,105,73,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,111,83,94,70,90,77,121,77,80,82,124,87,94,77,94,92,75,90,77}, (8687+-8624))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,48,73,48,48,105,48,79,79,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,111,83,94,70,90,77,125,70,106,76,90,77,118,91}, (89785-89722))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,111,108,111,111,79,73,111,48,73,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,111,83,94,70,90,77,76}, (74759-74696))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,111,111,79,79,105,73,111,79,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,76,121,77,86,90,81,91,76,104,86,75,87}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,79,48,79,108,73,108,73,105,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({118,76,118,81,120,77,80,74,79}, (20291-20228))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,79,48,111,108,73,108,108,111,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({120,90,75,109,94,81,84,118,81,120,77,80,74,79}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,79,108,105,108,73,111,48,79,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,93,76}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,79,105,48,108,73,48,73,79,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,90,86,83}, (92328+-92265))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,79,108,108,73,111,108,108,73,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,83,80,80,77}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,105,79,108,79,111,105,105,48,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,78,77,75}, (19116~19091))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,105,105,48,48,48,79,48,48,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,86,81}, (48682~48661))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,105,48,48,111,111,111,73,48,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,80,76}, (40269-40206))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,108,108,73,79,79,108,108,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({75,94,81}, (24+39))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,105,108,79,73,79,79,48,79,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,76,86,81}, (91699+-91636))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,79,79,111,111,79,79,79,108,73,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,92,80,76}, (84930+-84867))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,111,111,48,48,111,79,79,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,75,94,81}, (46600~46647))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,108,48,79,111,108,111,79,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,75,94,81,13}, (95129-95066))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,73,79,73,79,111,105,111,79,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({90,71,79}, (5*12+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,79,73,105,108,48,105,79,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,88}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,73,73,108,111,105,111,73,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,94,71}, (58944~59007))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,48,79,48,73,108,79,108,79,105,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,86,81}, (62152+-62089))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,79,79,111,73,105,48,105,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,82,80,91}, (13050-12987))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,105,79,108,48,111,105,48,108,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({87,74,88,90}, (93552+-93489))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,105,79,108,48,73,108,79,73,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,86}, (1637~1626))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,79,111,105,48,73,48,73,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,81,91,80,82}, (4197~4186))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,105,48,105,105,48,79,73,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,94,81,91,80,82,76,90,90,91}, (6130~6093))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,79,105,111,108,73,111,73,73,111,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,80,72}, (38890~38869))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,79,111,73,111,48,79,73,48,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,83,94,82,79}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,48,48,79,105,108,79,111,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,86,88,81}, (42823+-42760))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,111,105,108,111,105,108,79,73,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({81,80,86,76,90}, (12245~12266))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,108,111,108,108,79,79,108,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,80,74,81,91}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,79,48,48,48,111,73,108,111,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,80,77,82,94,75}, (51141~51194))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,105,48,73,108,73,73,73,73,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,90,81}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,108,105,79,105,48,108,79,48,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,74,93}, (67658+-67595))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,108,108,48,73,48,105,79,73,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,79}, (82999+-82936))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,111,79,108,105,105,105,111,105,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,73,90,77,76,90}, (18222+-18159))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,105,79,73,48,108,79,111,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({74,79,79,90,77}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,73,105,48,73,111,79,105,108,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,72,90,77}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,105,79,48,105,111,108,111,108,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({93,70,75,90}, (1602+-1539))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,105,105,105,108,111,108,48,105,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,87,94,77}, (18892+-18829))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,48,108,48,111,111,111,79,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,86,81,91}, (51381+-51318))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,79,73,48,111,111,111,108,48,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,94,75,92,87}, (3498+-3435))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,79,48,111,105,105,111,79,105,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,82,94,75,92,87}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,108,73,111,73,73,111,108,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,76,74,93}, (5174-5111))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,73,73,48,79,105,48,108,108,79,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,79,83,86,75}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,105,105,105,105,79,73,105,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,81,76,90,77,75}, (4*15+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,48,48,108,48,111,108,79,111,79,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,82,80,73,90}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,105,108,105,48,48,105,79,108,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,80,77,75}, (84167+-84104))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,79,73,105,73,105,105,108,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,80,81,92,94,75}, (17399~17352))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,108,108,111,108,111,105,48,108,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,73,90}, (23971-23908))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,111,108,48,105,73,79,111,73,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,77,90,94,75,90}, (47131-47068))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,105,108,79,105,79,73,79,105,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,81}, (7250~7277))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,105,111,73,108,105,111,79,105,105,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({79,94,92,84}, (60450~60445))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,108,73,108,111,108,79,111,111,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,76,74,82,90}, (26359~26312))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,48,48,48,108,105,108,111,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({70,86,90,83,91}, (33032-32969))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,79,48,108,48,79,48,73,105,73,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,75,94,75,74,76}, (71296-71233))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,79,73,48,79,105,48,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,77,94,79}, (5*12+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,48,108,48,108,111,73,73,111,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,74,81,81,86,81,88}, (19392-19329))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,111,48,73,111,73,111,73,108,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,70,86,90,83,91,94,93,83,90}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,48,73,48,105,108,79,111,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,94,91,89,86,83,90}, (30458+-30395))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,73,108,111,48,48,108,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,80,76,75,77,86,81,88}, (80343+-80280))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,79,105,108,111,108,111,111,108,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,80,94,91,82,80,91,74,83,90}, (21651+-21588))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,79,73,108,111,79,105,73,108,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,94,91,89,86,83,90}, (23364-23301))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,105,105,111,108,111,111,73,73,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,77,86,75,90,89,86,83,90}, (15440-15377))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,111,108,48,105,105,79,108,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({83,86,76,75,89,86,83,90,76}, (5436+-5373))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,108,105,73,73,79,79,48,73,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,89,86,83,90}, (48206~48241))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,48,73,79,73,48,111,73,48,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,89,80,83,91,90,77}, (3717~3770))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,79,105,48,108,73,73,108,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,94,84,90,89,80,83,91,90,77}, (51869~51874))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,73,108,73,79,79,73,105,79,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,83,89,80,83,91,90,77}, (3182~3153))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,73,48,105,108,111,111,108,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,83,89,86,83,90}, (52684~52723))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,111,73,79,111,105,73,105,48,111,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({94,79,79,90,81,91,89,86,83,90}, (91891-91828))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,79,73,73,48,48,105,79,105,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,78,74,90,76,75}, (58792~58775))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,108,105,73,105,105,73,73,105,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({87,75,75,79,96,77,90,78,74,90,76,75}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,111,105,79,48,79,79,73,108,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,70,81}, (55702~55721))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,111,79,79,105,105,73,111,73,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,83,74,71,74,76}, (17509~17498))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,108,108,105,79,79,48,79,105,48,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,88,90,81,73}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,111,108,73,73,48,111,48,48,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,77,90,81,73}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,79,48,73,73,48,73,105,73,108,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,77,90,88}, (89296-89233))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,111,48,105,73,79,48,111,73,105,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,77,94,72,82,90,75,94,75,94,93,83,90}, (62596+-62533))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,111,48,79,105,79,79,108,79,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,77,94,72,82,90,75,94,75,94,93,83,90}, (39465-39402))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,73,111,111,105,48,73,111,73,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({87,80,80,84,89,74,81,92,75,86,80,81}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,79,79,48,105,48,79,79,105,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({81,90,72,92,92,83,80,76,74,77,90}, (27132+-27069))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,79,105,73,48,108,108,48,73,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,87,90,92,84,92,94,83,83,90,77}, (91462-91399))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,73,48,73,111,48,48,73,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,83,92,83,80,76,74,77,90}, (2739~2700))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,108,105,105,48,79,105,111,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,92,92,83,80,76,74,77,90}, (56477+-56414))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,108,108,79,73,79,108,48,105,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,81,94,82,90,92,94,83,83,82,90,75,87,80,91}, (47689~47734))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,105,108,79,48,105,79,111,108,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,81,94,82,90,92,94,83,83,82,90,75,87,80,91}, (81424-81361))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,48,108,48,79,73,108,111,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,87,74,86}, (63204-63141))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,79,79,111,79,79,73,73,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,83,80,81,90,77,90,89}, (13395-13332))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,79,73,111,48,79,79,108,108,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,80,82,79,94,77,90,86,81,76,75,94,81,92,90,76}, (590-527))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,108,111,111,79,73,73,105,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,86,81,76,75,94,81,92,90,76}, (98355-98292))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,105,73,48,108,111,73,108,105,108,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,81,86,83,86,81,76,75,94,81,92,90,76}, (33040+-32977))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,48,108,48,111,111,108,108,108,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,76,92,77,86,79,75,76}, (15945+-15882))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,73,48,73,48,48,73,111,48,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,83,80,94,91,90,91,82,80,91,74,83,90,76}, (26949+-26886))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,79,79,105,48,111,48,111,111,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,77,74,81,81,86,81,88,76,92,77,86,79,75,76}, (61108-61045))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,79,48,48,111,108,48,48,79,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,76,92,77,86,79,75,93,70,75,90,92,80,91,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,48,111,79,79,105,48,79,111,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,76,92,77,86,79,75,92,83,80,76,74,77,90}, (57207~57160))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,73,105,48,105,79,105,48,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({91,90,92,80,82,79,86,83,90}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,111,73,48,48,73,79,48,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({77,90,79,83,86,92,94,75,90,76,86,88,81,94,83}, (14708+-14645))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,111,48,108,48,73,105,48,48,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,86,77,90,76,86,88,81,94,83}, (94307-94244))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,105,111,48,108,111,105,111,48,111,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,86,77,90,75,80,74,92,87,86,81,75,90,77,90,76,75}, (97520+-97457))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,108,79,73,108,79,111,73,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,86,77,90,79,77,80,71,86,82,86,75,70,79,77,80,82,79,75}, (97970+-97907))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,108,79,108,108,73,79,105,105,48,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({89,86,77,90,92,83,86,92,84,91,90,75,90,92,75,80,77}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,105,108,79,111,73,73,48,105,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,92,94,83,83,76,75,94,92,84}, (15001-14938))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,108,105,79,79,48,105,111,79,108,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,74,79,73,94,83,74,90,76}, (82417+-82354))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,105,79,108,48,108,48,79,79,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,74,79,73,94,83,74,90}, (8*7+7))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,105,79,79,73,108,79,73,48,73,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,74,79,73,94,83,74,90}, (97463+-97400))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,111,111,111,108,79,73,73,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,79,77,80,75,80,76}, (24139-24076))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,48,108,108,79,111,111,79,73,73,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,79,77,80,75,80}, (6745-6682))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,79,108,48,79,79,108,73,73,73,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,76,75,94,92,84}, (3*21+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,48,105,111,79,108,73,105,48,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,82,80,91,74,83,90,90,81,73}, (73638-73575))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,105,73,48,73,108,73,48,73,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,90,71,90,92,74,75,80,77,92,83,80,76,74,77,90}, (96434-96371))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,73,79,105,108,48,73,79,79,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,91,90,81,75,86,89,70,90,71,90,92,74,75,80,77}, (3676~3683))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,111,79,108,48,73,108,79,111,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,90,76,76,94,88,90,93,80,71}, (58366+-58303))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,73,105,79,48,48,105,108,108,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({78,74,90,74,90,96,80,81,96,75,90,83,90,79,80,77,75}, (22782+-22719))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,79,73,73,111,79,111,108,105,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({78,74,90,74,90,80,81,75,90,83,90,79,80,77,75}, (16199-16136))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,73,73,48,111,48,105,79,105,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({123,77,94,72,86,81,88}, (48140+-48077))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,108,108,79,73,105,108,108,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({86,76,77,90,81,91,90,77,80,93,85}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,73,48,73,79,48,48,111,73,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,77,90,81,91,90,77,79,77,80,79,90,77,75,70}, (64300~64275))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,108,111,48,111,48,108,108,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,77,90,81,91,90,77,79,77,80,79,90,77,75,70}, (26746~26693))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,111,108,108,111,73,108,73,111,48,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({92,83,90,94,77,91,77,94,72,92,94,92,87,90}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,48,73,108,79,48,48,79,111,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({72,77,86,75,90,92,83,86,79,93,80,94,77,91}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,79,105,48,108,111,108,73,108,73,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,92,83,86,79,93,80,94,77,91}, (50374~50425))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,108,79,108,48,79,111,108,79,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,92,83,86,79,93,80,94,77,91}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,108,73,108,79,108,111,79,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,14,92,83,86,92,84}, (24960~25023))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,105,48,111,79,48,111,105,105,108})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,13,92,83,86,92,84}, (87108+-87045))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,79,48,79,105,79,73,73,111,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,14,79,77,90,76,76}, (6*10+3))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,48,105,105,79,111,108,108,48,108,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,13,79,77,90,76,76}, (27594-27531))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,111,105,79,73,108,111,105,105,111,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,14,77,90,83,90,94,76,90}, (2*31+1))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,111,111,111,111,48,48,105,79,48,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,13,77,90,83,90,94,76,90}, (9*7+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,73,105,73,79,108,105,108,108,105,48})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,82,80,73,90,77,90,83}, (79604+-79541))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,48,111,111,105,108,79,48,79,111,105})] = _ioIl0lioiI0i[_l00OOoI0IOO0({82,80,74,76,90,82,80,73,90,94,93,76}, (49551~49584))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,48,79,73,48,79,105,73,79,73,79})] = _ioIl0lioiI0i[_l00OOoI0IOO0({84,90,70,79,77,90,76,76}, (35839+-35776))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,108,79,111,108,73,48,79,48,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({84,90,70,77,90,83,90,94,76,90}, (2790-2727))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,48,108,48,73,48,73,48,108,105,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,81,91,83,74,94}, (49350-49287))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,111,48,111,108,105,111,105,111,79,111})] = _ioIl0lioiI0i[_l00OOoI0IOO0({76,90,75,75,87,77,90,94,91,86,91,90,81,75,86,75,70}, (7*9+0))]
+_iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,79,48,111,48,108,105,105,79,48,73})] = _ioIl0lioiI0i[_l00OOoI0IOO0({88,90,75,75,87,77,90,94,91,86,91,90,81,75,86,75,70}, (2*31+1))]
+-- local proxies
+local _I0Iloi0OoOIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,48,105,111,73,111,48,73,79,73})]
+local _iiollIOOllOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,48,105,111,73,73,108,111,48,48,48})]
+local _O0Il0OOolilI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,79,111,111,105,108,73,73,111,79,105})]
+local _IIlil00lo0oO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,108,73,73,79,73,48,105,48,108,111})]
+local _OIIolil0IOli = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,48,111,111,48,79,105,111,108,73,79})]
+local _oIlI0lO0IIOo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,108,105,108,108,105,105,111,105,105})]
+local _IIlOl0l0Il0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,79,73,108,73,79,48,79,105,48,73})]
+local _ilOioillIloi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,108,108,79,111,108,111,111,79,79,48})]
+local _0oiIo00ooI0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,108,73,111,111,48,73,108,48,79})]
+local _0oiOIooOiO0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,111,111,105,108,105,108,105,48,111,105})]
+local _oOlooooliio0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,73,111,105,105,111,48,48,48,73,48})]
+local _o0OIIliiOll0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,48,105,111,108,73,73,73,111})]
+local _l0i0OIO0looO = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,73,79,79,79,111,73,48,108,111})]
+local _Oi0lIlOlIili = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,105,108,79,79,111,108,48,48,111,73})]
+local _oi0iiIlollll = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,79,48,79,48,73,108,108,108,111,73})]
+local _0lIillloiiOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,111,79,73,48,79,73,111,105,73})]
+local _iOolOOoI0Ili = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,79,108,73,48,105,48,105,73,73,48})]
+local _lOlOi0OoOliI = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,48,105,48,108,111,108,111,48})]
+local _I0llOioiliol = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,105,48,105,73,108,73,111,73,73,105})]
+local _IOIoii0ooOIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,73,79,73,48,79,111,79,108,73})]
+local _il0oilill0OI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,79,73,105,108,105,111,108,48,108})]
+local _OIl0OIoIoIiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,111,79,79,111,111,73,48,73,105,108})]
+local _0IIiIliIii00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,79,73,48,111,105,73,108,48,108,79})]
+local _loIIiioO0Il0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,108,105,111,105,73,111,105,48,73})]
+local _i0oIloOIooIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,73,73,111,105,108,48,79,79,73,79})]
+local _O0IlIOioIIoi = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,108,73,48,73,79,105,111,79,111})]
+local _lioiIIOi00Il = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,108,73,105,111,48,111,79,73,108,73})]
+local _olOiOIiIo0Il = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,105,73,111,48,73,108,111,105})]
+local _IioIOO0oioIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,108,79,79,79,111,79,108,105,105,48})]
+local _0OoIooOIl00l = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,73,48,48,111,108,111,111,48,73,48})]
+local _iIOi0lli0OlO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,79,73,111,111,105,105,111,48})]
+local _lIiI0ioOliIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,79,108,108,105,108,108,111,79,108})]
+local _II0iloIillo0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,79,111,73,105,105,105,48,111,79,111})]
+local _oII00IoililI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,73,111,48,79,105,73,105,105,111,111})]
+local _0llIO00iIlO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,79,111,79,108,105,108,79,48,48,48})]
+local _IIIioiioilIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,105,108,48,105,111,48,108,48,48,105})]
+local _i0lIOiIlIilI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,105,48,48,79,105,111,111,105,105})]
+local _oloIloO0OlI0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,73,111,73,73,73,105,73,73,73,79})]
+local _0O0io0OOioIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,108,111,73,108,48,48,111,108,48,73})]
+local _loIoo0iOoOlI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,111,111,48,108,73,73,79,108,79})]
+local _i0OoIO000iIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,73,79,73,48,73,73,108,73})]
+local _i0iiIOioIoiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,105,73,79,79,105,79,105,105,48})]
+local _oIIl0IlIol0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,111,111,48,108,111,48,48,79,105,48})]
+local _IlIilIoliIll = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,79,111,111,105,111,105,79,79,73})]
+local _Oioi0IlioOlo = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,48,73,73,105,105,105,73,108})]
+local _IOOl0lIiOOOl = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,108,73,105,108,111,73,73,108,111,105})]
+local _OO0ilIiO0ilI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,73,108,108,48,79,73,111,105,105,111})]
+local _0illolIlOllO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,111,105,73,111,111,48,79,105,105})]
+local _IolOiIoloiOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,105,105,73,48,108,111,79,79,105,73})]
+local _0illI0illIIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,48,108,48,108,79,48,111,111,79,73})]
+local _OoloiI0OilII = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,108,79,48,48,73,79,73,48,108})]
+local _OOlOO0IIOO0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,111,79,79,108,48,73,48,105,111})]
+local _0lllIoOol0lI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,48,108,105,73,48,48,111,111,79})]
+local _II0I0oillIlo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,48,111,48,105,79,73,108,105,108,111})]
+local _il0I0oi0loii = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,73,111,73,79,79,111,111,48,105,73})]
+local _0OIOl0i0Io0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,48,105,48,108,111,79,48,108,108})]
+local _Ilo0iliO0lOo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,111,111,48,48,79,111,79,79,105})]
+local _0loO0oOlI0lI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,108,105,111,79,79,79,48,108,108,79})]
+local _I0oiIiOIlo0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,79,111,111,108,108,108,105,48,79,73})]
+local _OOoi0OOoOil0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,105,48,48,73,48,111,111,79,48})]
+local _0OIOoioil0o0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,108,79,48,105,79,79,73,48,73,111})]
+local _l0illoOi0o0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,73,73,111,79,111,105,79,111,79})]
+local _OliilI0ll0Ol = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,105,108,79,48,73,79,73,73,111,73})]
+local _00lIOOllo0il = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,73,105,48,111,108,105,111,48,105,48})]
+local _OIOOilOiooIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,48,108,73,73,111,108,79,108,111,108})]
+local _0IIiolIoIOoI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,108,79,111,108,111,108,111,111,48})]
+local _OioOoOlooo0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,73,111,105,105,79,105,105,79,105})]
+local _iIoiOOIlilii = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,48,73,105,111,73,48,48,105,79})]
+local _oIoIi0oiO0Io = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,79,48,108,73,79,111,48,108,105})]
+local _lililll00IIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,108,73,79,79,105,48,73,105,111})]
+local _llI0ll00lO0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,105,111,105,48,48,105,108,73,111,73})]
+local _II0OlIIili00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,79,79,105,73,108,105,48,73,73})]
+local _O0OillIoiiio = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,105,73,108,108,108,108,48,108,108})]
+local _o0iioll0O0Il = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,108,48,105,73,105,105,111,48,111,105})]
+local _O0o0oOOIi0IO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,48,73,108,108,48,108,105,73,73,111})]
+local _0llololool0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,108,108,79,48,79,105,48,108,79,108})]
+local _l0IoOIO0IIIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,111,79,73,73,111,108,108,48,79,111})]
+local _lIoIllIloOiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,48,108,79,79,73,48,48,111,105,48})]
+local _0O0IiioOlO0I = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,48,105,111,105,111,108,73,79,79,79})]
+local _O0iOi0liOiOl = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,48,73,79,79,108,108,48,111,105})]
+local _0Ioi0li0Iol0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,105,73,73,111,105,79,105,108,111,105})]
+local _ill0lliii0IO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,105,111,48,73,48,105,48,111,73})]
+local _iOOoi0o0oOlo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,48,73,48,73,111,79,48,48,111})]
+local _OIOIOOoOoIIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,79,79,108,73,108,79,48,48,73})]
+local _0IOO0lOl0iIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,48,48,108,79,105,111,48,73,111,73})]
+local _loOOioiI0Iii = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,79,108,111,48,108,79,48,73,111})]
+local _00O00iI00IiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,48,73,73,111,79,105,73,73,108,105})]
+local _II0oo0oilO0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,108,111,48,108,73,79,105,73,108,48})]
+local _loiIOio0IiOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,111,48,48,108,105,73,105,111,108})]
+local _iiIOo0iIoi0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,108,48,79,108,105,105,73,108,111,111})]
+local _iIoIIloOioO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,79,105,48,73,73,108,111,79,108,111})]
+local _IoOli0oOOOli = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,111,108,48,48,105,79,48,105,111,48})]
+local _I0iIIolIi0Ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,73,108,79,79,108,111,73,108,105,108})]
+local _oiilool00ol0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,73,48,73,105,73,73,48,73,48,111})]
+local _o0IiiillIlil = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,73,111,73,111,111,79,111,48,105})]
+local _OliiOoioIIII = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,111,111,105,73,111,73,48,108,108,108})]
+local _lOIioO0iii0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,108,73,108,111,73,108,105,111,108,111})]
+local _I00ooioll0li = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,48,111,48,105,105,111,48,111,108,79})]
+local _lI0loO0Ioi00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,108,73,111,111,105,111,105,108,105,73})]
+local _oI00ooiIlli0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,73,48,111,111,79,73,108,79,108,48})]
+local _looooI0iiilO = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,73,73,108,111,73,111,48,108,48})]
+local _l0OlooOO0l0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,111,79,105,105,48,105,79,108,48})]
+local _ilOlIIOliiii = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,73,48,48,111,48,73,73,73,79,111})]
+local _O0OIliii0IiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,111,108,111,111,48,105,111,108,105})]
+local _0IIOiIoiolIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,79,105,79,48,105,48,108,108,48})]
+local _o0i00llIIo00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,48,79,48,73,105,108,79,105,79,73})]
+local _0I0l0loiIiol = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,73,105,108,48,108,48,79,105,73,48})]
+local _lloioOIlioOo = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,111,79,48,105,111,48,79,111,111,48})]
+local _i00I0iilOiiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,79,105,48,79,48,111,105,111,105,108})]
+local _OoiOO0oiloIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,48,73,48,111,111,73,108,111,111,111})]
+local _000IOIlOooIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,79,105,108,48,111,111,111,111,73})]
+local _lIl0IloOoi0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,108,73,73,108,111,48,111,48,48,48})]
+local _O0OllIiI0Il0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,105,111,79,108,108,105,105,111,108,48})]
+local _oIIOOlIOO0Ol = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,111,111,79,111,105,79,73,79,79})]
+local _I0lIOiO0i0lo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,48,48,79,79,79,111,108,73,79,79})]
+local _i0l0Oil0oloo = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,111,111,79,73,73,73,48,111,105,111})]
+local _IO0IOi00iOlI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,108,79,73,48,105,111,73,108,48,79})]
+local _0IiI0o00Oiio = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,48,111,108,111,48,73,105,108,108})]
+local _0oI0loioIllo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,48,79,108,79,48,111,111,79,111,73})]
+local _Ol000lOl0llO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,48,73,108,111,108,111,79,73})]
+local _iooIOlllolOO = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,108,108,108,73,79,108,105,108,73,79})]
+local _OIoooli0OiII = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,79,48,108,79,73,48,105,111,73,79})]
+local _0I0Iil0I0ilo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,108,48,105,108,111,48,73,48,105,73})]
+local _IlioiOoIo0IO = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,111,79,105,108,108,108,108,105,111})]
+local _i0oiloIilOoi = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,48,48,48,108,108,108,48,105,48,48})]
+local _olilIIOi0OIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,48,108,105,105,105,73,111,108,111,105})]
+local _loilOOI0Iool = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,48,48,79,105,79,48,79,111,108})]
+local _ioOo0ooololo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,111,79,73,79,108,105,73,108,111})]
+local _IIl0Ollo0OIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,73,108,73,105,111,79,111,108,79,108})]
+local _o00oi0oOll0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,48,105,73,111,111,79,48,79,105})]
+local _o00Oi0oOliOo = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,108,108,73,105,105,111,111,73,79})]
+local _OIO0ll0oiIoI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,73,108,105,79,111,79,108,105,73,108})]
+local _OIolOillo0Ol = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,111,48,108,108,73,48,73,48,48,108})]
+local _Oi00OilIIli0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,79,48,105,73,79,79,111,48,105,111})]
+local _IlO0Olii0i00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,111,108,111,105,111,73,48,111,48,111})]
+local _oOi0lOIO0lIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,73,48,73,111,79,79,108,108,48,73})]
+local _ll0lioOO0Olo = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,79,79,105,105,111,73,48,79,105,73})]
+local _0OoI0Oil00O0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,73,48,73,108,105,73,108,79,111,108})]
+local _loO0OO0O0ioO = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,111,79,48,111,108,73,105,79,105,105})]
+local _oOi0oo0Iooi0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,48,79,73,73,108,105,48,79,79,79})]
+local _iliO0ol0iIoI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,111,73,79,111,79,108,73,48,105})]
+local _Oo0oIlIlOioi = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,108,79,108,108,48,108,105,48,105,105})]
+local _lOiolOI0io0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,111,48,111,48,105,111,48,73,79,111})]
+local _IoolllOooio0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,73,73,111,73,105,48,111,73,111,105})]
+local _lOllOiIioIiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,111,48,105,111,111,108,73,111,108,73})]
+local _i0OiIi0OloII = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,48,108,108,79,73,105,73,105,111,105})]
+local _lIlilIo0oooO = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,79,111,79,48,108,73,79,111,108})]
+local _00OollooIiiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,73,48,111,79,48,73,108,79,111})]
+local _i0oloolIoIlO = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,79,111,111,48,79,73,73,105,73,108})]
+local _IoiI0Io0lloi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,48,73,48,48,105,48,79,79,105,111})]
+local _OollOIlIilol = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,111,108,111,111,79,73,111,48,73,108})]
+local _iolioOOiI0ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,111,111,79,79,105,73,111,79,79,79})]
+local _IiIolIIOiiOi = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,79,48,79,108,73,108,73,105,48,73})]
+local _loOI00lO0lIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,79,48,111,108,73,108,108,111,111,105})]
+local _I0OOoOIillil = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,79,108,105,108,73,111,48,79,48,108})]
+local _i0I0O0ii0loo = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,79,105,48,108,73,48,73,79,105,111})]
+local _oOOoO0lI00io = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,79,108,108,73,111,108,108,73,73,105})]
+local _i0ooIiiIOoiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,105,79,108,79,111,105,105,48,73,79})]
+local _li0lIoOllliI = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,105,105,48,48,48,79,48,48,48,105})]
+local _lOlIiloIoiI0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,105,48,48,111,111,111,73,48,48,111})]
+local _oiiIiI0lio0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,108,108,73,79,79,108,108,111,73})]
+local _00loiiIIoolI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,105,108,79,73,79,79,48,79,108,111})]
+local _0oIIOI0OlIIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,79,79,111,111,79,79,79,108,73,108})]
+local _oloo0l0oO0l0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,79,111,111,48,48,111,79,79,105,105})]
+local _0OooliolOllI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,108,48,79,111,108,111,79,111,48})]
+local _oIiiO0IOoooi = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,73,79,73,79,111,105,111,79,48,79})]
+local _l0liiIOIoo0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,79,73,105,108,48,105,79,73,48})]
+local _IoIiII00ol0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,73,73,108,111,105,111,73,73,48})]
+local _O0iOl0O0oil0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,48,79,48,73,108,79,108,79,105,79})]
+local _IIIolliIIlll = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,105,79,79,111,73,105,48,105,79,79})]
+local _IOiOioIiOoii = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,105,79,108,48,111,105,48,108,108,48})]
+local _iioI0i0iOlil = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,105,79,108,48,73,108,79,73,108,73})]
+local _00liOOoIiiol = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,48,79,111,105,48,73,48,73,79,105})]
+local _lIlllIo0ll0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,105,105,48,105,105,48,79,73,111,105})]
+local _iioIliOoIOlO = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,79,105,111,108,73,111,73,73,111,79})]
+local _0I0ll0OiOlii = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,79,111,73,111,48,79,73,48,73,111})]
+local _ioIi0iiIoIiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,48,48,79,105,108,79,111,108,108})]
+local _lI0OIIO0lIO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,111,105,108,111,105,108,79,73,111,48})]
+local _lIi0II0lI0OO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,108,105,108,111,108,108,79,79,108,108,48})]
+local _oIo00li0Oloo = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,79,48,48,48,111,73,108,111,48,79})]
+local _00IIIIiioi0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,105,48,73,108,73,73,73,73,105,108})]
+local _oOII0OI0Ilol = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,108,105,79,105,48,108,79,48,79,111})]
+local _Ioo0iloiIli0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,108,108,48,73,48,105,79,73,73,79})]
+local _OlOIOlOooio0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,111,79,108,105,105,105,111,105,48,73})]
+local _oOooiO0IlOIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,105,79,73,48,108,79,111,108,48})]
+local _Oi0iI0l0OoiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,73,105,48,73,111,79,105,108,79,108})]
+local _ioloIO0IOoO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,105,79,48,105,111,108,111,108,48,79})]
+local _l00O0lOlilil = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,105,105,105,108,111,108,48,105,73,105})]
+local _I0II0OO0i0lo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,48,108,48,111,111,111,79,105,111})]
+local _Oi0O0l0ll00I = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,79,73,48,111,111,111,108,48,108,105})]
+local _OOOOlo0ollii = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,79,48,111,105,105,111,79,105,105,73})]
+local _iloOlIo0II0I = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,108,73,111,73,73,111,108,108,79})]
+local _0oOiloiiiiIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,111,73,73,48,79,105,48,108,108,79,73})]
+local _lIll0IlloIo0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,105,105,105,105,105,79,73,105,48,108})]
+local _loIoiliOIIil = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,48,48,108,48,111,108,79,111,79,105})]
+local _OiIo0OOiollO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,105,108,105,48,48,105,79,108,111,105})]
+local _I0iio0oIolI0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,79,73,105,73,105,105,108,79,79})]
+local _OOOI0loii0ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,108,108,111,108,111,105,48,108,111,111})]
+local _l0illiiloo00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,111,111,108,48,105,73,79,111,73,48,108})]
+local _ioIOOOliii0I = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,105,108,79,105,79,73,79,105,108,73})]
+local _0lOoilOoii0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,105,111,73,108,105,111,79,105,105,79})]
+local _oOoO0lO0llii = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,108,73,108,111,108,79,111,111,108,105})]
+local _0OI0Oooilo0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,48,48,48,108,105,108,111,111,73})]
+local _OOilliOl0loi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,79,48,108,48,79,48,73,105,73,73})]
+local _iloIOl0ooOIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,79,73,48,79,105,48,73,111})]
+local _oIIlil0ooioI = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,48,108,48,108,111,73,73,111,48,73})]
+local _lOlIIIil0oiO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,111,48,73,111,73,111,73,108,111,111})]
+local _0lloIi0liio0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,108,48,73,48,105,108,79,111,111,105})]
+local _lilO0lIilIIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,73,73,73,108,111,48,48,108,73,48})]
+local _lIliIoi0i0lO = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,79,105,108,111,108,111,111,108,111,73})]
+local _OoIO0illIlol = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,79,73,108,111,79,105,73,108,111,48})]
+local _lO0IOIiOo0i0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,105,105,111,108,111,111,73,73,111,108})]
+local _0IloliIlIl0I = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,111,108,48,105,105,79,108,73,111,73})]
+local _IiOiiOilIiOO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,108,105,73,73,79,79,48,73,48,105})]
+local _o0IiOOoOlilO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,48,73,79,73,48,111,73,48,111,111})]
+local _00IiIloOioil = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,105,79,105,48,108,73,73,108,48,111})]
+local _0OIlII0oliil = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,73,108,73,79,79,73,105,79,105,48})]
+local _o0OoooIIOlOO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,73,48,105,108,111,111,108,111,111})]
+local _oolOI0IOI00i = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,111,111,73,79,111,105,73,105,48,111,79})]
+local _OoloOI0lii0l = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,73,79,73,73,48,48,105,79,105,105})]
+local _0ii00iIO0il0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,79,108,105,73,105,105,73,73,105,105,48})]
+local _OllOl0o0I0il = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,105,105,111,105,79,48,79,79,73,108,79})]
+local _0liilIl0i0ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,111,79,79,105,105,73,111,73,79,111})]
+local _lIO0IOi0Ooii = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,108,108,108,105,79,79,48,79,105,48,108})]
+local _OIIOIIIIii0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,111,108,73,73,48,111,48,48,111,73})]
+local _0iOOl0ioi0Oi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,79,48,73,73,48,73,105,73,108,48})]
+local _OloOioilOo0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,111,48,105,73,79,48,111,73,105,79})]
+local _liOIIilIiIII = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,111,48,79,105,79,79,108,79,79,79})]
+local _Ol0Iiiooi0IO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,73,111,111,105,48,73,111,73,73,105})]
+local _loOllOIoil0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,79,79,48,105,48,79,79,105,108,73})]
+local _0IlIloOO0o0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,79,105,73,48,108,108,48,73,48,111})]
+local _IIo0iioOo0II = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,79,79,73,48,73,111,48,48,73,111,48})]
+local _l0IolIiOooIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,108,48,108,105,105,48,79,105,111,79,108})]
+local _oOIlOill0i00 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,108,108,79,73,79,108,48,105,108,108})]
+local _iolillillili = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,105,108,79,48,105,79,111,108,105,108})]
+local _Ol0OIoOIOIOl = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,108,111,48,108,48,79,73,108,111,79,48})]
+local _i0llIi0llo0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,73,73,79,79,111,79,79,73,73,111,108})]
+local _OioOililIIO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,79,73,111,48,79,79,108,108,79,48})]
+local _ooio0lloloOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,108,48,108,111,111,79,73,73,105,108,105})]
+local _ilOOOo0O0O0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,105,73,48,108,111,73,108,105,108,108})]
+local _olOIlIIlIlOI = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,48,108,48,111,111,108,108,108,105,73})]
+local _Oil0o0IilOI0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,73,73,48,73,48,48,73,111,48,111,105})]
+local _0ollolIl0Olo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,79,79,105,48,111,48,111,111,79,48})]
+local _OIlOiOlI0ioi = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,79,48,48,111,108,48,48,79,48})]
+local _olOoO0liliOl = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,79,48,111,79,79,105,48,79,111,108})]
+local _OIo0OIIOi0ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,73,73,105,48,105,79,105,48,73,111,73})]
+local _ioi0I0IOi0OI = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,48,105,111,73,48,48,73,79,48,111,105})]
+local _i0oi0oiIllol = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,111,48,108,48,73,105,48,48,105,111})]
+local _oIIiil0lI0Oo = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,111,105,111,48,108,111,105,111,48,111,48})]
+local _Oi00I00l0oiI = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,108,79,73,108,79,111,73,73,105})]
+local _IIoloOi000o0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,108,79,108,108,73,79,105,105,48,105})]
+local _OIOi00oiO0iI = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,105,108,79,111,73,73,48,105,108,111})]
+local _o0oIi00I0iIo = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,108,105,79,79,48,105,111,79,108,73})]
+local _iOoO0iIOIllO = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,108,105,79,108,48,108,48,79,79,79})]
+local _Oii0lIIO0oil = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,48,105,79,79,73,108,79,73,48,73,48})]
+local _iili00llIooo = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,48,73,111,111,111,108,79,73,73,111,111})]
+local _00iOO00loiii = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,48,108,108,79,111,111,79,73,73,73})]
+local _OlioOIo0i0iI = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,79,108,48,79,79,108,73,73,73,105})]
+local _Oo0OIio0IllI = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,48,105,111,79,108,73,105,48,73,79})]
+local _oIoololli0Il = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,105,73,48,73,108,73,48,73,48,73})]
+local _OIOOiiI0ioIO = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,105,48,73,79,105,108,48,73,79,79,108})]
+local _00ioIoolOI0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,105,111,79,108,48,73,108,79,111,48,79})]
+local _llloll0olloO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,79,73,105,79,48,48,105,108,108,108,111})]
+local _Il000oOIOi0O = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,111,79,73,73,111,79,111,108,105,108,111})]
+local _0oIO0OiiO0IO = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,73,73,48,111,48,105,79,105,111})]
+local _IoiIIoiIOili = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,108,108,108,79,73,105,108,108,111})]
+local _llOlO00iOiIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,73,48,73,79,48,48,111,73,111,73})]
+local _lOl00OloolO0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,73,108,111,48,111,48,108,108,48,73})]
+local _iOliliO0oIo0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,48,111,108,108,111,73,108,73,111,48,79})]
+local _0lio0I0OllOl = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,48,73,108,79,48,48,79,111,105,73})]
+local _OoliioiioOii = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,79,105,48,108,111,108,73,108,73,111})]
+local _ii0OIIool0ii = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,105,108,79,108,48,79,111,108,79,111,111})]
+local _IOOOIiI0IOli = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,79,111,108,73,108,79,108,111,79,73,79})]
+local _Ool00lIooll0 = _iOiloOoIo0IO[_OlIoIolIOIll({95,73,48,111,105,48,111,79,48,111,105,105,108})]
+local _I0i0iioOllol = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,48,105,79,48,79,105,79,73,73,111,111})]
+local _O0IolOOilI0o = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,105,48,105,105,79,111,108,108,48,108,105})]
+local _OOoOIOl0iloo = _iOiloOoIo0IO[_OlIoIolIOIll({95,79,79,111,105,79,73,108,111,105,105,111,73})]
+local _ioOi0OOI0oIl = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,111,111,111,111,111,48,48,105,79,48,111})]
+local _oo0oO0O0illl = _iOiloOoIo0IO[_OlIoIolIOIll({95,105,73,73,105,73,79,108,105,108,108,105,48})]
+local _ilI0I0l0lolo = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,108,48,111,111,105,108,79,48,79,111,105})]
+local _oOIoiIll0oIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,48,79,73,48,79,105,73,79,73,79})]
+local _I0OlOOoi0OOo = _iOiloOoIo0IO[_OlIoIolIOIll({95,111,73,108,79,111,108,73,48,79,48,79,111})]
+local _l00oOlIiOOIi = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,73,48,108,48,73,48,73,48,108,105,73})]
+local _oi000ill0olO = _iOiloOoIo0IO[_OlIoIolIOIll({95,108,105,111,48,111,108,105,111,105,111,79,111})]
+local _l00OIOO0il0i = _iOiloOoIo0IO[_OlIoIolIOIll({95,48,79,79,48,111,48,108,105,105,79,48,73})]
 
-local _lo0I0Oo0oiIi=function(_lilllIi0O0iI,_0iIIlIoIOl0o,_0OolilliOl0o)
-local _iIoi0IoOloli={}
-local _llO00oOI0oO0=(59625+-59624)
-local _oI0iilli0loi={}
-local _IiiOlOoliOO0=(15485-15485)
-local _oI00i0l0iOI0=function(_ioo0oo0lii0I) _IiiOlOoliOO0=_IiiOlOoliOO0+(7965-7964) _iIoi0IoOloli[_IiiOlOoliOO0]=_ioo0oo0lii0I end
-local _I00i00illIIO=function() local _ioo0oo0lii0I=_iIoi0IoOloli[_IiiOlOoliOO0] _iIoi0IoOloli[_IiiOlOoliOO0]=nil _IiiOlOoliOO0=_IiiOlOoliOO0-(35-34) return _ioo0oo0lii0I end
-local _iOlo0oliIoil=function() return _iIoi0IoOloli[_IiiOlOoliOO0] end
-while _llO00oOI0oO0<=#_lilllIi0O0iI do
-local _oIoiOllooOiO=_lilllIi0O0iI[_llO00oOI0oO0]
-local _iOooOIlOIOoo=_oIoiOllooOiO[(94650-94649)]
-_llO00oOI0oO0=_llO00oOI0oO0+(93297-93296)
-if _iOooOIlOIOoo==(97306+-97306) then _oI00i0l0iOI0(_0iIIlIoIOl0o[_oIoiOllooOiO[(48-46)]])
-elseif _iOooOIlOIOoo==(42819~42818) then _oI00i0l0iOI0(_oI0iilli0loi[_oIoiOllooOiO[(11-9)]] ~= nil and _oI0iilli0loi[_oIoiOllooOiO[(22-20)]] or _0OolilliOl0o[_oIoiOllooOiO[(80596-80594)]])
-elseif _iOooOIlOIOoo==(17-15) then _oI0iilli0loi[_oIoiOllooOiO[(2-0)]]=_I00i00illIIO()
-elseif _iOooOIlOIOoo==(4*6+1) then _oI00i0l0iOI0(_0OolilliOl0o[_oIoiOllooOiO[(19439~19437)]])
-elseif _iOooOIlOIOoo==(82094-82067) then _0OolilliOl0o[_oIoiOllooOiO[(85609-85607)]]=_I00i00illIIO()
-elseif _iOooOIlOIOoo==(8484~8497) then _oI00i0l0iOI0(nil)
-elseif _iOooOIlOIOoo==(9*2+4) then _oI00i0l0iOI0(_oIoiOllooOiO[(68865+-68863)]==(23911-23910))
-elseif _iOooOIlOIOoo==(71170+-71147) then _oI00i0l0iOI0(_iOlo0oliIoil())
-elseif _iOooOIlOIOoo==(7806-7782) then _I00i00illIIO()
-elseif _iOooOIlOIOoo==(10-5) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io+_ioli00lliiII)
-elseif _iOooOIlOIOoo==(59122-59116) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io-_ioli00lliiII)
-elseif _iOooOIlOIOoo==(17747+-17740) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io*_ioli00lliiII)
-elseif _iOooOIlOIOoo==(67677+-67669) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io/_ioli00lliiII)
-elseif _iOooOIlOIOoo==(91214+-91205) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io%_ioli00lliiII)
-elseif _iOooOIlOIOoo==(3872+-3844) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io^_ioli00lliiII)
-elseif _iOooOIlOIOoo==(48813~48816) then local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(-_0OOiI0llI0Io)
-elseif _iOooOIlOIOoo==(91729+-91719) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io.._ioli00lliiII)
-elseif _iOooOIlOIOoo==(6626+-6600) then local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(#_0OOiI0llI0Io)
-elseif _iOooOIlOIOoo==(6966~6973) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io==_ioli00lliiII)
-elseif _iOooOIlOIOoo==(7*1+5) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io<_ioli00lliiII)
-elseif _iOooOIlOIOoo==(41120-41107) then local _ioli00lliiII=_I00i00illIIO() local _0OOiI0llI0Io=_I00i00illIIO() _oI00i0l0iOI0(_0OOiI0llI0Io<=_ioli00lliiII)
-elseif _iOooOIlOIOoo==(4971+-4957) then _oI00i0l0iOI0(not _I00i00illIIO())
-elseif _iOooOIlOIOoo==(54266~54261) then _llO00oOI0oO0=_oIoiOllooOiO[(7-5)]
-elseif _iOooOIlOIOoo==(42823-42807) then local _ioo0oo0lii0I=_I00i00illIIO() if not _ioo0oo0lii0I then _llO00oOI0oO0=_oIoiOllooOiO[(26-24)] end
-elseif _iOooOIlOIOoo==(53845+-53828) then local _ioo0oo0lii0I=_I00i00illIIO() if _ioo0oo0lii0I then _llO00oOI0oO0=_oIoiOllooOiO[(17384+-17382)] end
-elseif _iOooOIlOIOoo==(78662+-78644) then _oI00i0l0iOI0({})
-elseif _iOooOIlOIOoo==(29816+-29797) then local _ioo0oo0lii0I=_I00i00illIIO() local _Oiii0iOooOO0=_I00i00illIIO() local _li00ioi0lOol=_iOlo0oliIoil() _li00ioi0lOol[_Oiii0iOooOO0]=_ioo0oo0lii0I
-elseif _iOooOIlOIOoo==(74473+-74453) then local _Oiii0iOooOO0=_I00i00illIIO() local _li00ioi0lOol=_I00i00illIIO() _oI00i0l0iOI0(_li00ioi0lOol[_Oiii0iOooOO0])
-elseif _iOooOIlOIOoo==(7369~7370) then
-local _0Il0iO0iolOl=_oIoiOllooOiO[(22768+-22766)]
-local _illlIiiOl0ll={}
-for _0lOiIioO0OI0=_0Il0iO0iolOl,(78564-78563),-(6047-6046) do _illlIiiOl0ll[_0lOiIioO0OI0]=_I00i00illIIO() end
-local _lioOOloi0IIo=_I00i00illIIO()
-if _lioOOloi0IIo then
-local _IIl0I0loOll0,_loOOIioiIOOl,_iliO0oIoiiOO=pcall(_lioOOloi0IIo,table.unpack(_illlIiiOl0ll))
-if _IIl0I0loOll0 then _oI00i0l0iOI0(_loOOIioiIOOl) if _iliO0oIoiiOO~=nil then _oI00i0l0iOI0(_iliO0oIoiiOO) end
-else _oI00i0l0iOI0(nil) end
-else _oI00i0l0iOI0(nil) end
-elseif _iOooOIlOIOoo==(95951+-95947) then return _I00i00illIIO()
+local _OiloiOo0oiII=function(_iIoOloiiOlii,_oIlioilIoOIl,_ol0i000Oii0O)
+local _Oo0lOiO0o0OI={}
+local _Io00OO0000lO=(23457+-23456)
+local _OOiIloI00olo={}
+local _Oi0ooIlillIo=(16-16)
+local _0oiooIOI00lo=function(_o0iolIlllO0l) _Oi0ooIlillIo=_Oi0ooIlillIo+(10819-10818) _Oo0lOiO0o0OI[_Oi0ooIlillIo]=_o0iolIlllO0l end
+local _0OIOi0oOOIiI=function() local _o0iolIlllO0l=_Oo0lOiO0o0OI[_Oi0ooIlillIo] _Oo0lOiO0o0OI[_Oi0ooIlillIo]=nil _Oi0ooIlillIo=_Oi0ooIlillIo-(24775~24774) return _o0iolIlllO0l end
+local _i0OoOlI0lIIl=function() return _Oo0lOiO0o0OI[_Oi0ooIlillIo] end
+while _Io00OO0000lO<=#_iIoOloiiOlii do
+local _IOOIll0ililo=_iIoOloiiOlii[_Io00OO0000lO]
+local _OIooliillooo=_IOOIll0ililo[(50239+-50238)]
+_Io00OO0000lO=_Io00OO0000lO+(22499-22498)
+if _OIooliillooo==(36058~36058) then _0oiooIOI00lo(_oIlioilIoOIl[_IOOIll0ililo[(65339+-65337)]])
+elseif _OIooliillooo==(87~86) then _0oiooIOI00lo(_OOiIloI00olo[_IOOIll0ililo[(12396+-12394)]] ~= nil and _OOiIloI00olo[_IOOIll0ililo[(3937+-3935)]] or _ol0i000Oii0O[_IOOIll0ililo[(4274-4272)]])
+elseif _OIooliillooo==(58362~58360) then _OOiIloI00olo[_IOOIll0ililo[(23543-23541)]]=_0OIOi0oOOIiI()
+elseif _OIooliillooo==(6*4+1) then _0oiooIOI00lo(_ol0i000Oii0O[_IOOIll0ililo[(26-24)]])
+elseif _OIooliillooo==(36997~37022) then _ol0i000Oii0O[_IOOIll0ililo[(40-38)]]=_0OIOi0oOOIiI()
+elseif _OIooliillooo==(64711~64722) then _0oiooIOI00lo(nil)
+elseif _OIooliillooo==(49560-49538) then _0oiooIOI00lo(_IOOIll0ililo[(46-44)]==(16-15))
+elseif _OIooliillooo==(65214~65193) then _0oiooIOI00lo(_i0OoOlI0lIIl())
+elseif _OIooliillooo==(3*8+0) then _0OIOi0oOOIiI()
+elseif _OIooliillooo==(17743~17738) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl+_OloiIOOIii0O)
+elseif _OIooliillooo==(20-14) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl-_OloiIOOIii0O)
+elseif _OIooliillooo==(70102-70095) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl*_OloiIOOIii0O)
+elseif _OIooliillooo==(39-31) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl/_OloiIOOIii0O)
+elseif _OIooliillooo==(60628-60619) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl%_OloiIOOIii0O)
+elseif _OIooliillooo==(66344+-66316) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl^_OloiIOOIii0O)
+elseif _OIooliillooo==(9*3+2) then local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(-_oOiIoOO0IlIl)
+elseif _OIooliillooo==(92542-92532) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl.._OloiIOOIii0O)
+elseif _OIooliillooo==(11318~11308) then local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(#_oOiIoOO0IlIl)
+elseif _OIooliillooo==(8*1+3) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl==_OloiIOOIii0O)
+elseif _OIooliillooo==(65619+-65607) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl<_OloiIOOIii0O)
+elseif _OIooliillooo==(51297+-51284) then local _OloiIOOIii0O=_0OIOi0oOOIiI() local _oOiIoOO0IlIl=_0OIOi0oOOIiI() _0oiooIOI00lo(_oOiIoOO0IlIl<=_OloiIOOIii0O)
+elseif _OIooliillooo==(65431~65433) then _0oiooIOI00lo(not _0OIOi0oOOIiI())
+elseif _OIooliillooo==(59928+-59913) then _Io00OO0000lO=_IOOIll0ililo[(82615-82613)]
+elseif _OIooliillooo==(53701-53685) then local _o0iolIlllO0l=_0OIOi0oOOIiI() if not _o0iolIlllO0l then _Io00OO0000lO=_IOOIll0ililo[(26-24)] end
+elseif _OIooliillooo==(6*2+5) then local _o0iolIlllO0l=_0OIOi0oOOIiI() if _o0iolIlllO0l then _Io00OO0000lO=_IOOIll0ililo[(22-20)] end
+elseif _OIooliillooo==(90626+-90608) then _0oiooIOI00lo({})
+elseif _OIooliillooo==(4*4+3) then local _o0iolIlllO0l=_0OIOi0oOOIiI() local _OlIlIlOlOoIO=_0OIOi0oOOIiI() local _0iolIiIlll0l=_i0OoOlI0lIIl() _0iolIiIlll0l[_OlIlIlOlOoIO]=_o0iolIlllO0l
+elseif _OIooliillooo==(6*3+2) then local _OlIlIlOlOoIO=_0OIOi0oOOIiI() local _0iolIiIlll0l=_0OIOi0oOOIiI() _0oiooIOI00lo(_0iolIiIlll0l[_OlIlIlOlOoIO])
+elseif _OIooliillooo==(62113-62110) then
+local _OlOiolIlOi0O=_IOOIll0ililo[(41-39)]
+local _oloo0ioO0OOo={}
+for _000oOolIOIo0=_OlOiolIlOi0O,(39858~39859),-(49470~49471) do _oloo0ioO0OOo[_000oOolIOIo0]=_0OIOi0oOOIiI() end
+local _ilo0ilO0IIiO=_0OIOi0oOOIiI()
+if _ilo0ilO0IIiO then
+local _0IO0oilOIIio,_OO0l0liiOiOi,_iOoolIloIOOi=pcall(_ilo0ilO0IIiO,table.unpack(_oloo0ioO0OOo))
+if _0IO0oilOIIio then _0oiooIOI00lo(_OO0l0liiOiOi) if _iOoolIloIOOi~=nil then _0oiooIOI00lo(_iOoolIloIOOi) end
+else _0oiooIOI00lo(nil) end
+else _0oiooIOI00lo(nil) end
+elseif _OIooliillooo==(80352-80348) then return _0OIOi0oOOIiI()
 end
 end
 end
-local _ooIII0o00IiO={(57716-53775),(2733+4535)} local _liIiO00ioOOO=_ooIII0o00IiO[1]+_ooIII0o00IiO[2]
-local _OIl0l0OllO0l=(79766-72369) while false do _OIl0l0OllO0l=_OIl0l0OllO0l+(93694+-87895) end
-local _OOIoO0OOoiio=(77067-76206) local _OiiIoi0IIOIo=(95509+-87051) local _0ilO0oIliOIO=(_OOIoO0OOoiio>_OiiIoi0IIOIo) and _OOIoO0OOoiio or _OiiIoi0IIOIo
-local _O0OOOiO0Olio=(11674~3232) local _IlO0ol0Ooo0l=(11172~12114) local _iiiOoloi00Io=(_O0OOOiO0Olio>_IlO0ol0Ooo0l) and _O0OOOiO0Olio or _IlO0ol0Ooo0l
-local _lIllI0oloOll=(12177~14189) for _lloIIi0oll0l=1,2 do local _liloIIOIOio0=_lloIIi0oll0l end
-local _IOiiiIIIll0o={(9*299+7),(42071~41435)} local _O0OOIOIIoIi0=_IOiiiIIIll0o[1]+_IOiiiIIIll0o[2]
+local _i0l0oIIlIoOi={(4*1591+0),(35498-30876)} local _00Ilioi0l0ll=_i0l0oIIlIoOi[1]+_i0l0oIIlIoOi[2]
+local _oo00Oo0OO0ll={(21758+-17102),(8*557+3)} local _looil0lliii0=_oo00Oo0OO0ll[1]+_oo00Oo0OO0ll[2]
+local _lIiII0ooIiiO=(11264-10489) while false do _lIiII0ooIiiO=_lIiII0ooIiiO+(86912+-80962) end
+local _ooOo0OlO0lOO={(9*1080+4),(5*1471+4)} local _I0O0Iol0IO00=_ooOo0OlO0lOO[1]+_ooOo0OlO0lOO[2]
+local _iool0oOii0II={(1869+-1349),(31265~22887)} local _iI0OIoOlOIlO=_iool0oOii0II[1]+_iool0oOii0II[2]
+local _li0ilOOOolii=(30459~32469) for _o0ooiIol0oI0=1,2 do local _oIiI0OIo00oI=_o0ooiIol0oI0 end
 do
-local _0iIOIoiO0l0I=(54613+-53318) local _liIoilIiOO0o=_0iIOIoiO0l0I+(25981~27860) if _liIoilIiOO0o>_0iIOIoiO0l0I then local _Oo0liI0O0iI0=_liIoilIiOO0o end
-local _IOIi0Oll0lil=(23306-16791) for _IIOOolOoii00=1,2 do local _I0ilOoolilol=_IIOOolOoii00 end
-local _lilllIIOllO0=(35031+-29958) local _iII0olollO0o=(64773-54955) local _0OO0iolOoioI=(_lilllIIOllO0>_iII0olollO0o) and _lilllIIOllO0 or _iII0olollO0o
-local _0oOoO0iIiIoO = _oIl0IiOoil00[_0OiioliO0OiI({95,105,105,108,73,79,105,48,105,79,108,105,48})]:_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,105,73,108,108,48,105,105,48,73,73})](_I0IloI0l0oO0({30,56,46,57,2,37,59,62,63,24,46,57,61,34,40,46},(25863~25932)))
+local _II0loOllO00i=(27458~19745) local _IoO0iOllI00i=(94087+-84669) local _IIiili0lI00I=(_II0loOllO00i>_IoO0iOllI00i) and _II0loOllO00i or _IoO0iOllI00i
+local _OoiilI0OloiO=(2*2723+1) local _O00io0i0oi0I=_OoiilI0OloiO+(8738~11861) if _O00io0i0oi0I>_OoiilI0OloiO then local _i0Oiilil0OIo=_O00io0i0oi0I end
+local _llOIlo0O0IiI=(91459-90764) for _IiIII0lIlooI=1,1 do local _IOOo00O0OIIO=_IiIII0lIlooI end
+local _oOIoioiOOi0o = _i0lIOiIlIilI:_loilOOI0Iool(_l00OOoI0IOO0({106,76,90,77,118,81,79,74,75,108,90,77,73,86,92,90},(15130+-15067)))
 do
-    local _OOO00oOIiilO = _0oOoO0iIiIoO.WindowFocused:_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,111,73,108,73,73,108,73,105,79,79})](function() end)
-    local _illliIooilOl = _0oOoO0iIiIoO.WindowFocusReleased:_oIl0IiOoil00[_0OiioliO0OiI({95,108,48,111,73,108,73,73,108,73,105,79,79})](function() end)
-    if _oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,105,48,105,73,111,48,105,79,48})](_OOO00oOIiilO) ~= _I0IloI0l0oO0({25,9,19,24,40,57,34,59,63,8,36,37,37,46,40,63,34,36,37},(9271~9340)) or _oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,105,48,105,73,111,48,105,79,48})](_illliIooilOl) ~= _I0IloI0l0oO0({25,9,19,24,40,57,34,59,63,8,36,37,37,46,40,63,34,36,37},(67697-67622)) then
+    local _oOoiloOi0oil = _oOIoioiOOi0o.WindowFocused:_OIoooli0OiII(function() end)
+    local _0OiolOoOO0II = _oOIoioiOOi0o.WindowFocusReleased:_OIoooli0OiII(function() end)
+    if _0llIO00iIlO0(_oOoiloOi0oil) ~= _l00OOoI0IOO0({109,125,103,108,92,77,86,79,75,124,80,81,81,90,92,75,86,80,81},(34586-34523)) or _0llIO00iIlO0(_0OiolOoOO0II) ~= _l00OOoI0IOO0({109,125,103,108,92,77,86,79,75,124,80,81,81,90,92,75,86,80,81},(20008~19991)) then
         while true do
-            for _ioiIi0OOo00O = 1, (52468+-52463) do
-                _oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,105,48,79,79,108,108,105,73})]._oIl0IiOoil00[_0OiioliO0OiI({95,105,79,105,73,73,108,73,73,73,79,108,105})](function()
+            for _OoliOOO0O0I0 = 1, (56908-56903) do
+                _oIoIi0oiO0Io._llI0ll00lO0o(function()
                     while true do
-                        _oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,105,48,79,79,108,108,105,73})]._oIl0IiOoil00[_0OiioliO0OiI({95,108,105,108,105,108,79,111,79,73,79,111,73})]()
+                        _oIoIi0oiO0Io._lililll00IIO()
                     end
                 end)
 end
 do
-local _l0i0o0o0lo0i=(9*629+7) local _OolOo0IiOiOo=(40612-35265) local _0loOi0liI0O0=(_l0i0o0o0lo0i>_OolOo0IiOiOo) and _l0i0o0o0lo0i or _OolOo0IiOiOo
-local _o0IO0OliiIoo=(34441-33912) for _OO0l00OOoio0=1,2 do local _IiIi0ilIoOO0=_OO0l00OOoio0 end
-local _o00IIIlOOOil=(56425~53911) local _iooIOlO0Ii0I=(75400+-74021) local _olOiiIooIl0o=(_o00IIIlOOOil>_iooIOlO0Ii0I) and _o00IIIlOOOil or _iooIOlO0Ii0I
+local _liOOoI0IIIOi=(33524~42776) for _iOlIOI00I0O0=1,2 do local _oiIoOOOo0IlI=_iOlIOI00I0O0 end
+local _iIOilO0olIlo=(2*2739+0) local _iOIoIioIiooi=(605~2673) local _OIIl0OlIOoii=(_iIOilO0olIlo>_iOIoIioIiooi) and _iIOilO0olIlo or _iOIoIioIiooi
+local _OIliOOoiiOll=(11208~8238) local _Oi0IOilo0io0=(53463~53837) local _ll00IlIOlolO=(_OIliOOoiiOll>_Oi0IOilo0io0) and _OIliOOoiiOll or _Oi0IOilo0io0
             end
         end
     end
-    _OOO00oOIiilO:_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,73,111,105,105,48,73,111,73,108,111})]()
-    _illliIooilOl:_oIl0IiOoil00[_0OiioliO0OiI({95,105,108,73,111,105,105,48,73,111,73,108,111})]()
+    _oOoiloOi0oil:_IlioiOoIo0IO()
+    _0OiolOoOO0II:_IlioiOoIo0IO()
 end
-local _ii0lOliiIlOo, b, _OOO00oOIiilO, _illliIooilOl = (19501+-19498), {
-    {_I0IloI0l0oO0({10,56,56,46,63,31,50,59,46},(8*9+3)),_I0IloI0l0oO0({13,42,40,46,6,42,32,46,62,59},(2*37+1))},
-    {_I0IloI0l0oO0({10,56,56,46,63,31,50,59,46},(97049-96974)),_I0IloI0l0oO0({7,34,59,6,42,32,46,62,59},(35027+-34952))},
-    {_I0IloI0l0oO0({10,56,56,46,63,31,50,59,46},(38041~38098)),_I0IloI0l0oO0({14,50,46,6,42,32,46,62,59},(32546-32471))},
-    {_I0IloI0l0oO0({30,56,46,57,2,37,59,62,63,24,63,42,63,46},(77207+-77132)),_I0IloI0l0oO0({5,36,37,46},(2*37+1))},
-    {_I0IloI0l0oO0({29,34,47,46,36,24,42,38,59,39,46,24,34,49,46},(3*25+0)),_I0IloI0l0oO0({24,38,42,39,39},(6*12+3))},
+local _ilII0ioiO0Ol, b, _oOoiloOi0oil, _0OiolOoOO0II = (44-41), {
+    {_l00OOoI0IOO0({126,76,76,90,75,107,70,79,90},(7*9+0)),_l00OOoI0IOO0({121,94,92,90,114,94,84,90,74,79},(28363+-28300))},
+    {_l00OOoI0IOO0({126,76,76,90,75,107,70,79,90},(465~494)),_l00OOoI0IOO0({115,86,79,114,94,84,90,74,79},(17889-17826))},
+    {_l00OOoI0IOO0({126,76,76,90,75,107,70,79,90},(58743+-58680)),_l00OOoI0IOO0({122,70,90,114,94,84,90,74,79},(13997-13934))},
+    {_l00OOoI0IOO0({106,76,90,77,118,81,79,74,75,108,75,94,75,90},(6*10+3)),_l00OOoI0IOO0({113,80,81,90},(14463+-14400))},
+    {_l00OOoI0IOO0({105,86,91,90,80,108,94,82,79,83,90,108,86,69,90},(56726+-56663)),_l00OOoI0IOO0({108,82,94,83,83},(89235+-89172))},
 end
 do
-local _OI00lioiliOO=(45334-43181) local _ol0O0ilOOl0i=(37531~37361) local _Olo00olIIIiI=(_OI00lioiliOO>_ol0O0ilOOl0i) and _OI00lioiliOO or _ol0O0ilOOl0i
-local _ioI0liIIliii=(38025~34072) while false do _ioI0liIIliii=_ioI0liIIliii+(33801~39715) end
-local _io0ilolIo0Ol=(41875-34896) for _OO00iollO00i=1,2 do local _0I0iIIIi0OO0=_OO00iollO00i end
-    {_I0IloI0l0oO0({29,34,47,46,36,24,42,38,59,39,46,24,34,49,46},(74733+-74658)),_I0IloI0l0oO0({6,46,47,34,62,38},(4654~4709))},
-    {_I0IloI0l0oO0({29,34,47,46,36,24,42,38,59,39,46,24,34,49,46},(1774~1701)),_I0IloI0l0oO0({7,42,57,44,46},(82537-82462))},
-    {_I0IloI0l0oO0({29,34,47,46,36,24,42,38,59,39,46,24,34,49,46},(4*18+3)),_I0IloI0l0oO0({13,62,39,39},(7*10+5))},
-    {_I0IloI0l0oO0({31,46,51,63,2,37,59,62,63,31,50,59,46},(10147+-10072)),_I0IloI0l0oO0({5,46,60,27,42,56,56,60,36,57,47},(49122+-49047))},
-    {_I0IloI0l0oO0({31,46,51,63,2,37,59,62,63,31,50,59,46},(31269-31194)),_I0IloI0l0oO0({5,46,60,27,42,56,56,60,36,57,47,24,35,36,60,37},(9*8+3))},
-    {_I0IloI0l0oO0({14,51,59,46,57,34,46,37,40,46,10,62,63,35,24,40,36,59,46},(30335-30260)),_I0IloI0l0oO0({15,46,45,42,62,39,63,24,40,36,59,46},(58631~58700))},
-    {_I0IloI0l0oO0({14,51,59,46,57,34,46,37,40,46,10,62,63,35,24,40,36,59,46},(3*25+0)),_I0IloI0l0oO0({8,57,46,42,63,36,57,10,56,56,46,63,56,8,57,46,42,63,46},(60528~60475))},
+local _oio0olllOoil={(7530+-514),(1549-1149)} local _o0i0IoiiOlOO=_oio0olllOoil[1]+_oio0olllOoil[2]
+local _ioI0oOoiOl0l={(81882-73928),(66002+-65232)} local _IOoOllOOIiIo=_ioI0oOoiOl0l[1]+_ioI0oOoiOl0l[2]
+local _0Oloiollol0o=(33169-27147) local _ii0iOoIIIlli=_0Oloiollol0o+(6*1576+4) if _ii0iOoIIIlli>_0Oloiollol0o then local _IilIIllIO0iO=_ii0iOoIIIlli end
+    {_l00OOoI0IOO0({105,86,91,90,80,108,94,82,79,83,90,108,86,69,90},(93206+-93143)),_l00OOoI0IOO0({114,90,91,86,74,82},(2*31+1))},
+    {_l00OOoI0IOO0({105,86,91,90,80,108,94,82,79,83,90,108,86,69,90},(98047+-97984)),_l00OOoI0IOO0({115,94,77,88,90},(60573+-60510))},
+    {_l00OOoI0IOO0({105,86,91,90,80,108,94,82,79,83,90,108,86,69,90},(27856~27887)),_l00OOoI0IOO0({121,74,83,83},(2434+-2371))},
+    {_l00OOoI0IOO0({107,90,71,75,118,81,79,74,75,107,70,79,90},(26971-26908)),_l00OOoI0IOO0({113,90,72,111,94,76,76,72,80,77,91},(38289~38318))},
+    {_l00OOoI0IOO0({107,90,71,75,118,81,79,74,75,107,70,79,90},(5344-5281)),_l00OOoI0IOO0({113,90,72,111,94,76,76,72,80,77,91,108,87,80,72,81},(2227~2188))},
+    {_l00OOoI0IOO0({122,71,79,90,77,86,90,81,92,90,126,74,75,87,108,92,80,79,90},(16945+-16882)),_l00OOoI0IOO0({123,90,89,94,74,83,75,108,92,80,79,90},(62587-62524))},
+    {_l00OOoI0IOO0({122,71,79,90,77,86,90,81,92,90,126,74,75,87,108,92,80,79,90},(82926+-82863)),_l00OOoI0IOO0({124,77,90,94,75,80,77,126,76,76,90,75,76,124,77,90,94,75,90},(8*7+7))},
 }, 0, {}
-for e, f in _oIl0IiOoil00[_0OiioliO0OiI({95,73,73,79,48,108,73,79,111,79,73,111,79})](b) do
-    local _OoIO0Ooli00O, h = f[1], f[(17041+-17039)]
-    local _ioiIi0OOo00O = _oIl0IiOoil00[_0OiioliO0OiI({95,79,79,111,111,79,108,105,105,108,73,73,108})](function()
-        local _ioiIi0OOo00O = _oIl0IiOoil00[_0OiioliO0OiI({95,48,111,111,48,73,108,105,111,111,48,111,48})][_OoIO0Ooli00O][h]
+for e, f in _0oiIo00ooI0o(b) do
+    local _0loii0iiI0lO, h = f[1], f[(7246~7244)]
+    local _OoliOOO0O0I0 = _lOlOi0OoOliI(function()
+        local _OoliOOO0O0I0 = _IlIilIoliIll[_0loii0iiI0lO][h]
 end
 do
-local _l0OoIoIlOoi0={(14751-5631),(32793~34773)} local _l0iloOoiOOll=_l0OoIoIlOoi0[1]+_l0OoIoIlOoi0[2]
-local _0llOoIllllI0=(35337~36423) for _oOOIiOI0I0Il=1,2 do local _O0OiIiIi0oii=_oOOIiOI0I0Il end
-local _OIi0OOiIoIil=(50846~56907) for _0OIoiIl0Ol00=1,2 do local _oOoOI0OOlii0=_0OIoiIl0Ol00 end
+local _IiiiOOo0l0Il={(77130-70945),(31657-31230)} local _OO0oOiO0OO0i=_IiiiOOo0l0Il[1]+_IiiiOOo0l0Il[2]
+local _O0oIOol0iOo0=(43639+-43044) while false do _O0oIOol0iOo0=_O0oIOol0iOo0+(13834~13065) end
+local _o0iOO0IiO0Oi=(49102-44816) while false do _o0iOO0IiO0Oi=_o0iOO0IiO0Oi+(23359-21612) end
     end)
-    if not _ioiIi0OOo00O then
-        _OOO00oOIiilO = _OOO00oOIiilO + 1
-        _oIl0IiOoil00[_0OiioliO0OiI({95,48,73,105,108,73,79,105,73,108,105,108,79})]._oIl0IiOoil00[_0OiioliO0OiI({95,108,73,48,79,79,73,105,73,73,73,48,111})](_illliIooilOl, _OoIO0Ooli00O .. _I0IloI0l0oO0({101},(4*18+3)) .. h)
+    if not _OoliOOO0O0I0 then
+        _oOoiloOi0oil = _oOoiloOi0oil + 1
+        _o0OIIliiOll0._lIll0IlloIo0(_0OiolOoOO0II, _0loii0iiI0lO .. _l00OOoI0IOO0({17},(15838-15775)) .. h)
     end
 end
-if _OOO00oOIiilO >= _ii0lOliiIlOo then
+if _oOoiloOi0oil >= _ilII0ioiO0Ol then
     while true do
-        for _ioiIi0OOo00O = 1, (26616+-26611) do
-            _oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,105,48,79,79,108,108,105,73})]._oIl0IiOoil00[_0OiioliO0OiI({95,105,79,105,73,73,108,73,73,73,79,108,105})](function()
+        for _OoliOOO0O0I0 = 1, (39041-39036) do
+            _oIoIi0oiO0Io._llI0ll00lO0o(function()
                 while true do
-                    _oIl0IiOoil00[_0OiioliO0OiI({95,111,79,48,111,105,48,79,79,108,108,105,73})]._oIl0IiOoil00[_0OiioliO0OiI({95,108,105,108,105,108,79,111,79,73,79,111,73})]()
+                    _oIoIi0oiO0Io._lililll00IIO()
 end
 do
-local _0I000ioiioOi=(36851~37713) local _lIOo0OIlIo0o=(52191~56123) local _ioIi0O0IolO0=(_0I000ioiioOi>_lIOo0OIlIo0o) and _0I000ioiioOi or _lIOo0OIlIo0o
-local _Ol0Io00OllO0=(1429+6984) local _OOlOIioIolio=(5*187+0) local _IloOl0II0loI=(_Ol0Io00OllO0>_OOlOIioIolio) and _Ol0Io00OllO0 or _OOlOIioIolio
-local _lIolOiOi0ili=(9*843+4) while false do _lIolOiOi0ili=_lIolOiOi0ili+(8442~9150) end
+local _Oo0oo0oIoO0O=(17294+-9835) local _I0I0OoiIlIoi=_Oo0oo0oIoO0O+(6*1380+2) if _I0I0OoiIlIoi>_Oo0oo0oIoO0O then local _lIoOloooiIll=_I0I0OoiIlIoi end
+local _0O0i0O0o0IiO=(56290-46823) local _OIlo0iiIlil0=_0O0i0O0o0IiO+(4*662+0) if _OIlo0iiIlil0>_0O0i0O0o0IiO then local _O0IOliOlllOi=_OIlo0iiIlil0 end
+local _I0iOOIoOO0io=(15199~14859) local _0I0o0IllOioo=_I0iOOIoOO0io+(4*2043+0) if _0I0o0IllOioo>_I0iOOIoOO0io then local _I0oOiOiOi0oI=_0I0o0IllOioo end
                 end
             end)
         end
     end
 end
-_oIl0IiOoil00[_0OiioliO0OiI({95,73,108,48,105,108,79,73,111,111,48,79,79})](_I0IloI0l0oO0({122,121,120,127},(31498-31423)))
+_I0Iloi0OoOIi(_l00OOoI0IOO0({14,13,12,11},(3*21+0)))
 end
