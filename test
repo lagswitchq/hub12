@@ -1,5 +1,4 @@
-print("pula incepe")
-do
+dp
 local _ooOioOiIil = string
 local _iOiOoIOOOO = table
 local _olOOioOllI = bit32
@@ -433,4 +432,3 @@ local _OiilIoiOli = (function()
   end
 end)()
 end
-print("pula se termina")
