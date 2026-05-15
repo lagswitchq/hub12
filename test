@@ -1,1079 +1,1051 @@
 do
-local _OOOoioOoOO=string
-local _liIIiliolI=table
-local _lliiolilIl=function(t)
+local _iiiolliIIi=string
+local _iIOIlIIili=table
+local _ioOIolIiOO=function(t)
   local r={}
-  for i=1,#t do r[i]=_OOOoioOoOO.char(t[i]) end
-  return _liIIiliolI.concat(r)
+  for i=1,#t do r[i]=_iiiolliIIi.char(t[i]) end
+  return _iIOIlIIili.concat(r)
 end
-local _liliOloiIi=function(t,k)
+local _oOOiiiOIoo=function(t,k)
   local r={}
-  for i=1,#t do r[i]=_OOOoioOoOO.char(t[i]~k) end
-  return _liIIiliolI.concat(r)
+  for i=1,#t do r[i]=_iiiolliIIi.char(t[i]~k) end
+  return _iIOIlIIili.concat(r)
 end
-local _oiIIIOIIiI=getgenv()
-local _lolOilOOOI={}
+local _iooOOlIiii=getgenv()
+local _oiiiiooooo={}
 pcall(function()
-  local _k=_lliiolilIl({103,97,109,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,97,109,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({119,111,114,107,115,112,97,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({119,111,114,107,115,112,97,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,99,114,105,112,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,99,114,105,112,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,104,97,114,101,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,104,97,114,101,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({95,71})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({95,71})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,97,115,107})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,97,115,107})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({119,97,105,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({119,97,105,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,112,97,119,110})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,112,97,119,110})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,101,108,97,121})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,101,108,97,121})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,101,102,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,101,102,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({112,114,105,110,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({112,114,105,110,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({119,97,114,110})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({119,97,114,110})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({101,114,114,111,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({101,114,114,111,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({97,115,115,101,114,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({97,115,115,101,114,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,111,115,116,114,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,111,115,116,114,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,111,110,117,109,98,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,111,110,117,109,98,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,121,112,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,121,112,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,121,112,101,111,102})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,121,112,101,111,102})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({112,97,105,114,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({112,97,105,114,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,112,97,105,114,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,112,97,105,114,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({110,101,120,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({110,101,120,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,108,101,99,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,108,101,99,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({117,110,112,97,99,107})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({117,110,112,97,99,107})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,97,119,103,101,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,97,119,103,101,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,97,119,115,101,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,97,119,115,101,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,97,119,101,113,117,97,108})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,97,119,101,113,117,97,108})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,97,119,108,101,110})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,97,119,108,101,110})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({112,99,97,108,108})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({112,99,97,108,108})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({120,112,99,97,108,108})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({120,112,99,97,108,108})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,109,101,116,97,116,97,98,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,109,101,116,97,116,97,98,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,109,101,116,97,116,97,98,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,109,101,116,97,116,97,98,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,101,113,117,105,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,101,113,117,105,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({108,111,97,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({108,111,97,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({108,111,97,100,115,116,114,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({108,111,97,100,115,116,114,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({99,111,108,108,101,99,116,103,97,114,98,97,103,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({99,111,108,108,101,99,116,103,97,114,98,97,103,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({99,111,114,111,117,116,105,110,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({99,111,114,111,117,116,105,110,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,97,116,104})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,97,116,104})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,116,114,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,116,114,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({116,97,98,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({116,97,98,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({111,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({111,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({98,105,116,51,50})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({98,105,116,51,50})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({117,116,102,56})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({117,116,102,56})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({98,117,102,102,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({98,117,102,102,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({73,110,115,116,97,110,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({73,110,115,116,97,110,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({69,110,117,109})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({69,110,117,109})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({86,101,99,116,111,114,50})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({86,101,99,116,111,114,50})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({86,101,99,116,111,114,51})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({86,101,99,116,111,114,51})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({67,70,114,97,109,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({67,70,114,97,109,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({67,111,108,111,114,51})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({67,111,108,111,114,51})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({66,114,105,99,107,67,111,108,111,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({66,114,105,99,107,67,111,108,111,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({85,68,105,109})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({85,68,105,109})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({85,68,105,109,50})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({85,68,105,109,50})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,101,99,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,101,99,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,97,121})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,97,121})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,101,103,105,111,110,51})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,101,103,105,111,110,51})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({84,119,101,101,110,73,110,102,111})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({84,119,101,101,110,73,110,102,111})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({78,117,109,98,101,114,83,101,113,117,101,110,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({78,117,109,98,101,114,83,101,113,117,101,110,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({67,111,108,111,114,83,101,113,117,101,110,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({67,111,108,111,114,83,101,113,117,101,110,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({78,117,109,98,101,114,82,97,110,103,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({78,117,109,98,101,114,82,97,110,103,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({80,104,121,115,105,99,97,108,80,114,111,112,101,114,116,105,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({80,104,121,115,105,99,97,108,80,114,111,112,101,114,116,105,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,97,110,100,111,109})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,97,110,100,111,109})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({68,97,116,101,84,105,109,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({68,97,116,101,84,105,109,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,97,121,99,97,115,116,80,97,114,97,109,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,97,121,99,97,115,116,80,97,114,97,109,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({79,118,101,114,108,97,112,80,97,114,97,109,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({79,118,101,114,108,97,112,80,97,114,97,109,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,103,101,110,118})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,103,101,110,118})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,114,101,110,118})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,114,101,110,118})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,114,101,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,114,101,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,114,97,119,109,101,116,97,116,97,98,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,114,97,119,109,101,116,97,116,97,98,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,114,97,119,109,101,116,97,116,97,98,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,114,97,119,109,101,116,97,116,97,98,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({104,111,111,107,102,117,110,99,116,105,111,110})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({104,111,111,107,102,117,110,99,116,105,111,110})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({110,101,119,99,99,108,111,115,117,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({110,101,119,99,99,108,111,115,117,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({99,104,101,99,107,99,97,108,108,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({99,104,101,99,107,99,97,108,108,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,115,108,99,108,111,115,117,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,115,108,99,108,111,115,117,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,115,99,99,108,111,115,117,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,115,99,99,108,111,115,117,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,115,101,120,101,99,117,116,111,114,99,108,111,115,117,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,115,101,120,101,99,117,116,111,114,99,108,111,115,117,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,100,101,110,116,105,102,121,101,120,101,99,117,116,111,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,100,101,110,116,105,102,121,101,120,101,99,117,116,111,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,110,97,109,101,99,97,108,108,109,101,116,104,111,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,104,117,105})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,104,117,105})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({99,108,111,110,101,114,101,102})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({99,108,111,110,101,114,101,102})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({99,111,109,112,97,114,101,105,110,115,116,97,110,99,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({99,111,109,112,97,114,101,105,110,115,116,97,110,99,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,105,110,115,116,97,110,99,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,105,110,115,116,97,110,99,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,110,105,108,105,110,115,116,97,110,99,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,110,105,108,105,110,115,116,97,110,99,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,115,99,114,105,112,116,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,115,99,114,105,112,116,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,108,111,97,100,101,100,109,111,100,117,108,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,108,111,97,100,101,100,109,111,100,117,108,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,114,117,110,110,105,110,103,115,99,114,105,112,116,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,114,117,110,110,105,110,103,115,99,114,105,112,116,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,115,99,114,105,112,116,98,121,116,101,99,111,100,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,115,99,114,105,112,116,98,121,116,101,99,111,100,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,115,99,114,105,112,116,99,108,111,115,117,114,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,115,99,114,105,112,116,99,108,111,115,117,114,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,101,99,111,109,112,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,101,99,111,109,112,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({102,105,114,101,115,105,103,110,97,108})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({102,105,114,101,115,105,103,110,97,108})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({102,105,114,101,116,111,117,99,104,105,110,116,101,114,101,115,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({102,105,114,101,116,111,117,99,104,105,110,116,101,114,101,115,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({102,105,114,101,112,114,111,120,105,109,105,116,121,112,114,111,109,112,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({102,105,114,101,112,114,111,120,105,109,105,116,121,112,114,111,109,112,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({102,105,114,101,99,108,105,99,107,100,101,116,101,99,116,111,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({102,105,114,101,99,108,105,99,107,100,101,116,101,99,116,111,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,117,112,118,97,108,117,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,117,112,118,97,108,117,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,117,112,118,97,108,117,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,117,112,118,97,108,117,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,117,112,118,97,108,117,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,117,112,118,97,108,117,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,112,114,111,116,111,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,112,114,111,116,111,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,112,114,111,116,111})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,112,114,111,116,111})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,115,116,97,99,107})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,115,116,97,99,107})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,109,111,100,117,108,101,101,110,118})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,109,111,100,117,108,101,101,110,118})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,101,115,115,97,103,101,98,111,120})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,101,115,115,97,103,101,98,111,120})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({113,117,101,117,101,95,111,110,95,116,101,108,101,112,111,114,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({113,117,101,117,101,95,111,110,95,116,101,108,101,112,111,114,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({113,117,101,117,101,111,110,116,101,108,101,112,111,114,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({113,117,101,117,101,111,110,116,101,108,101,112,111,114,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({68,114,97,119,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({68,114,97,119,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({119,114,105,116,101,99,108,105,112,98,111,97,114,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({119,114,105,116,101,99,108,105,112,98,111,97,114,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,99,108,105,112,98,111,97,114,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,99,108,105,112,98,111,97,114,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,99,108,105,112,98,111,97,114,100})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,99,108,105,112,98,111,97,114,100})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,49,99,108,105,99,107})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,49,99,108,105,99,107})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,50,99,108,105,99,107})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,50,99,108,105,99,107})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,49,112,114,101,115,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,49,112,114,101,115,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,50,112,114,101,115,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,50,112,114,101,115,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,49,114,101,108,101,97,115,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,49,114,101,108,101,97,115,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,50,114,101,108,101,97,115,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,50,114,101,108,101,97,115,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,109,111,118,101,114,101,108})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,109,111,118,101,114,101,108})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,111,117,115,101,109,111,118,101,97,98,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,111,117,115,101,109,111,118,101,97,98,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({107,101,121,112,114,101,115,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({107,101,121,112,114,101,115,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({107,101,121,114,101,108,101,97,115,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({107,101,121,114,101,108,101,97,115,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,110,100,108,117,97})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,110,100,108,117,97})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({103,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({103,101,116,116,104,114,101,97,100,105,100,101,110,116,105,116,121})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,101,97,100,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,101,97,100,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({119,114,105,116,101,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({119,114,105,116,101,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({108,105,115,116,102,105,108,101,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({108,105,115,116,102,105,108,101,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,115,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,115,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({105,115,102,111,108,100,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({105,115,102,111,108,100,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({109,97,107,101,102,111,108,100,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({109,97,107,101,102,111,108,100,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,101,108,102,111,108,100,101,114})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,101,108,102,111,108,100,101,114})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,101,108,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,101,108,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({97,112,112,101,110,100,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({97,112,112,101,110,100,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({114,101,113,117,101,115,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({114,101,113,117,101,115,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({104,116,116,112,95,114,101,113,117,101,115,116})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({104,116,116,112,95,114,101,113,117,101,115,116})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({115,121,110})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({115,121,110})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({102,108,117,120,117,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({102,108,117,120,117,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({108,111,97,100,102,105,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({108,111,97,100,102,105,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({100,111,115,116,114,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({100,111,115,116,114,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({108,111,97,100,109,111,100,117,108,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({108,111,97,100,109,111,100,117,108,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,117,110,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,117,110,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({80,108,97,121,101,114,115})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({80,108,97,121,101,114,115})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({76,105,103,104,116,105,110,103})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({76,105,103,104,116,105,110,103})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({84,119,101,101,110,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({84,119,101,101,110,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({72,116,116,112,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({72,116,116,112,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({67,111,108,108,101,99,116,105,111,110,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({67,111,108,108,101,99,116,105,111,110,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({77,97,114,107,101,116,112,108,97,99,101,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({77,97,114,107,101,116,112,108,97,99,101,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
 pcall(function()
-  local _k=_lliiolilIl({84,101,120,116,83,101,114,118,105,99,101})
-  local _v=_oiIIIOIIiI[_k]
+  local _k=_ioOIolIiOO({84,101,120,116,83,101,114,118,105,99,101})
+  local _v=_iooOOlIiii[_k]
   if _v==nil then _v=_G[_k] end
-  if _v~=nil then _lolOilOOOI[_k]=_v end
+  if _v~=nil then _oiiiiooooo[_k]=_v end
 end)
-local _OlOOooIIoI=_lolOilOOOI[_liliOloiIi({65,71,75,67},38)]
-local _IlOIoIilII=_lolOilOOOI[_liliOloiIi({81,73,84,77,85,86,71,69,67},38)]
-local _lOoooOoOlo=_lolOilOOOI[_liliOloiIi({85,69,84,79,86,82},38)]
-local _OliIiIoIlO=_lolOilOOOI[_liliOloiIi({85,78,71,84,67,66},38)]
-local _OOOlioIIIl=_lolOilOOOI[_liliOloiIi({121,97},38)]
-local _IiOlIliiiI=_lolOilOOOI[_liliOloiIi({82,71,85,77},38)]
-local _iliOIiIliO=_lolOilOOOI[_liliOloiIi({81,71,79,82},38)]
-local _lOoIllioiI=_lolOilOOOI[_liliOloiIi({85,86,71,81,72},38)]
-local _ollIIiloOl=_lolOilOOOI[_liliOloiIi({66,67,74,71,95},38)]
-local _oiIoOlOiiO=_lolOilOOOI[_liliOloiIi({66,67,64,67,84},38)]
-local _ioOOiIiIIi=_lolOilOOOI[_liliOloiIi({86,84,79,72,82},38)]
-local _illiIOolII=_lolOilOOOI[_liliOloiIi({81,71,84,72},38)]
-local _lOiIioliiO=_lolOilOOOI[_liliOloiIi({67,84,84,73,84},38)]
-local _oOIllOIiil=_lolOilOOOI[_liliOloiIi({71,85,85,67,84,82},38)]
-local _OooIoOlIio=_lolOilOOOI[_liliOloiIi({82,73,85,82,84,79,72,65},38)]
-local _IliOOOlloo=_lolOilOOOI[_liliOloiIi({82,73,72,83,75,68,67,84},38)]
-local _iOoIolOoOi=_lolOilOOOI[_liliOloiIi({82,95,86,67},38)]
-local _oIoIIllIli=_lolOilOOOI[_liliOloiIi({82,95,86,67,73,64},38)]
-local _iOiOloIIII=_lolOilOOOI[_liliOloiIi({86,71,79,84,85},38)]
-local _IiiOoolOIo=_lolOilOOOI[_liliOloiIi({79,86,71,79,84,85},38)]
-local _IiIiilIOll=_lolOilOOOI[_liliOloiIi({72,67,94,82},38)]
-local _illiOOliio=_lolOilOOOI[_liliOloiIi({85,67,74,67,69,82},38)]
-local _OOlOlOliOo=_lolOilOOOI[_liliOloiIi({83,72,86,71,69,77},38)]
-local _oOOIoIiooi=_lolOilOOOI[_liliOloiIi({84,71,81,65,67,82},38)]
-local _IoloOioioo=_lolOilOOOI[_liliOloiIi({84,71,81,85,67,82},38)]
-local _olIlOlIOOl=_lolOilOOOI[_liliOloiIi({84,71,81,67,87,83,71,74},38)]
-local _iOOIOOOliI=_lolOilOOOI[_liliOloiIi({84,71,81,74,67,72},38)]
-local _iollIiOIOo=_lolOilOOOI[_liliOloiIi({86,69,71,74,74},38)]
-local _IlioIIIloO=_lolOilOOOI[_liliOloiIi({94,86,69,71,74,74},38)]
-local _lIllilIolI=_lolOilOOOI[_liliOloiIi({85,67,82,75,67,82,71,82,71,68,74,67},38)]
-local _iiOIoIilIo=_lolOilOOOI[_liliOloiIi({65,67,82,75,67,82,71,82,71,68,74,67},38)]
-local _OOolilllII=_lolOilOOOI[_liliOloiIi({84,67,87,83,79,84,67},38)]
-local _liIililIlo=_lolOilOOOI[_liliOloiIi({74,73,71,66},38)]
-local _OiIlOllooO=_lolOilOOOI[_liliOloiIi({74,73,71,66,85,82,84,79,72,65},38)]
-local _iIIlollOli=_lolOilOOOI[_liliOloiIi({69,73,74,74,67,69,82,65,71,84,68,71,65,67},38)]
-local _OolIIIlIOi=_lolOilOOOI[_liliOloiIi({69,73,84,73,83,82,79,72,67},38)]
-local _oOiioiIool=_lolOilOOOI[_liliOloiIi({75,71,82,78},38)]
-local _lolIioOllo=_lolOilOOOI[_liliOloiIi({85,82,84,79,72,65},38)]
-local _OIOllIOoIi=_lolOilOOOI[_liliOloiIi({82,71,68,74,67},38)]
-local _IiOolooOll=_lolOilOOOI[_liliOloiIi({73,85},38)]
-local _OOiIlIoIoi=_lolOilOOOI[_liliOloiIi({68,79,82,21,20},38)]
-local _OlIlOoilii=_lolOilOOOI[_liliOloiIi({83,82,64,30},38)]
-local _ilooilolOo=_lolOilOOOI[_liliOloiIi({68,83,64,64,67,84},38)]
-local _llOoIOilOo=_lolOilOOOI[_liliOloiIi({111,72,85,82,71,72,69,67},38)]
-local _IoIOIlioOo=_lolOilOOOI[_liliOloiIi({99,72,83,75},38)]
-local _iIiolOlIoi=_lolOilOOOI[_liliOloiIi({112,67,69,82,73,84,20},38)]
-local _OIOOlIllOl=_lolOilOOOI[_liliOloiIi({112,67,69,82,73,84,21},38)]
-local _IooolIIIoO=_lolOilOOOI[_liliOloiIi({101,96,84,71,75,67},38)]
-local _IIiioloiOO=_lolOilOOOI[_liliOloiIi({101,73,74,73,84,21},38)]
-local _OoOOlooooo=_lolOilOOOI[_liliOloiIi({100,84,79,69,77,101,73,74,73,84},38)]
-local _ilOOIoIlio=_lolOilOOOI[_liliOloiIi({115,98,79,75},38)]
-local _IOolliOOlo=_lolOilOOOI[_liliOloiIi({115,98,79,75,20},38)]
-local _OOoIoooIol=_lolOilOOOI[_liliOloiIi({116,67,69,82},38)]
-local _ioIioOoIlO=_lolOilOOOI[_liliOloiIi({116,71,95},38)]
-local _loIiollolo=_lolOilOOOI[_liliOloiIi({116,67,65,79,73,72,21},38)]
-local _IIlIIIoiII=_lolOilOOOI[_liliOloiIi({114,81,67,67,72,111,72,64,73},38)]
-local _OliOOIiOli=_lolOilOOOI[_liliOloiIi({104,83,75,68,67,84,117,67,87,83,67,72,69,67},38)]
-local _IoIIiilIlo=_lolOilOOOI[_liliOloiIi({101,73,74,73,84,117,67,87,83,67,72,69,67},38)]
-local _oOooillOIl=_lolOilOOOI[_liliOloiIi({104,83,75,68,67,84,116,71,72,65,67},38)]
-local _iOlIIlilIi=_lolOilOOOI[_liliOloiIi({118,78,95,85,79,69,71,74,118,84,73,86,67,84,82,79,67,85},38)]
-local _llIoiOoioi=_lolOilOOOI[_liliOloiIi({116,71,72,66,73,75},38)]
-local _iIoolIlOol=_lolOilOOOI[_liliOloiIi({98,71,82,67,114,79,75,67},38)]
-local _iOOOIoiOlo=_lolOilOOOI[_liliOloiIi({116,71,95,69,71,85,82,118,71,84,71,75,85},38)]
-local _oIooioIOlO=_lolOilOOOI[_liliOloiIi({105,80,67,84,74,71,86,118,71,84,71,75,85},38)]
-local _lOOooioioo=_lolOilOOOI[_liliOloiIi({65,67,82,65,67,72,80},38)]
-local _oliIlIlIll=_lolOilOOOI[_liliOloiIi({65,67,82,84,67,72,80},38)]
-local _OOlIIOIioI=_lolOilOOOI[_liliOloiIi({65,67,82,84,67,65},38)]
-local _lOloilIolo=_lolOilOOOI[_liliOloiIi({65,67,82,84,71,81,75,67,82,71,82,71,68,74,67},38)]
-local _IOlIOlOOIl=_lolOilOOOI[_liliOloiIi({85,67,82,84,71,81,75,67,82,71,82,71,68,74,67},38)]
-local _IOiiiioiiO=_lolOilOOOI[_liliOloiIi({78,73,73,77,64,83,72,69,82,79,73,72},38)]
-local _oIoloIoIil=_lolOilOOOI[_liliOloiIi({72,67,81,69,69,74,73,85,83,84,67},38)]
-local _OlOollIIoi=_lolOilOOOI[_liliOloiIi({69,78,67,69,77,69,71,74,74,67,84},38)]
-local _iOOoioooio=_lolOilOOOI[_liliOloiIi({79,85,74,69,74,73,85,83,84,67},38)]
-local _iiiOIOooIi=_lolOilOOOI[_liliOloiIi({79,85,69,69,74,73,85,83,84,67},38)]
-local _oIlooOoIOI=_lolOilOOOI[_liliOloiIi({79,85,67,94,67,69,83,82,73,84,69,74,73,85,83,84,67},38)]
-local _loilIioIiO=_lolOilOOOI[_liliOloiIi({79,66,67,72,82,79,64,95,67,94,67,69,83,82,73,84},38)]
-local _OOIOIooOIl=_lolOilOOOI[_liliOloiIi({65,67,82,72,71,75,67,69,71,74,74,75,67,82,78,73,66},38)]
-local _iOoIIllili=_lolOilOOOI[_liliOloiIi({85,67,82,72,71,75,67,69,71,74,74,75,67,82,78,73,66},38)]
-local _iiiIOiIoiI=_lolOilOOOI[_liliOloiIi({65,67,82,78,83,79},38)]
-local _IIlIollIIl=_lolOilOOOI[_liliOloiIi({69,74,73,72,67,84,67,64},38)]
-local _ioilOiOliO=_lolOilOOOI[_liliOloiIi({69,73,75,86,71,84,67,79,72,85,82,71,72,69,67,85},38)]
-local _ioIlOiooII=_lolOilOOOI[_liliOloiIi({65,67,82,79,72,85,82,71,72,69,67,85},38)]
-local _iiOoiOooiO=_lolOilOOOI[_liliOloiIi({65,67,82,72,79,74,79,72,85,82,71,72,69,67,85},38)]
-local _OoIoIollIl=_lolOilOOOI[_liliOloiIi({65,67,82,85,69,84,79,86,82,85},38)]
-local _iIOiIiiioI=_lolOilOOOI[_liliOloiIi({65,67,82,74,73,71,66,67,66,75,73,66,83,74,67,85},38)]
-local _OIiIoioIOO=_lolOilOOOI[_liliOloiIi({65,67,82,84,83,72,72,79,72,65,85,69,84,79,86,82,85},38)]
-local _liIIOllOoO=_lolOilOOOI[_liliOloiIi({65,67,82,85,69,84,79,86,82,68,95,82,67,69,73,66,67},38)]
-local _lIIiOoloIo=_lolOilOOOI[_liliOloiIi({65,67,82,85,69,84,79,86,82,69,74,73,85,83,84,67},38)]
-local _iIiillOOOI=_lolOilOOOI[_liliOloiIi({66,67,69,73,75,86,79,74,67},38)]
-local _iOOioOIIii=_lolOilOOOI[_liliOloiIi({64,79,84,67,85,79,65,72,71,74},38)]
-local _oilIiilloO=_lolOilOOOI[_liliOloiIi({64,79,84,67,82,73,83,69,78,79,72,82,67,84,67,85,82},38)]
-local _IllIoiiOil=_lolOilOOOI[_liliOloiIi({64,79,84,67,86,84,73,94,79,75,79,82,95,86,84,73,75,86,82},38)]
-local _oIIOilOOoI=_lolOilOOOI[_liliOloiIi({64,79,84,67,69,74,79,69,77,66,67,82,67,69,82,73,84},38)]
-local _IiliIoIooi=_lolOilOOOI[_liliOloiIi({65,67,82,83,86,80,71,74,83,67,85},38)]
-local _iOOlIoIolI=_lolOilOOOI[_liliOloiIi({65,67,82,83,86,80,71,74,83,67},38)]
-local _oOOIoOOllI=_lolOilOOOI[_liliOloiIi({85,67,82,83,86,80,71,74,83,67},38)]
-local _oIlIIiOIOi=_lolOilOOOI[_liliOloiIi({65,67,82,86,84,73,82,73,85},38)]
-local _ioliloiIOi=_lolOilOOOI[_liliOloiIi({65,67,82,86,84,73,82,73},38)]
-local _OiliIiOIlI=_lolOilOOOI[_liliOloiIi({65,67,82,85,82,71,69,77},38)]
-local _OIIIioOoOI=_lolOilOOOI[_liliOloiIi({65,67,82,75,73,66,83,74,67,67,72,80},38)]
-local _OIlliliIOi=_lolOilOOOI[_liliOloiIi({75,67,85,85,71,65,67,68,73,94},38)]
-local _iIOlOlloOo=_lolOilOOOI[_liliOloiIi({87,83,67,83,67,121,73,72,121,82,67,74,67,86,73,84,82},38)]
-local _OlOolooiOI=_lolOilOOOI[_liliOloiIi({87,83,67,83,67,73,72,82,67,74,67,86,73,84,82},38)]
-local _iOOIiiioii=_lolOilOOOI[_liliOloiIi({98,84,71,81,79,72,65},38)]
-local _OiiOilIIiI=_lolOilOOOI[_liliOloiIi({81,84,79,82,67,69,74,79,86,68,73,71,84,66},38)]
-local _OilOOOoiiO=_lolOilOOOI[_liliOloiIi({65,67,82,69,74,79,86,68,73,71,84,66},38)]
-local _lOOOloiIoO=_lolOilOOOI[_liliOloiIi({85,67,82,69,74,79,86,68,73,71,84,66},38)]
-local _oOiiIIOIoi=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,23,69,74,79,69,77},38)]
-local _OoiliioolI=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,20,69,74,79,69,77},38)]
-local _iilIlIiOoI=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,23,86,84,67,85,85},38)]
-local _IIliiOioOo=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,20,86,84,67,85,85},38)]
-local _OliOliolOl=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,23,84,67,74,67,71,85,67},38)]
-local _oiIliloIoo=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,20,84,67,74,67,71,85,67},38)]
-local _iliIiiilil=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,75,73,80,67,84,67,74},38)]
-local _IOoOOlIIiO=_lolOilOOOI[_liliOloiIi({75,73,83,85,67,75,73,80,67,71,68,85},38)]
-local _iloiOlIIIl=_lolOilOOOI[_liliOloiIi({77,67,95,86,84,67,85,85},38)]
-local _ioiiiIiOil=_lolOilOOOI[_liliOloiIi({77,67,95,84,67,74,67,71,85,67},38)]
-local _olOiOlOoOI=_lolOilOOOI[_liliOloiIi({85,67,72,66,74,83,71},38)]
-local _IlOlOIiliI=_lolOilOOOI[_liliOloiIi({85,67,82,82,78,84,67,71,66,79,66,67,72,82,79,82,95},38)]
-local _IIoiOliOll=_lolOilOOOI[_liliOloiIi({65,67,82,82,78,84,67,71,66,79,66,67,72,82,79,82,95},38)]
-local _IOOIOiIIoI=_lolOilOOOI[_liliOloiIi({84,67,71,66,64,79,74,67},38)]
-local _IiiOOOIOli=_lolOilOOOI[_liliOloiIi({81,84,79,82,67,64,79,74,67},38)]
-local _OIloIOOiOi=_lolOilOOOI[_liliOloiIi({74,79,85,82,64,79,74,67,85},38)]
-local _IlloIlIOii=_lolOilOOOI[_liliOloiIi({79,85,64,79,74,67},38)]
-local _iiiiOllOio=_lolOilOOOI[_liliOloiIi({79,85,64,73,74,66,67,84},38)]
-local _oiioiolOIO=_lolOilOOOI[_liliOloiIi({75,71,77,67,64,73,74,66,67,84},38)]
-local _iOoilliOlo=_lolOilOOOI[_liliOloiIi({66,67,74,64,73,74,66,67,84},38)]
-local _OOlOlIloiI=_lolOilOOOI[_liliOloiIi({66,67,74,64,79,74,67},38)]
-local _llOlOiOiIl=_lolOilOOOI[_liliOloiIi({71,86,86,67,72,66,64,79,74,67},38)]
-local _olioIoiiOi=_lolOilOOOI[_liliOloiIi({84,67,87,83,67,85,82},38)]
-local _lOiIiIiloi=_lolOilOOOI[_liliOloiIi({78,82,82,86,121,84,67,87,83,67,85,82},38)]
-local _llioOiIloI=_lolOilOOOI[_liliOloiIi({85,95,72},38)]
-local _llOoIlIloO=_lolOilOOOI[_liliOloiIi({64,74,83,94,83,85},38)]
-local _ooIllOiliI=_lolOilOOOI[_liliOloiIi({74,73,71,66,64,79,74,67},38)]
-local _OIioIoliiO=_lolOilOOOI[_liliOloiIi({66,73,85,82,84,79,72,65},38)]
-local _olOOiolOoO=_lolOilOOOI[_liliOloiIi({74,73,71,66,75,73,66,83,74,67},38)]
-local _ilolOOOOlI=_lolOilOOOI[_liliOloiIi({116,83,72,117,67,84,80,79,69,67},38)]
-local _IoIoOooIoO=_lolOilOOOI[_liliOloiIi({118,74,71,95,67,84,85},38)]
-local _OIioIiOlio=_lolOilOOOI[_liliOloiIi({116,67,86,74,79,69,71,82,67,66,117,82,73,84,71,65,67},38)]
-local _OoloiooIII=_lolOilOOOI[_liliOloiIi({106,79,65,78,82,79,72,65},38)]
-local _iIiiooOOoo=_lolOilOOOI[_liliOloiIi({115,85,67,84,111,72,86,83,82,117,67,84,80,79,69,67},38)]
-local _oloiliOIoo=_lolOilOOOI[_liliOloiIi({114,81,67,67,72,117,67,84,80,79,69,67},38)]
-local _IOioioilol=_lolOilOOOI[_liliOloiIi({110,82,82,86,117,67,84,80,79,69,67},38)]
-local _OoOIoiiOOl=_lolOilOOOI[_liliOloiIi({101,73,74,74,67,69,82,79,73,72,117,67,84,80,79,69,67},38)]
-local _IiOOioOooo=_lolOilOOOI[_liliOloiIi({107,71,84,77,67,82,86,74,71,69,67,117,67,84,80,79,69,67},38)]
-local _OlliiliIOo=_lolOilOOOI[_liliOloiIi({114,67,94,82,117,67,84,80,79,69,67},38)]
-local _OIOloOilil=_iOoIolOoOi(_oIoIIllIli)
-if _OIOloOilil~="function" then while true do _IiOlIliiiI.wait() end end
-local _OOIIioilOl=_iOoIolOoOi(_oiIIIOIIiI)
-if _OOIIioilOl~="table" then while true do _IiOlIliiiI.wait() end end
-local _oOiOloOliO=_iOoIolOoOi(_OooIoOlIio)
-if _oOiOloOliO~="function" then while true do _IiOlIliiiI.wait() end end
-local _OiIllIOOoo=(8221-61) while false do _OiIllIOOoo=_OiIllIOOoo+1 end
-local _iioIiioili={} for _lIiOIiIlll=1,3 do _iioIiioili[_lIiOIiIlll]=(3*1718+2) end
-local _IOoOoOlOOl=(7*1196+5) local _lOOlIoOOiO=(8311-358) if _lOOlIoOOiO>_IOoOoOlOOl then local _x=0 end
-local _iOIOOIlOOl=pcall(function() local _liiiOiOOOI=(31*45+18) return _liiiOiOOOI end)
-local _OiIliIIioO={} for _llllOlloOi=1,3 do _OiIliIIioO[_llllOlloOi]=(41*212+28) end
-local _iIioiliIOO = _OlOOooIIoI:GetService(_liliOloiIi({115,85,67,84,111,72,86,83,82,117,67,84,80,79,69,67},(452-414)))
-do
-    local _lIOIoiioOO = _iIioiliIOO.WindowFocused:Connect(function() end)
-    local _OiOlioOOIo = _iIioiliIOO.WindowFocusReleased:Connect(function() end)
-    if _oIoIIllIli(_lIOIoiioOO) ~= _liliOloiIi({116,100,126,117,69,84,79,86,82,101,73,72,72,67,69,82,79,73,72},(22*1+16)) or _oIoIIllIli(_OiOlioOOIo) ~= _liliOloiIi({116,100,126,117,69,84,79,86,82,101,73,72,72,67,69,82,79,73,72},(49*0+38)) then
-        while true do _IiOlIliiiI._iliOIiIliO() end
-    end
-    _lIOIoiioOO:Disconnect()
-    _OiOlioOOIo:Disconnect()
-end
-local _at_a, _at_b, _at_c, _at_d = (378-375), {
-    {_liliOloiIi({103,85,85,67,82,114,95,86,67},(50*0+38)),_liliOloiIi({96,71,69,67,107,71,77,67,83,86},(345-307))},{_liliOloiIi({103,85,85,67,82,114,95,86,67},(48*0+38)),_liliOloiIi({106,79,86,107,71,77,67,83,86},(267-229))},{_liliOloiIi({103,85,85,67,82,114,95,86,67},(594-556)),_liliOloiIi({99,95,67,107,71,77,67,83,86},(278-240))},
-    {_liliOloiIi({115,85,67,84,111,72,86,83,82,117,82,71,82,67},(312-274)),_liliOloiIi({104,73,72,67},(470-432))},{_liliOloiIi({112,79,66,67,73,117,71,75,86,74,67,117,79,92,67},(208-170)),_liliOloiIi({117,75,71,74,74},(580-542))},{_liliOloiIi({112,79,66,67,73,117,71,75,86,74,67,117,79,92,67},(30*1+8)),_liliOloiIi({107,67,66,79,83,75},(42*0+38))},
-    {_liliOloiIi({112,79,66,67,73,117,71,75,86,74,67,117,79,92,67},(41*0+38)),_liliOloiIi({106,71,84,65,67},(19*2+0))},{_liliOloiIi({112,79,66,67,73,117,71,75,86,74,67,117,79,92,67},(51*0+38)),_liliOloiIi({96,83,74,74},(446-408))},{_liliOloiIi({114,67,94,82,111,72,86,83,82,114,95,86,67},(526-488)),_liliOloiIi({104,67,81,118,71,85,85,81,73,84,66},(276-238))},
-    {_liliOloiIi({114,67,94,82,111,72,86,83,82,114,95,86,67},(35*1+3)),_liliOloiIi({104,67,81,118,71,85,85,81,73,84,66,117,78,73,81,72},(178-140))},{_liliOloiIi({99,94,86,67,84,79,67,72,69,67,103,83,82,78,117,69,73,86,67},(317-279)),_liliOloiIi({98,67,64,71,83,74,82,117,69,73,86,67},(356-318))},
-    {_liliOloiIi({99,94,86,67,84,79,67,72,69,67,103,83,82,78,117,69,73,86,67},(578-540)),_liliOloiIi({101,84,67,71,82,73,84,103,85,85,67,82,85,101,84,67,71,82,67},(426-388))},
-}, 0, {}
-for _at_e, _at_f in _IiiOoolOIo(_at_b) do
-    local _at_g, _at_h = _at_f[1], _at_f[(36*0+2)]
-    local _at_i = _iollIiOIOo(function() local _iIIIlIilIO = _IoIOIlioOo[_at_g][_at_h] end)
-    if not _at_i then
-        _at_c = _at_c + 1
-        _OIOllIOoIi.insert(_at_d, _at_g .. _liliOloiIi({8},(137-99)) .. _at_h)
-    end
-end
-if _at_c >= _at_a then
-    while true do _IiOlIliiiI._iliOIiIliO() end
-end
-
-_ioOOiIiIIi(_liliOloiIi({23,20,21,18},(6*6+2)))
+local _loOOOiIiIO=_oiiiiooooo[_oOOiiiOIoo({77,75,71,79},42)]
+local _ilIoOlIoiI=_oiiiiooooo[_oOOiiiOIoo({93,69,88,65,89,90,75,73,79},42)]
+local _IiloOIOlol=_oiiiiooooo[_oOOiiiOIoo({89,73,88,67,90,94},42)]
+local _lOiiliilOO=_oiiiiooooo[_oOOiiiOIoo({89,66,75,88,79,78},42)]
+local _loiOiOoIoO=_oiiiiooooo[_oOOiiiOIoo({117,109},42)]
+local _OOiOlIIiOO=_oiiiiooooo[_oOOiiiOIoo({94,75,89,65},42)]
+local _oiOoiIoill=_oiiiiooooo[_oOOiiiOIoo({93,75,67,94},42)]
+local _lOiIliolOi=_oiiiiooooo[_oOOiiiOIoo({89,90,75,93,68},42)]
+local _iillIliloO=_oiiiiooooo[_oOOiiiOIoo({78,79,70,75,83},42)]
+local _oIooIIiiil=_oiiiiooooo[_oOOiiiOIoo({78,79,76,79,88},42)]
+local _lOiIOiIIoo=_oiiiiooooo[_oOOiiiOIoo({90,88,67,68,94},42)]
+local _oiiOOOIIiO=_oiiiiooooo[_oOOiiiOIoo({93,75,88,68},42)]
+local _IiooiIOooO=_oiiiiooooo[_oOOiiiOIoo({79,88,88,69,88},42)]
+local _IloIOOlilo=_oiiiiooooo[_oOOiiiOIoo({75,89,89,79,88,94},42)]
+local _OOiOlooOII=_oiiiiooooo[_oOOiiiOIoo({94,69,89,94,88,67,68,77},42)]
+local _llOiIOoili=_oiiiiooooo[_oOOiiiOIoo({94,69,68,95,71,72,79,88},42)]
+local _lOIlOiIOOl=_oiiiiooooo[_oOOiiiOIoo({94,83,90,79},42)]
+local _IioiiiilOl=_oiiiiooooo[_oOOiiiOIoo({94,83,90,79,69,76},42)]
+local _iOOOIOliio=_oiiiiooooo[_oOOiiiOIoo({90,75,67,88,89},42)]
+local _iIIoillllo=_oiiiiooooo[_oOOiiiOIoo({67,90,75,67,88,89},42)]
+local _OooIiooloo=_oiiiiooooo[_oOOiiiOIoo({68,79,82,94},42)]
+local _OoOIooiOOO=_oiiiiooooo[_oOOiiiOIoo({89,79,70,79,73,94},42)]
+local _iOOIlIIIoo=_oiiiiooooo[_oOOiiiOIoo({95,68,90,75,73,65},42)]
+local _lOOIOliliI=_oiiiiooooo[_oOOiiiOIoo({88,75,93,77,79,94},42)]
+local _ollioiOool=_oiiiiooooo[_oOOiiiOIoo({88,75,93,89,79,94},42)]
+local _oIOiIlIIlO=_oiiiiooooo[_oOOiiiOIoo({88,75,93,79,91,95,75,70},42)]
+local _iIoIilIool=_oiiiiooooo[_oOOiiiOIoo({88,75,93,70,79,68},42)]
+local _ooIiiIilOI=_oiiiiooooo[_oOOiiiOIoo({90,73,75,70,70},42)]
+local _iiliioiiOi=_oiiiiooooo[_oOOiiiOIoo({82,90,73,75,70,70},42)]
+local _IolOoOlolO=_oiiiiooooo[_oOOiiiOIoo({89,79,94,71,79,94,75,94,75,72,70,79},42)]
+local _olIiOIOool=_oiiiiooooo[_oOOiiiOIoo({77,79,94,71,79,94,75,94,75,72,70,79},42)]
+local _lIOoIOOiII=_oiiiiooooo[_oOOiiiOIoo({88,79,91,95,67,88,79},42)]
+local _OIlIOiOIIi=_oiiiiooooo[_oOOiiiOIoo({70,69,75,78},42)]
+local _IOIIiilOIO=_oiiiiooooo[_oOOiiiOIoo({70,69,75,78,89,94,88,67,68,77},42)]
+local _oOIOoiiOlI=_oiiiiooooo[_oOOiiiOIoo({73,69,70,70,79,73,94,77,75,88,72,75,77,79},42)]
+local _OllOliIloi=_oiiiiooooo[_oOOiiiOIoo({73,69,88,69,95,94,67,68,79},42)]
+local _OilIIooill=_oiiiiooooo[_oOOiiiOIoo({71,75,94,66},42)]
+local _olIIIIIOil=_oiiiiooooo[_oOOiiiOIoo({89,94,88,67,68,77},42)]
+local _IOlIoiOlio=_oiiiiooooo[_oOOiiiOIoo({94,75,72,70,79},42)]
+local _lIIoillOiO=_oiiiiooooo[_oOOiiiOIoo({69,89},42)]
+local _oOilliOllI=_oiiiiooooo[_oOOiiiOIoo({72,67,94,25,24},42)]
+local _OiOIIIIoli=_oiiiiooooo[_oOOiiiOIoo({95,94,76,18},42)]
+local _ollOIllOoi=_oiiiiooooo[_oOOiiiOIoo({72,95,76,76,79,88},42)]
+local _OiloOoiOlo=_oiiiiooooo[_oOOiiiOIoo({99,68,89,94,75,68,73,79},42)]
+local _lOioiliOio=_oiiiiooooo[_oOOiiiOIoo({111,68,95,71},42)]
+local _iiOIoOoIOI=_oiiiiooooo[_oOOiiiOIoo({124,79,73,94,69,88,24},42)]
+local _oiiOOOoOli=_oiiiiooooo[_oOOiiiOIoo({124,79,73,94,69,88,25},42)]
+local _OoloioloIo=_oiiiiooooo[_oOOiiiOIoo({105,108,88,75,71,79},42)]
+local _OioiIooOIl=_oiiiiooooo[_oOOiiiOIoo({105,69,70,69,88,25},42)]
+local _OIOlIiIioO=_oiiiiooooo[_oOOiiiOIoo({104,88,67,73,65,105,69,70,69,88},42)]
+local _iIoiIOOliO=_oiiiiooooo[_oOOiiiOIoo({127,110,67,71},42)]
+local _IliiliOioI=_oiiiiooooo[_oOOiiiOIoo({127,110,67,71,24},42)]
+local _oIOOOllIOl=_oiiiiooooo[_oOOiiiOIoo({120,79,73,94},42)]
+local _liOililIOi=_oiiiiooooo[_oOOiiiOIoo({120,75,83},42)]
+local _lIOoIoliII=_oiiiiooooo[_oOOiiiOIoo({120,79,77,67,69,68,25},42)]
+local _iOOOIIIOll=_oiiiiooooo[_oOOiiiOIoo({126,93,79,79,68,99,68,76,69},42)]
+local _lOoolIlOiO=_oiiiiooooo[_oOOiiiOIoo({100,95,71,72,79,88,121,79,91,95,79,68,73,79},42)]
+local _loIolIiIOo=_oiiiiooooo[_oOOiiiOIoo({105,69,70,69,88,121,79,91,95,79,68,73,79},42)]
+local _OlololooIi=_oiiiiooooo[_oOOiiiOIoo({100,95,71,72,79,88,120,75,68,77,79},42)]
+local _ioooIlilII=_oiiiiooooo[_oOOiiiOIoo({122,66,83,89,67,73,75,70,122,88,69,90,79,88,94,67,79,89},42)]
+local _loOoiIOIIi=_oiiiiooooo[_oOOiiiOIoo({120,75,68,78,69,71},42)]
+local _OioillIoii=_oiiiiooooo[_oOOiiiOIoo({110,75,94,79,126,67,71,79},42)]
+local _ioiiioIOOi=_oiiiiooooo[_oOOiiiOIoo({120,75,83,73,75,89,94,122,75,88,75,71,89},42)]
+local _lOoOiiliOi=_oiiiiooooo[_oOOiiiOIoo({101,92,79,88,70,75,90,122,75,88,75,71,89},42)]
+local _lIloiOiooo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,77,79,68,92},42)]
+local _liOIOilOiO=_oiiiiooooo[_oOOiiiOIoo({77,79,94,88,79,68,92},42)]
+local _lOIoilIlIO=_oiiiiooooo[_oOOiiiOIoo({77,79,94,88,79,77},42)]
+local _OIiIlloIll=_oiiiiooooo[_oOOiiiOIoo({77,79,94,88,75,93,71,79,94,75,94,75,72,70,79},42)]
+local _IilooOooli=_oiiiiooooo[_oOOiiiOIoo({89,79,94,88,75,93,71,79,94,75,94,75,72,70,79},42)]
+local _iioliioOli=_oiiiiooooo[_oOOiiiOIoo({66,69,69,65,76,95,68,73,94,67,69,68},42)]
+local _liIOIIOilO=_oiiiiooooo[_oOOiiiOIoo({68,79,93,73,73,70,69,89,95,88,79},42)]
+local _IliilOllIi=_oiiiiooooo[_oOOiiiOIoo({73,66,79,73,65,73,75,70,70,79,88},42)]
+local _llOlooIlII=_oiiiiooooo[_oOOiiiOIoo({67,89,70,73,70,69,89,95,88,79},42)]
+local _OOIIOlooiI=_oiiiiooooo[_oOOiiiOIoo({67,89,73,73,70,69,89,95,88,79},42)]
+local _iOiiIilIoi=_oiiiiooooo[_oOOiiiOIoo({67,89,79,82,79,73,95,94,69,88,73,70,69,89,95,88,79},42)]
+local _OooOIloOoI=_oiiiiooooo[_oOOiiiOIoo({67,78,79,68,94,67,76,83,79,82,79,73,95,94,69,88},42)]
+local _IiOiooOIil=_oiiiiooooo[_oOOiiiOIoo({77,79,94,68,75,71,79,73,75,70,70,71,79,94,66,69,78},42)]
+local _lIiIolOilI=_oiiiiooooo[_oOOiiiOIoo({89,79,94,68,75,71,79,73,75,70,70,71,79,94,66,69,78},42)]
+local _liioIIiOil=_oiiiiooooo[_oOOiiiOIoo({77,79,94,66,95,67},42)]
+local _OilllIlliI=_oiiiiooooo[_oOOiiiOIoo({73,70,69,68,79,88,79,76},42)]
+local _OooOIlOolO=_oiiiiooooo[_oOOiiiOIoo({73,69,71,90,75,88,79,67,68,89,94,75,68,73,79,89},42)]
+local _loloIIoOIo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,67,68,89,94,75,68,73,79,89},42)]
+local _liIoOlIOIo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,68,67,70,67,68,89,94,75,68,73,79,89},42)]
+local _IloIIIooii=_oiiiiooooo[_oOOiiiOIoo({77,79,94,89,73,88,67,90,94,89},42)]
+local _IIOioOlIlo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,70,69,75,78,79,78,71,69,78,95,70,79,89},42)]
+local _OilOOiiOoI=_oiiiiooooo[_oOOiiiOIoo({77,79,94,88,95,68,68,67,68,77,89,73,88,67,90,94,89},42)]
+local _oiioOOlOOl=_oiiiiooooo[_oOOiiiOIoo({77,79,94,89,73,88,67,90,94,72,83,94,79,73,69,78,79},42)]
+local _ooiOOIllio=_oiiiiooooo[_oOOiiiOIoo({77,79,94,89,73,88,67,90,94,73,70,69,89,95,88,79},42)]
+local _ioilooOlli=_oiiiiooooo[_oOOiiiOIoo({78,79,73,69,71,90,67,70,79},42)]
+local _iIlOOoOOOi=_oiiiiooooo[_oOOiiiOIoo({76,67,88,79,89,67,77,68,75,70},42)]
+local _olOOOOiOIi=_oiiiiooooo[_oOOiiiOIoo({76,67,88,79,94,69,95,73,66,67,68,94,79,88,79,89,94},42)]
+local _IloIoOIIOl=_oiiiiooooo[_oOOiiiOIoo({76,67,88,79,90,88,69,82,67,71,67,94,83,90,88,69,71,90,94},42)]
+local _IIIlOilOoO=_oiiiiooooo[_oOOiiiOIoo({76,67,88,79,73,70,67,73,65,78,79,94,79,73,94,69,88},42)]
+local _IIOiOIioll=_oiiiiooooo[_oOOiiiOIoo({77,79,94,95,90,92,75,70,95,79,89},42)]
+local _iiiloIlIio=_oiiiiooooo[_oOOiiiOIoo({77,79,94,95,90,92,75,70,95,79},42)]
+local _OOlooIiiio=_oiiiiooooo[_oOOiiiOIoo({89,79,94,95,90,92,75,70,95,79},42)]
+local _oOOiOOiili=_oiiiiooooo[_oOOiiiOIoo({77,79,94,90,88,69,94,69,89},42)]
+local _oIilIIlloo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,90,88,69,94,69},42)]
+local _IollOiooOI=_oiiiiooooo[_oOOiiiOIoo({77,79,94,89,94,75,73,65},42)]
+local _oIlOlIOiOo=_oiiiiooooo[_oOOiiiOIoo({77,79,94,71,69,78,95,70,79,79,68,92},42)]
+local _iIoiioioIO=_oiiiiooooo[_oOOiiiOIoo({71,79,89,89,75,77,79,72,69,82},42)]
+local _IiilIliOli=_oiiiiooooo[_oOOiiiOIoo({91,95,79,95,79,117,69,68,117,94,79,70,79,90,69,88,94},42)]
+local _IioilolOlo=_oiiiiooooo[_oOOiiiOIoo({91,95,79,95,79,69,68,94,79,70,79,90,69,88,94},42)]
+local _OlOOOloloI=_oiiiiooooo[_oOOiiiOIoo({110,88,75,93,67,68,77},42)]
+local _IIOiOiIOOi=_oiiiiooooo[_oOOiiiOIoo({93,88,67,94,79,73,70,67,90,72,69,75,88,78},42)]
+local _OIOIoOioli=_oiiiiooooo[_oOOiiiOIoo({77,79,94,73,70,67,90,72,69,75,88,78},42)]
+local _oolIllooil=_oiiiiooooo[_oOOiiiOIoo({89,79,94,73,70,67,90,72,69,75,88,78},42)]
+local _oIOlOoliIO=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,27,73,70,67,73,65},42)]
+local _lIliIOOIOI=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,24,73,70,67,73,65},42)]
+local _loIoOIiIoO=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,27,90,88,79,89,89},42)]
+local _iOiolilOlO=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,24,90,88,79,89,89},42)]
+local _llOilOiIoO=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,27,88,79,70,79,75,89,79},42)]
+local _OoIoooIliO=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,24,88,79,70,79,75,89,79},42)]
+local _iloiOloOIo=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,71,69,92,79,88,79,70},42)]
+local _IIilOiloli=_oiiiiooooo[_oOOiiiOIoo({71,69,95,89,79,71,69,92,79,75,72,89},42)]
+local _oIlOOoIIOi=_oiiiiooooo[_oOOiiiOIoo({65,79,83,90,88,79,89,89},42)]
+local _lllIOIIiOI=_oiiiiooooo[_oOOiiiOIoo({65,79,83,88,79,70,79,75,89,79},42)]
+local _IIOIoOoiIO=_oiiiiooooo[_oOOiiiOIoo({89,79,68,78,70,95,75},42)]
+local _iOioOoOIoO=_oiiiiooooo[_oOOiiiOIoo({89,79,94,94,66,88,79,75,78,67,78,79,68,94,67,94,83},42)]
+local _IoliIIIIIO=_oiiiiooooo[_oOOiiiOIoo({77,79,94,94,66,88,79,75,78,67,78,79,68,94,67,94,83},42)]
+local _OoOlIilIIl=_oiiiiooooo[_oOOiiiOIoo({88,79,75,78,76,67,70,79},42)]
+local _oIooIolIlO=_oiiiiooooo[_oOOiiiOIoo({93,88,67,94,79,76,67,70,79},42)]
+local _IoloOOoiOi=_oiiiiooooo[_oOOiiiOIoo({70,67,89,94,76,67,70,79,89},42)]
+local _ioOiooiiIO=_oiiiiooooo[_oOOiiiOIoo({67,89,76,67,70,79},42)]
+local _lOooIOOIIO=_oiiiiooooo[_oOOiiiOIoo({67,89,76,69,70,78,79,88},42)]
+local _IliIIilOio=_oiiiiooooo[_oOOiiiOIoo({71,75,65,79,76,69,70,78,79,88},42)]
+local _ilOiOIlIlO=_oiiiiooooo[_oOOiiiOIoo({78,79,70,76,69,70,78,79,88},42)]
+local _ilolOIIooi=_oiiiiooooo[_oOOiiiOIoo({78,79,70,76,67,70,79},42)]
+local _olillOIlOI=_oiiiiooooo[_oOOiiiOIoo({75,90,90,79,68,78,76,67,70,79},42)]
+local _iloOiooloO=_oiiiiooooo[_oOOiiiOIoo({88,79,91,95,79,89,94},42)]
+local _lOOIolooIO=_oiiiiooooo[_oOOiiiOIoo({66,94,94,90,117,88,79,91,95,79,89,94},42)]
+local _lIliiioilO=_oiiiiooooo[_oOOiiiOIoo({89,83,68},42)]
+local _OoIoOOOoio=_oiiiiooooo[_oOOiiiOIoo({76,70,95,82,95,89},42)]
+local _OIOlIlooiO=_oiiiiooooo[_oOOiiiOIoo({70,69,75,78,76,67,70,79},42)]
+local _OliOOlooOO=_oiiiiooooo[_oOOiiiOIoo({78,69,89,94,88,67,68,77},42)]
+local _OlIlIiOoII=_oiiiiooooo[_oOOiiiOIoo({70,69,75,78,71,69,78,95,70,79},42)]
+local _IoOOIooOOI=_oiiiiooooo[_oOOiiiOIoo({120,95,68,121,79,88,92,67,73,79},42)]
+local _llIiioOOOl=_oiiiiooooo[_oOOiiiOIoo({122,70,75,83,79,88,89},42)]
+local _liiOlIIIoo=_oiiiiooooo[_oOOiiiOIoo({120,79,90,70,67,73,75,94,79,78,121,94,69,88,75,77,79},42)]
+local _olIoOOIoIO=_oiiiiooooo[_oOOiiiOIoo({102,67,77,66,94,67,68,77},42)]
+local _iIooiOiiOI=_oiiiiooooo[_oOOiiiOIoo({127,89,79,88,99,68,90,95,94,121,79,88,92,67,73,79},42)]
+local _iiooilOIil=_oiiiiooooo[_oOOiiiOIoo({126,93,79,79,68,121,79,88,92,67,73,79},42)]
+local _IlIIoollIo=_oiiiiooooo[_oOOiiiOIoo({98,94,94,90,121,79,88,92,67,73,79},42)]
+local _IoiOliOOil=_oiiiiooooo[_oOOiiiOIoo({105,69,70,70,79,73,94,67,69,68,121,79,88,92,67,73,79},42)]
+local _iOOoiooiII=_oiiiiooooo[_oOOiiiOIoo({103,75,88,65,79,94,90,70,75,73,79,121,79,88,92,67,73,79},42)]
+local _OoooIiOoOo=_oiiiiooooo[_oOOiiiOIoo({126,79,82,94,121,79,88,92,67,73,79},42)]
+local _oOoIOioIIi=_lOIlOiIOOl(_IioiiiilOl)
+if _oOoIOioIIi~="function" then while true do _OOiOlIIiOO.wait() end end
+local _oOIloiOOlO=_lOIlOiIOOl(_iooOOlIiii)
+if _oOIloiOOlO~="table" then while true do _OOiOlIIiOO.wait() end end
+local _OlliOlilii=_lOIlOiIOOl(_OOiOlooOII)
+if _OlliOlilii~="function" then while true do _OOiOlIIiOO.wait() end end
+local _OOiOOilliI=pcall(function() local _loIIoIiIiI=(10*560+5) return _loIIoIiIiI end)
+local _oOloooooIO=(24*334+3) local _iIOOiOOlol=(6779-416) if _iIOOiOOlol>_oOloooooIO then local _x=0 end
+local _OOiOoollli=pcall(function() local _IIiiloOoli=(5362-327) return _IIiiloOoli end)
+local _IooollIOiI=(27*333+10) local _oOoOiIllio=(7704-452) if _oOoOiIllio>_IooollIOiI then local _x=0 end
+local _IlloIliOOl={} for _olOOioilol=1,3 do _IlloIliOOl[_olOOioilol]=(5291-481) end
+_lOiIOiIIoo(_oOOiiiOIoo({79,94,79,90,70,75},(7*6+0)))
+_lOiIOiIIoo(_oOOiiiOIoo({90,70},(102-60)))
 end
